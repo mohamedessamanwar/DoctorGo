@@ -1,0 +1,139 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9CC451E4-3241-41ED-AC38-D55777A9FFF7}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\al-fajr\\desktop\\go doctor\\godoctor\\dataaccesslayer\\data\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CC451E4-3241-41ED-AC38-D55777A9FFF7}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\data\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\DataAccessLayer\\Migrations\\20241001211802_seedRoles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DataAccessLayer\\Migrations\\20241001211802_seedRoles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\DataAccessLayer\\Migrations\\20241001211707_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DataAccessLayer\\Migrations\\20241001211707_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CC451E4-3241-41ED-AC38-D55777A9FFF7}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\al-fajr\\desktop\\go doctor\\godoctor\\dataaccesslayer\\data\\context\\godoctorcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CC451E4-3241-41ED-AC38-D55777A9FFF7}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\data\\context\\godoctorcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CC451E4-3241-41ED-AC38-D55777A9FFF7}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\al-fajr\\desktop\\go doctor\\godoctor\\dataaccesslayer\\dataaccesslayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{9CC451E4-3241-41ED-AC38-D55777A9FFF7}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\dataaccesslayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85C91D78-4979-49F7-90B0-291B5E85018E}|GoDoctor\\GoDoctor.csproj|c:\\users\\al-fajr\\desktop\\go doctor\\godoctor\\godoctor\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{85C91D78-4979-49F7-90B0-291B5E85018E}|GoDoctor\\GoDoctor.csproj|solutionrelative:godoctor\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85C91D78-4979-49F7-90B0-291B5E85018E}|GoDoctor\\GoDoctor.csproj|c:\\users\\al-fajr\\desktop\\go doctor\\godoctor\\godoctor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85C91D78-4979-49F7-90B0-291B5E85018E}|GoDoctor\\GoDoctor.csproj|solutionrelative:godoctor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\DataAccessLayer\\Data\\Models\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Data\\Models\\ApplicationUser.cs",
+              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\DataAccessLayer\\Data\\Models\\ApplicationUser.cs",
+              "RelativeToolTip": "DataAccessLayer\\Data\\Models\\ApplicationUser.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T21:22:09.161Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "20241001211802_seedRoles.cs",
+              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\DataAccessLayer\\Migrations\\20241001211802_seedRoles.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Migrations\\20241001211802_seedRoles.cs",
+              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\DataAccessLayer\\Migrations\\20241001211802_seedRoles.cs",
+              "RelativeToolTip": "DataAccessLayer\\Migrations\\20241001211802_seedRoles.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAAACEAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T21:18:02.321Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "20241001211707_initial.cs",
+              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\DataAccessLayer\\Migrations\\20241001211707_initial.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Migrations\\20241001211707_initial.cs",
+              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\DataAccessLayer\\Migrations\\20241001211707_initial.cs",
+              "RelativeToolTip": "DataAccessLayer\\Migrations\\20241001211707_initial.cs",
+              "ViewState": "AQIAAN4AAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T21:17:08.004Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\GoDoctor\\Program.cs",
+              "RelativeDocumentMoniker": "GoDoctor\\Program.cs",
+              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\GoDoctor\\Program.cs",
+              "RelativeToolTip": "GoDoctor\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T21:16:16.959Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\GoDoctor\\appsettings.json",
+              "RelativeDocumentMoniker": "GoDoctor\\appsettings.json",
+              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\GoDoctor\\appsettings.json",
+              "RelativeToolTip": "GoDoctor\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAB1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-01T21:16:14.804Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DataAccessLayer",
+              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\DataAccessLayer\\DataAccessLayer.csproj",
+              "RelativeDocumentMoniker": "DataAccessLayer\\DataAccessLayer.csproj",
+              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\DataAccessLayer\\DataAccessLayer.csproj",
+              "RelativeToolTip": "DataAccessLayer\\DataAccessLayer.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-10-01T21:15:10.256Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GoDoctorContext.cs",
+              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\DataAccessLayer\\Data\\Context\\GoDoctorContext.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Data\\Context\\GoDoctorContext.cs",
+              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\DataAccessLayer\\Data\\Context\\GoDoctorContext.cs",
+              "RelativeToolTip": "DataAccessLayer\\Data\\Context\\GoDoctorContext.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAmwA4AAACIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T20:39:50.157Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
