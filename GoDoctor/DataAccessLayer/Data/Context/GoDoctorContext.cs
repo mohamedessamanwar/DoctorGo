@@ -24,8 +24,14 @@ namespace DataAccessLayer.Data.Context
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<ApplicationUser>()
+            .HasIndex(u => u.Email)
+            .IsUnique();
 
-          
+            modelBuilder.Entity<ApplicationUser>()
+                .Property(u => u.Email)
+                .IsRequired();
+
         }
         
 

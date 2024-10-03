@@ -5,6 +5,9 @@ namespace DataAccessLayer.Data.Models
 {
     public class ApplicationUser : IdentityUser
     {
+        //[Required]
+        //[EmailAddress]
+        public override string Email { get; set; }
         [MaxLength(100)]
         public string FirstName { get; set; }
         [MaxLength(100)]

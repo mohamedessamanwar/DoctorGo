@@ -1,0 +1,72 @@
+﻿@model BusinessAccessLayer.DataViews.AuthView.SignupView
+@{
+}
+<div class="row justify-content-center mt-5">
+    <div class="col-md-8 col-lg-6">
+        <!-- Increased the column size for larger form -->
+        <div class="card shadow-lg">
+            <!-- Used shadow-lg for a larger shadow effect -->
+            <div class="card-header bg-primary text-white text-center">
+                <h3>Sign Up</h3>
+            </div>
+            <div class="card-body p-4">
+                <!-- Added padding for more space around form elements -->
+                <form asp-action="Signup" asp-controller="Auth" method="post">
+
+                    <div asp-validation-summary="All"></div>
+                    <div class="form-row">
+                        <div class="form-group ">
+                            <label asp-for="Email" class="font-weight-bold">Email</label>
+                            <input asp-for="Email" class="form-control" id="inputEmail4" placeholder="Enter your email">
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+                       
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Firstname" class="font-weight-bold">First Name</label>
+                        <input asp-for="Firstname" class="form-control" id="inputFirstname" placeholder="Enter your first name">
+                        <span asp-validation-for="Firstname" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Lastname" class="font-weight-bold">Last Name</label>
+                        <input asp-for="Lastname" class="form-control" id="inputLastname" placeholder="Enter your last name">
+                        <span asp-validation-for="Lastname" class="text-danger"></span>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group ">
+                            <label asp-for="City" class="font-weight-bold">City</label>
+                            <input asp-for="City" class="form-control" id="inputCity" placeholder="Enter your city">
+                            <span asp-validation-for="City" class="text-danger"></span>
+                        </div>
+                        <div class="form-group ">
+                            <label asp-for="Password" class="font-weight-bold">Password</label>
+                            <input asp-for="Password" class="form-control" id="inputPassword4" placeholder="Enter your password">
+                            <span asp-validation-for="Password" class="text-danger"></span>
+                        </div>
+                        <div class="form-group ">
+                            <label asp-for="ConfirmPassword" class="font-weight-bold">Confirm Password</label>
+                            <input asp-for="ConfirmPassword" class="form-control" id="inputConfirmPassword" placeholder="Confirm your password">
+                            <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                         
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Sign up</button> <!-- Added btn-block to make button span full width -->
+                </form>
+
+  
+
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
