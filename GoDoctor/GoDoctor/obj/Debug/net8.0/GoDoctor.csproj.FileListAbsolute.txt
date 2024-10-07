@@ -260,3 +260,7 @@ C:\Users\AL-FAJR\Desktop\Go Doctor\GoDoctor\GoDoctor\bin\Debug\net8.0\runtimes\w
 C:\Users\AL-FAJR\Desktop\Go Doctor\GoDoctor\GoDoctor\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
 C:\Users\AL-FAJR\Desktop\Go Doctor\GoDoctor\GoDoctor\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\AL-FAJR\Desktop\Go Doctor\GoDoctor\GoDoctor\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
+C:\Users\AL-FAJR\Desktop\Go Doctor\GoDoctor\GoDoctor\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\AL-FAJR\Desktop\Go Doctor\GoDoctor\GoDoctor\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
+C:\Users\AL-FAJR\Desktop\Go Doctor\GoDoctor\GoDoctor\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
+C:\Users\AL-FAJR\Desktop\Go Doctor\GoDoctor\GoDoctor\obj\Debug\net8.0\GoDoctor.MvcApplicationPartsAssemblyInfo.cs

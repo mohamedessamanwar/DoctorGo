@@ -1,5 +1,6 @@
 ﻿using DataAccessLayer.Data.Context;
-
+using DataAccessLayer.Repositories.DoctorRepo;
+using DataAccessLayer.Repositories.SpecialtyRepo;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage;
 using System.Data;
@@ -15,6 +16,8 @@ namespace DataAccessLayer.UnitOfWorkRepo
         public UnitOfWork(GoDoctorContext context)
         {
             this._context = context;
+            doctorRepository = new DoctorRepository(context);
+            SpecialtyRepository = new SpecialtyRepository(context);
            
           
         }
@@ -29,7 +32,9 @@ namespace DataAccessLayer.UnitOfWorkRepo
         }
 
         private IDbContextTransaction _transaction; // Add this field to your class
-       
+
+        public IDoctorRepository doctorRepository {  get; private set; }
+        public ISpecialtyRepository SpecialtyRepository {  get; private set; }
         public async Task<IDbContextTransaction> BeginTransactionAsync(System.Data.IsolationLevel isolationLevel)
         {
             _transaction = await _context.Database.BeginTransactionAsync(isolationLevel);
@@ -66,8 +71,9 @@ namespace DataAccessLayer.UnitOfWorkRepo
             }
         }
 
-
-
-
+        public Task<int> CompleteAsync()
+        {
+            return _context.SaveChangesAsync();
+        }
     }
 }

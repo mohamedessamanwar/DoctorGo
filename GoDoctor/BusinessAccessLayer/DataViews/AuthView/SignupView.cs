@@ -21,6 +21,9 @@ namespace BusinessAccessLayer.DataViews.AuthView
         [Required(ErrorMessage = "firstname is required")]
         [MaxLength(50)]
         public string Lastname { get; set; }
+
+        
+
         [Required]
         [MaxLength(100 , ErrorMessage = "Max length is 100")]
         public string City { get; set; }
@@ -34,6 +37,8 @@ namespace BusinessAccessLayer.DataViews.AuthView
         [DataType(DataType.Password)]
         [Compare("Password", ErrorMessage = "Passwords do not match")]
         public string ConfirmPassword { get; set; }
+
+        public string? Role { get; set; }
 
     }
 }

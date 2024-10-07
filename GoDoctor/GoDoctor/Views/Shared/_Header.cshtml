@@ -1,0 +1,49 @@
+﻿<nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Go Doctor</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav me-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">
+                        Home
+                        <span class="visually-hidden">(current)</span>
+                    </a>
+                </li>
+                @if (!User.Identity.IsAuthenticated)
+                {
+                    <li class="nav-item d-flex justify-content-between justify-content-center">
+                        <a asp-controller="Auth" asp-action="Signup" class="nav-link">Signup</a>
+                        <a asp-controller="Auth" asp-action="Login" class="nav-link">Login</a>
+                    </li>
+
+                }
+                else
+                {
+                    <li class="nav-item">
+                        <a asp-controller="Auth" asp-action="Logout" class="nav-link">LogOut</a>
+                    </li>
+                    <li>
+                        <p class="text-bg-light">@User.Claims.FirstOrDefault(c => c.Type == "UserName")?.Value</p>
+                    </li>
+
+                }
+             @*    @if (User.Identity.IsAuthenticated && User.IsInRole("Patient"))
+                { *@
+                    <li class="nav-item d-flex justify-content-between justify-content-center">
+                        <a asp-controller="Doctor" asp-action="ViewDoctors" class="nav-link">Doctors</a>
+
+                    </li>
+                @* } *@
+
+
+
+
+            </ul>
+
+        </div>
+    </div>
+</nav>

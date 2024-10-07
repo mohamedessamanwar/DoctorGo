@@ -1,0 +1,69 @@
+﻿@{
+    // Check if the specialties have been populated
+    var specialties = ViewBag.Specialties as IEnumerable<SelectListItem>; // Adjust the type as necessary
+}
+
+<div class="search-container">
+    <form class="searchform  col-sm-12 col-md-6" action="#">
+        <div class="search-options">
+            <div class="search-field">
+                <label for="specialty">أنا أبحث عن دكتور</label>
+                <select id="specialty" name="specialty" asp-items="specialties">
+                    <option selected value="0">اختر التخصص</option>
+             
+                </select>
+            </div>
+
+            <div class="search-field">
+                <label for="governorate">في محافظة</label>
+                <select id="governorate">
+                    <option value="" selected>اختر المحافظة</option>
+                    <option value="Cairo">القاهرة</option>
+                    <option value="Giza">الجيزة</option>
+                    <option value="Alexandria">الإسكندرية</option>
+                    <option value="Port Said">بورسعيد</option>
+                    <option value="Suez">السويس</option>
+                    <option value="Mansoura">المنصورة</option>
+                    <option value="Tanta">طنطا</option>
+                    <option value="Ismailia">الإسماعيلية</option>
+                    <option value="Fayoum">الفيوم</option>
+                    <option value="Zagazig">الزقازيق</option>
+                    <option value="Asyut">أسيوط</option>
+                    <option value="Sohag">سوهاج</option>
+                    <option value="Luxor">الأقصر</option>
+                    <option value="Aswan">أسوان</option>
+                    <option value="Damanhur">دمنهور</option>
+                    <option value="Damietta">دمياط</option>
+                    <option value="Minya">المنيا</option>
+                    <option value="Beni Suef">بني سويف</option>
+                    <option value="Qena">قنا</option>
+                    <option value="Kafr El Sheikh">كفر الشيخ</option>
+                    <option value="Hurghada">الغردقة</option>
+                    <option value="Sharm El Sheikh">شرم الشيخ</option>
+                    <option value="El-Mahalla El-Kubra">المحلة الكبرى</option>
+                    <option value="Banha">بنها</option>
+                    <option value="Arish">العريش</option>
+                    <option value="Qalyub">قليوب</option>
+                    <option value="Helwan">حلوان</option>
+                </select>
+
+            </div>
+
+
+            <div class="search-field">
+                <label for="doctor">أو اكتب اسم</label>
+                <input type="text" id="doctor" name="doctor" placeholder="الدكتور او المستشفى">
+            </div>
+
+            <div class="search-button">
+                <button id="submit" type="submit">بحث</button>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="row container d-flex justify-content-center " id="ParentCard">
+ 
+</div>
+
+<div id="pagination-container"></div>
+<script src="~/js/doctorsearch.js"></script>

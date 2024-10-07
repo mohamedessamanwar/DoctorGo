@@ -20,7 +20,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarColor01">
                 <ul class="navbar-nav me-auto">
-                   
+
                     <li class="nav-item">
                         <a class="nav-link active" href="#">
                             Home
@@ -41,15 +41,23 @@
                             <a asp-controller="Auth" asp-action="Logout" class="nav-link">LogOut</a>
                         </li>
                         <li>
-                            <h5>@User.Claims.FirstOrDefault(c => c.Type == "UserName")?.Value</h5>
+                            <p class="text-bg-light">@User.Claims.FirstOrDefault(c => c.Type == "UserName")?.Value</p>
                         </li>
 
                     }
+                    @*    @if (User.Identity.IsAuthenticated && User.IsInRole("Patient"))
+                    { *@
+                    <li class="nav-item d-flex justify-content-between justify-content-center">
+                        <a asp-controller="Doctor" asp-action="ViewDoctors" class="nav-link">Doctors</a>
 
-                    
-                
+                    </li>
+                    @* } *@
+
+
+
+
                 </ul>
-            
+
             </div>
         </div>
     </nav>

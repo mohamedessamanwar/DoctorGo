@@ -48,7 +48,14 @@ namespace BusinessAccessLayer.Sevices.AuthService
                 }; 
             }
             // Add to role 
-            await _userManager.AddToRoleAsync(user, "Patient");
+            if (account.Role != null) {
+                await _userManager.AddToRoleAsync(user, "Doctor");
+            }
+            else
+            {
+                await _userManager.AddToRoleAsync(user, "Patient");
+            }
+           
             var role = await AddClaimsAsync(user);
             if (role is not null)
             {
@@ -61,7 +68,10 @@ namespace BusinessAccessLayer.Sevices.AuthService
             }
             // Create cookie and sign in user
             await _signInManager.SignInAsync(user, false);
-            return new AuthResult();
+            return new AuthResult()
+            {
+                UserId = user.Id
+            };
 
         }
 
@@ -102,6 +112,8 @@ namespace BusinessAccessLayer.Sevices.AuthService
             if (user == null) {
                return new AuthResult()
                {
+
+                   IsAuth = false,
                    Errors = "Email Or Passward Is Not Correct" 
                };
                
@@ -110,6 +122,8 @@ namespace BusinessAccessLayer.Sevices.AuthService
             {
                 return new AuthResult()
                 {
+
+                    IsAuth = false,
                     Errors = "Email Or Passward Is Not Correct"
                 };
             }
@@ -120,15 +134,19 @@ namespace BusinessAccessLayer.Sevices.AuthService
             {
                 return new AuthResult()
                 {
+                    IsAuth = false,
                     Errors = "Failed to sign in"
                 };
             }
+            var role = await _userManager.GetRolesAsync(user);
+
 
             // Return success result
             return new AuthResult()
             {
-                IsAuth = true
-            };
+                IsAuth = true,
+                Role = role.First()
+            }; 
 
         }
         public async Task LogOut()

@@ -1,6 +1,8 @@
-﻿namespace DataAccessLayer.Repositories.GenericRepo
+﻿using DataAccessLayer.Data.Models;
+
+namespace DataAccessLayer.Repositories.GenericRepo
 {
-    public interface IGenericRepo<T> where T : class // primary constrain 
+    public interface IGenericRepo<T> where T : BaseEntity // primary constrain 
     {
         Task<IEnumerable<T>> GetAll();
         Task<T?> GetByIdAsync(int id);

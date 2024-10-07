@@ -26,12 +26,24 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\AL-FAJR\Desktop\Go Doctor\GoDoctor\GoDoctor
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/AL-FAJR/Desktop/Go Doctor/GoDoctor/GoDoctor/Views/Admin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/AL-FAJR/Desktop/Go Doctor/GoDoctor/GoDoctor/Views/Auth/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/AL-FAJR/Desktop/Go Doctor/GoDoctor/GoDoctor/Views/Auth/Signup.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxTaWdudXAuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/AL-FAJR/Desktop/Go Doctor/GoDoctor/GoDoctor/Views/Doctor/GoAsDoctor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yXEdvQXNEb2N0b3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/AL-FAJR/Desktop/Go Doctor/GoDoctor/GoDoctor/Views/Doctor/ViewDoctors.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yXFZpZXdEb2N0b3JzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/AL-FAJR/Desktop/Go Doctor/GoDoctor/GoDoctor/Views/Home/Index.cshtml]
@@ -44,6 +56,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/AL-FAJR/Desktop/Go Doctor/GoDoctor/GoDoctor/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/AL-FAJR/Desktop/Go Doctor/GoDoctor/GoDoctor/Views/Shared/_AdminLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZG1pbkxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/AL-FAJR/Desktop/Go Doctor/GoDoctor/GoDoctor/Views/Shared/_Header.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9IZWFkZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/AL-FAJR/Desktop/Go Doctor/GoDoctor/GoDoctor/Views/Shared/_ValidationScriptsPartial.cshtml]

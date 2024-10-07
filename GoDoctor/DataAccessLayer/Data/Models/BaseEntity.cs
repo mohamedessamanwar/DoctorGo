@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Data.Models
 {
-    public interface BaseEntity
+    public class BaseEntity
     {
         public int Id { get; set; }
         public DateTime CreatedDate { get; set; }
-        public DateTime UpdatedDate { get; set; }
-        public bool IsDeleted { get; set; }
+        public DateTime? UpdatedDate { get; set; }
+        public bool? IsDeleted { get; set; }
 
     }
 }

@@ -10,5 +10,7 @@ namespace BusinessAccessLayer.DataViews.AuthView
     {
         public bool IsAuth {  get; set; } = true;
         public string Errors { get; set; } = string.Empty;
+        public string UserId { get; set; }
+        public string Role { get; set; }
     }
 }

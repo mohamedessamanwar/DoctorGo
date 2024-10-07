@@ -59,9 +59,14 @@ namespace GoDoctor.Controllers
 
             if (!result.IsAuth)
             {
+
                 // If login fails, add error to the model and return to the view
                 ModelState.AddModelError("", result.Errors);
                 return View(model);
+            }
+            if (result.Role == "Admin")
+            {
+                return RedirectToAction("Index", "Admin");
             }
             return RedirectToAction("Index", "Home");
 

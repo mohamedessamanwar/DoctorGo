@@ -1,0 +1,99 @@
+﻿@model BusinessAccessLayer.DataViews.DoctorView.AddDoctorView
+
+<div class="row justify-content-center mt-5">
+    <div class="col-md-8 col-lg-6">
+        <div class="card shadow-lg">
+            <div class="card-header bg-primary text-white text-center">
+                <h3>Add Doctor</h3>
+            </div>
+            <div class="card-body p-4">
+                <form asp-action="GoAsDoctor" asp-controller="Doctor" method="post" enctype="multipart/form-data">
+
+                    <div asp-validation-summary="All" class="text-danger"></div>
+
+                    <div class="form-group">
+                        <label asp-for="Email" class="font-weight-bold">Email</label>
+                        <input asp-for="Email" class="form-control" placeholder="Enter your email">
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Firstname" class="font-weight-bold">First Name</label>
+                        <input asp-for="Firstname" class="form-control" placeholder="Enter your first name">
+                        <span asp-validation-for="Firstname" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Lastname" class="font-weight-bold">Last Name</label>
+                        <input asp-for="Lastname" class="form-control" placeholder="Enter your last name">
+                        <span asp-validation-for="Lastname" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="PhoneNumber" class="font-weight-bold">Phone Number</label>
+                        <input asp-for="PhoneNumber" class="form-control" placeholder="Enter your phone number">
+                        <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="City" class="font-weight-bold">City</label>
+                        <input asp-for="City" class="form-control" placeholder="Enter your city">
+                        <span asp-validation-for="City" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Description" class="font-weight-bold">Description</label>
+                        <textarea asp-for="Description" class="form-control" placeholder="Describe the doctor"></textarea>
+                        <span asp-validation-for="Description" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="SpecialtyId" class="form-label mt-4"></label>
+                        <select class="form-select" asp-for="SpecialtyId" asp-items="Model.Specialties">
+                            <option></option>
+                        </select>
+                        <span asp-validation-for="SpecialtyId" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="ClinicAddress" class="font-weight-bold">Clinic Address</label>
+                        <input asp-for="ClinicAddress" class="form-control" placeholder="Enter the clinic address">
+                        <span asp-validation-for="ClinicAddress" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="ClinicCity" class="font-weight-bold">Clinic City</label>
+                        <input asp-for="ClinicCity" class="form-control" placeholder="Enter the clinic city">
+                        <span asp-validation-for="ClinicCity" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Price" class="font-weight-bold">Examination price</label>
+                        <input asp-for="Price" class="form-control" placeholder="Examination price">
+                        <span asp-validation-for="Price" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Password" class="font-weight-bold">Password</label>
+                        <input asp-for="Password" class="form-control" type="password" placeholder="Enter password">
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Image" class="font-weight-bold">Profile Image</label>
+                        <input asp-for="Image" class="form-control-file" type="file">
+                        <span asp-validation-for="Image" class="text-danger"></span>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block">Add Doctor</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+

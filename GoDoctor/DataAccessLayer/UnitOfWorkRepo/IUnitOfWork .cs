@@ -1,5 +1,6 @@
 ﻿using DataAccessLayer.Data.Context;
-
+using DataAccessLayer.Repositories.DoctorRepo;
+using DataAccessLayer.Repositories.SpecialtyRepo;
 using Microsoft.EntityFrameworkCore.Storage;
 using System.Data;
 
@@ -13,8 +14,10 @@ namespace DataAccessLayer.UnitOfWorkRepo
         void Commit();
         void Rollback();
         int Complete();
+        Task<int> CompleteAsync();
 
-
+        public ISpecialtyRepository SpecialtyRepository { get; }
+         public IDoctorRepository doctorRepository { get; }
 
     }
 }

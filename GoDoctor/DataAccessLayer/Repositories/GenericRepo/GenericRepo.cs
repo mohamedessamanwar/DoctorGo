@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.ChangeTracking;
 
 namespace DataAccessLayer.Repositories.GenericRepo
 {
-    public class GenericRepo<T> : IGenericRepo<T> where T : class , BaseEntity
+    public class GenericRepo<T> : IGenericRepo<T> where T :  BaseEntity
     {
         protected readonly GoDoctorContext context;
         public GenericRepo(GoDoctorContext context)
