@@ -327,7 +327,7 @@ namespace DataAccessLayer.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2024, 10, 7, 20, 38, 50, 399, DateTimeKind.Local).AddTicks(3901),
+                            CreatedDate = new DateTime(2024, 10, 8, 10, 21, 57, 961, DateTimeKind.Local).AddTicks(3559),
                             Description = "Heart and cardiovascular system specialists.",
                             IsDeleted = false,
                             Name = "Cardiology"
@@ -335,7 +335,7 @@ namespace DataAccessLayer.Migrations
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2024, 10, 7, 20, 38, 50, 399, DateTimeKind.Local).AddTicks(3954),
+                            CreatedDate = new DateTime(2024, 10, 8, 10, 21, 57, 961, DateTimeKind.Local).AddTicks(3609),
                             Description = "Specializes in the treatment of nervous system disorders.",
                             IsDeleted = false,
                             Name = "Neurology"
@@ -343,7 +343,7 @@ namespace DataAccessLayer.Migrations
                         new
                         {
                             Id = 3,
-                            CreatedDate = new DateTime(2024, 10, 7, 20, 38, 50, 399, DateTimeKind.Local).AddTicks(3960),
+                            CreatedDate = new DateTime(2024, 10, 8, 10, 21, 57, 961, DateTimeKind.Local).AddTicks(3613),
                             Description = "Treats skin conditions and diseases.",
                             IsDeleted = false,
                             Name = "Dermatology"
@@ -351,7 +351,7 @@ namespace DataAccessLayer.Migrations
                         new
                         {
                             Id = 4,
-                            CreatedDate = new DateTime(2024, 10, 7, 20, 38, 50, 399, DateTimeKind.Local).AddTicks(3964),
+                            CreatedDate = new DateTime(2024, 10, 8, 10, 21, 57, 961, DateTimeKind.Local).AddTicks(3617),
                             Description = "Focused on children's health and well-being.",
                             IsDeleted = false,
                             Name = "Pediatrics"
@@ -359,7 +359,7 @@ namespace DataAccessLayer.Migrations
                         new
                         {
                             Id = 5,
-                            CreatedDate = new DateTime(2024, 10, 7, 20, 38, 50, 399, DateTimeKind.Local).AddTicks(3969),
+                            CreatedDate = new DateTime(2024, 10, 8, 10, 21, 57, 961, DateTimeKind.Local).AddTicks(3620),
                             Description = "Treats conditions related to bones, joints, and muscles.",
                             IsDeleted = false,
                             Name = "Orthopedics"
@@ -367,7 +367,7 @@ namespace DataAccessLayer.Migrations
                         new
                         {
                             Id = 6,
-                            CreatedDate = new DateTime(2024, 10, 7, 20, 38, 50, 399, DateTimeKind.Local).AddTicks(3973),
+                            CreatedDate = new DateTime(2024, 10, 8, 10, 21, 57, 961, DateTimeKind.Local).AddTicks(3624),
                             Description = "Specializes in the diagnosis and treatment of eye disorders.",
                             IsDeleted = false,
                             Name = "Ophthalmology"
@@ -375,7 +375,7 @@ namespace DataAccessLayer.Migrations
                         new
                         {
                             Id = 7,
-                            CreatedDate = new DateTime(2024, 10, 7, 20, 38, 50, 399, DateTimeKind.Local).AddTicks(3977),
+                            CreatedDate = new DateTime(2024, 10, 8, 10, 21, 57, 961, DateTimeKind.Local).AddTicks(3627),
                             Description = "Focuses on the health of the female reproductive systems.",
                             IsDeleted = false,
                             Name = "Gynecology"
@@ -383,7 +383,7 @@ namespace DataAccessLayer.Migrations
                         new
                         {
                             Id = 8,
-                            CreatedDate = new DateTime(2024, 10, 7, 20, 38, 50, 399, DateTimeKind.Local).AddTicks(3981),
+                            CreatedDate = new DateTime(2024, 10, 8, 10, 21, 57, 961, DateTimeKind.Local).AddTicks(3630),
                             Description = "Specializes in diagnosing and treating cancer.",
                             IsDeleted = false,
                             Name = "Oncology"
@@ -401,8 +401,8 @@ namespace DataAccessLayer.Migrations
                     b.Property<int>("AppointmentId")
                         .HasColumnType("int");
 
-                    b.Property<DateTime>("AppointmentTime")
-                        .HasColumnType("datetime2");
+                    b.Property<TimeOnly>("AppointmentTime")
+                        .HasColumnType("time");
 
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
@@ -619,7 +619,7 @@ namespace DataAccessLayer.Migrations
             modelBuilder.Entity("DataAccessLayer.Data.Models.TimeSlot", b =>
                 {
                     b.HasOne("DataAccessLayer.Data.Models.Appointment", "Appointment")
-                        .WithMany()
+                        .WithMany("TimeSlots")
                         .HasForeignKey("AppointmentId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -676,6 +676,11 @@ namespace DataAccessLayer.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("DataAccessLayer.Data.Models.Appointment", b =>
+                {
+                    b.Navigation("TimeSlots");
                 });
 
             modelBuilder.Entity("DataAccessLayer.Data.Models.Docktor", b =>

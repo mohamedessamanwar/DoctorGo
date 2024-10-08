@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Tp4ijqwU3BqHFGVkP54OtZdhWMCFrFueQVY0cROs0T4=",
+  "Hash": "5mSPMwNtI1hg0oDeiiCqsF0MfxW5NSWVVF6MhdKDn3c=",
   "Source": "GoDoctor",
   "BasePath": "_content/GoDoctor",
   "Mode": "Default",
@@ -188,6 +188,25 @@
       "OriginalItemSpec": "wwwroot\\Img\\Doctors\\b9a71258-3540-4adf-a82c-21b0251f5e0b.png"
     },
     {
+      "Identity": "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\GoDoctor\\wwwroot\\Img\\Doctors\\cf28e8f6-55ca-44f6-80d0-81f203cc70bf.png",
+      "SourceId": "GoDoctor",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\GoDoctor\\wwwroot\\",
+      "BasePath": "_content/GoDoctor",
+      "RelativePath": "Img/Doctors/cf28e8f6-55ca-44f6-80d0-81f203cc70bf.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Img\\Doctors\\cf28e8f6-55ca-44f6-80d0-81f203cc70bf.png"
+    },
+    {
       "Identity": "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\GoDoctor\\wwwroot\\Img\\PagesImages\\Group-162.png",
       "SourceId": "GoDoctor",
       "SourceType": "Discovered",
@@ -243,6 +262,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Img\\PagesImages\\StockCake-Blurry hospital rush_1728016169.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\GoDoctor\\wwwroot\\js\\Appointment.js",
+      "SourceId": "GoDoctor",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\GoDoctor\\wwwroot\\",
+      "BasePath": "_content/GoDoctor",
+      "RelativePath": "js/Appointment.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\Appointment.js"
     },
     {
       "Identity": "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\GoDoctor\\wwwroot\\js\\site.js",

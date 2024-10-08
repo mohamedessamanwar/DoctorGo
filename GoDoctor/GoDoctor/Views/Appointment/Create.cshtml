@@ -1,0 +1,46 @@
+﻿@using BusinessAccessLayer.DataViews.Appointment
+@model  AddAppointment
+
+@{
+    Layout = "_DoctorLayout";
+    ViewData["Title"] = "Add Appointment";
+}
+
+<h2>Add Appointment</h2>
+
+<!-- Create the form with Bootstrap styling -->
+<form asp-action="Create" method="post" class="form-horizontal">
+
+    <!-- Appointment Day -->
+    <div class="form-group">
+        <label asp-for="AppointmentDay" class="control-label col-md-2">Appointment Day</label>
+        <div class="col-md-10">
+            <input asp-for="AppointmentDay" class="form-control" type="date" />
+            <span asp-validation-for="AppointmentDay" class="text-danger"></span>
+        </div>
+    </div>
+
+    <!-- Appointment Times (Dynamically add time fields) -->
+    <div class="form-group">
+        <label class="control-label col-md-2">Appointment Time(s)</label>
+        <div class="col-md-10" id="timeInputs">
+            <!-- Initial Time Input -->
+            <input name="AppointmentTime" class="form-control" type="time" />
+        </div>
+        <div class="col-md-10 mt-2">
+            <button type="button" class="btn btn-secondary" id="addTime">Add More Time</button>
+        </div>
+    </div>
+
+
+    <!-- Submit Button -->
+    <div class="form-group mt-4">
+        <div class="col-md-offset-2 col-md-10">
+            <button type="submit" class="btn btn-primary">Submit Appointment</button>
+        </div>
+    </div>
+
+</form>
+
+<!-- JavaScript to dynamically add time input fields -->
+<script src="~/js/appointment.js"></script>

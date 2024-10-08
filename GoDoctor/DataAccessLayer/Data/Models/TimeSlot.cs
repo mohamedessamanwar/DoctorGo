@@ -10,7 +10,7 @@ namespace DataAccessLayer.Data.Models
       public  class TimeSlot : BaseEntity
     {
        
-        public DateTime AppointmentTime { get; set; }
+        public TimeOnly AppointmentTime { get; set; }
         public Appointment Appointment { get; set; }
         public int AppointmentId { get; set; }
         public bool IsActive { get; set; }

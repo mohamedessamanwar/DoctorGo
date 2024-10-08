@@ -53,5 +53,12 @@ namespace DataAccessLayer.Repositories.DoctorRepo
             }
             return quary.Count();
         }
+
+
+        public async Task<Docktor?> GetDocterByUserId(string userId) {
+           return await context.Docktor.AsNoTracking().FirstOrDefaultAsync(d=> d.ApplicationUserId==userId);
+           
+         
+        }
     }
 }

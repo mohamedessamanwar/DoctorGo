@@ -68,6 +68,10 @@ namespace GoDoctor.Controllers
             {
                 return RedirectToAction("Index", "Admin");
             }
+            if (result.Role == "Doctor")
+            {
+                return RedirectToAction("DoctorDashboard", "Doctor");
+            }
             return RedirectToAction("Index", "Home");
 
         }

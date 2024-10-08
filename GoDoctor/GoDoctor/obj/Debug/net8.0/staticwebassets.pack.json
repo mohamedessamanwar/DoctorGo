@@ -21,6 +21,10 @@
       "PackagePath": "staticwebassets\\Img\\Doctors\\b9a71258-3540-4adf-a82c-21b0251f5e0b.png"
     },
     {
+      "Id": "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\GoDoctor\\wwwroot\\Img\\Doctors\\cf28e8f6-55ca-44f6-80d0-81f203cc70bf.png",
+      "PackagePath": "staticwebassets\\Img\\Doctors\\cf28e8f6-55ca-44f6-80d0-81f203cc70bf.png"
+    },
+    {
       "Id": "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\GoDoctor\\wwwroot\\Img\\PagesImages\\Group-162.png",
       "PackagePath": "staticwebassets\\Img\\PagesImages\\Group-162.png"
     },
@@ -43,6 +47,10 @@
     {
       "Id": "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\GoDoctor\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\GoDoctor\\wwwroot\\js\\Appointment.js",
+      "PackagePath": "staticwebassets\\js\\Appointment.js"
     },
     {
       "Id": "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\GoDoctor\\wwwroot\\js\\site.js",

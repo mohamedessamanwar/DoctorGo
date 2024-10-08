@@ -1,4 +1,5 @@
 ﻿using DataAccessLayer.Data.Context;
+using DataAccessLayer.Repositories.AppointmentRepo;
 using DataAccessLayer.Repositories.DoctorRepo;
 using DataAccessLayer.Repositories.SpecialtyRepo;
 using Microsoft.EntityFrameworkCore.Storage;
@@ -15,7 +16,7 @@ namespace DataAccessLayer.UnitOfWorkRepo
         void Rollback();
         int Complete();
         Task<int> CompleteAsync();
-
+        public IAppointmentRepo AppointmentRepo { get; }
         public ISpecialtyRepository SpecialtyRepository { get; }
          public IDoctorRepository doctorRepository { get; }
 

@@ -12,6 +12,6 @@ namespace DataAccessLayer.Data.Models
         public int DoctorId { get; set; }
         public Docktor Doctor { get; set; } 
         public DateOnly AppointmentDay { get; set; }
-        ICollection<TimeSlot> TimeSlots { get; set; } = new List<TimeSlot>();
+       public  ICollection<TimeSlot> TimeSlots { get; set; } = new List<TimeSlot>();
     }
     }

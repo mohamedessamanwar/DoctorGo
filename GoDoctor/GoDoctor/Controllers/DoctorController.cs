@@ -1,6 +1,7 @@
 ﻿using BusinessAccessLayer.DataViews.DoctorView;
 using BusinessAccessLayer.Sevices.DoctorService;
 using BusinessAccessLayer.Sevices.SpecialtyService;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace GoDoctor.Controllers
@@ -78,6 +79,14 @@ namespace GoDoctor.Controllers
                 return NotFound( new {massage = "No Doctor Match Search" });
             }
             return Ok ( new { data = result });
+        }
+
+
+        [HttpGet]
+        [Authorize(policy:"Doctor")]
+        public IActionResult DoctorDashboard()
+        {
+            return View();
         }
     }
 }

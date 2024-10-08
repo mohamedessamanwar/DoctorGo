@@ -12,5 +12,6 @@ namespace DataAccessLayer.Repositories.DoctorRepo
     {
         Task<int> GetDocktorsCount(int specialty, string governorate, string doctor, int page);
         Task<IEnumerable<Docktor>> GetDocktors(int specialty, string governorate, string doctor, int page);
+        Task<Docktor?> GetDocterByUserId(string userId);
     }
 }
