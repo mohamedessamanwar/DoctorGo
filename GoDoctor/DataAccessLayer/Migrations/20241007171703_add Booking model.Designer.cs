@@ -4,6 +4,7 @@ using DataAccessLayer.Data.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DataAccessLayer.Migrations
 {
     [DbContext(typeof(GoDoctorContext))]
-    partial class GoDoctorContextModelSnapshot : ModelSnapshot
+    [Migration("20241007171703_add Booking model")]
+    partial class addBookingmodel
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -153,12 +156,18 @@ namespace DataAccessLayer.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<int>("AppointmentId")
+                        .HasColumnType("int");
+
                     b.Property<string>("BookingState")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
+
+                    b.Property<int>("DoctorId")
+                        .HasColumnType("int");
 
                     b.Property<decimal>("FinalPrice")
                         .HasColumnType("decimal(18,2)");
@@ -180,9 +189,6 @@ namespace DataAccessLayer.Migrations
                     b.Property<string>("SessionId")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("TimeSlotId")
-                        .HasColumnType("int");
-
                     b.Property<DateTime?>("UpdatedDate")
                         .HasColumnType("datetime2");
 
@@ -192,7 +198,9 @@ namespace DataAccessLayer.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("TimeSlotId");
+                    b.HasIndex("AppointmentId");
+
+                    b.HasIndex("DoctorId");
 
                     b.HasIndex("UserId");
 
@@ -327,7 +335,7 @@ namespace DataAccessLayer.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2024, 10, 7, 20, 38, 50, 399, DateTimeKind.Local).AddTicks(3901),
+                            CreatedDate = new DateTime(2024, 10, 7, 20, 17, 2, 550, DateTimeKind.Local).AddTicks(7610),
                             Description = "Heart and cardiovascular system specialists.",
                             IsDeleted = false,
                             Name = "Cardiology"
@@ -335,7 +343,7 @@ namespace DataAccessLayer.Migrations
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2024, 10, 7, 20, 38, 50, 399, DateTimeKind.Local).AddTicks(3954),
+                            CreatedDate = new DateTime(2024, 10, 7, 20, 17, 2, 550, DateTimeKind.Local).AddTicks(7661),
                             Description = "Specializes in the treatment of nervous system disorders.",
                             IsDeleted = false,
                             Name = "Neurology"
@@ -343,7 +351,7 @@ namespace DataAccessLayer.Migrations
                         new
                         {
                             Id = 3,
-                            CreatedDate = new DateTime(2024, 10, 7, 20, 38, 50, 399, DateTimeKind.Local).AddTicks(3960),
+                            CreatedDate = new DateTime(2024, 10, 7, 20, 17, 2, 550, DateTimeKind.Local).AddTicks(7666),
                             Description = "Treats skin conditions and diseases.",
                             IsDeleted = false,
                             Name = "Dermatology"
@@ -351,7 +359,7 @@ namespace DataAccessLayer.Migrations
                         new
                         {
                             Id = 4,
-                            CreatedDate = new DateTime(2024, 10, 7, 20, 38, 50, 399, DateTimeKind.Local).AddTicks(3964),
+                            CreatedDate = new DateTime(2024, 10, 7, 20, 17, 2, 550, DateTimeKind.Local).AddTicks(7671),
                             Description = "Focused on children's health and well-being.",
                             IsDeleted = false,
                             Name = "Pediatrics"
@@ -359,7 +367,7 @@ namespace DataAccessLayer.Migrations
                         new
                         {
                             Id = 5,
-                            CreatedDate = new DateTime(2024, 10, 7, 20, 38, 50, 399, DateTimeKind.Local).AddTicks(3969),
+                            CreatedDate = new DateTime(2024, 10, 7, 20, 17, 2, 550, DateTimeKind.Local).AddTicks(7686),
                             Description = "Treats conditions related to bones, joints, and muscles.",
                             IsDeleted = false,
                             Name = "Orthopedics"
@@ -367,7 +375,7 @@ namespace DataAccessLayer.Migrations
                         new
                         {
                             Id = 6,
-                            CreatedDate = new DateTime(2024, 10, 7, 20, 38, 50, 399, DateTimeKind.Local).AddTicks(3973),
+                            CreatedDate = new DateTime(2024, 10, 7, 20, 17, 2, 550, DateTimeKind.Local).AddTicks(7690),
                             Description = "Specializes in the diagnosis and treatment of eye disorders.",
                             IsDeleted = false,
                             Name = "Ophthalmology"
@@ -375,7 +383,7 @@ namespace DataAccessLayer.Migrations
                         new
                         {
                             Id = 7,
-                            CreatedDate = new DateTime(2024, 10, 7, 20, 38, 50, 399, DateTimeKind.Local).AddTicks(3977),
+                            CreatedDate = new DateTime(2024, 10, 7, 20, 17, 2, 550, DateTimeKind.Local).AddTicks(7694),
                             Description = "Focuses on the health of the female reproductive systems.",
                             IsDeleted = false,
                             Name = "Gynecology"
@@ -383,7 +391,7 @@ namespace DataAccessLayer.Migrations
                         new
                         {
                             Id = 8,
-                            CreatedDate = new DateTime(2024, 10, 7, 20, 38, 50, 399, DateTimeKind.Local).AddTicks(3981),
+                            CreatedDate = new DateTime(2024, 10, 7, 20, 17, 2, 550, DateTimeKind.Local).AddTicks(7698),
                             Description = "Specializes in diagnosing and treating cancer.",
                             IsDeleted = false,
                             Name = "Oncology"
@@ -406,9 +414,6 @@ namespace DataAccessLayer.Migrations
 
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
-
-                    b.Property<bool>("IsActive")
-                        .HasColumnType("bit");
 
                     b.Property<bool?>("IsDeleted")
                         .HasColumnType("bit");
@@ -569,9 +574,15 @@ namespace DataAccessLayer.Migrations
 
             modelBuilder.Entity("DataAccessLayer.Data.Models.Booking", b =>
                 {
-                    b.HasOne("DataAccessLayer.Data.Models.TimeSlot", "TimeSlot")
+                    b.HasOne("DataAccessLayer.Data.Models.Appointment", "Appointment")
                         .WithMany()
-                        .HasForeignKey("TimeSlotId")
+                        .HasForeignKey("AppointmentId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("DataAccessLayer.Data.Models.Docktor", "Doctor")
+                        .WithMany()
+                        .HasForeignKey("DoctorId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
@@ -581,7 +592,9 @@ namespace DataAccessLayer.Migrations
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
-                    b.Navigation("TimeSlot");
+                    b.Navigation("Appointment");
+
+                    b.Navigation("Doctor");
 
                     b.Navigation("User");
                 });

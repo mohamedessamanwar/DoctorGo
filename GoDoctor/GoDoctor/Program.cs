@@ -18,10 +18,10 @@ namespace GoDoctor
             builder.Services.ConfigureApplicationCookie(options =>
             {
                 options.Cookie.HttpOnly = true; // Prevents client-side scripts from accessing the cookie
-                options.ExpireTimeSpan = TimeSpan.FromMinutes(30); // Default expiration time for cookies
+                options.ExpireTimeSpan = TimeSpan.FromMinutes(3); // Default expiration time for cookies
                 options.SlidingExpiration = true; // Resets the expiration time on each request
             });
-
+            
             builder.Services.AddDbContext<GoDoctorContext>(option => option.UseSqlServer(builder.Configuration["ConnectionStrings:DefaultConnection"]));
             builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
                .AddEntityFrameworkStores<GoDoctorContext>();

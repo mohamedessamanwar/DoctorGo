@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GoDoctor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f6ab970b4d329226aa610747702c1638be580783")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e38c84017641702181ababd9b8a4f22081fcb329")]
 [assembly: System.Reflection.AssemblyProductAttribute("GoDoctor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GoDoctor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

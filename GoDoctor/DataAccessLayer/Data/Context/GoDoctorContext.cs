@@ -28,6 +28,41 @@ namespace DataAccessLayer.Data.Context
             .HasIndex(u => u.Email)
             .IsUnique();
 
+
+            //// Prevent cascading delete for the UserId relationship
+            //modelBuilder.Entity<Booking>()
+            //    .HasOne(b => b.User)
+            //    .WithMany()
+            //    .HasForeignKey(b => b.UserId)
+            //    .OnDelete(DeleteBehavior.Restrict);  // or DeleteBehavior.NoAction
+
+            //// Configure DoctorId relationship
+            //modelBuilder.Entity<Booking>()
+            //    .HasOne(b => b.Doctor)
+            //    .WithMany()
+            //    .HasForeignKey(b => b.DoctorId)
+            //    .OnDelete(DeleteBehavior.Restrict);
+
+            //// Configure AppointmentId relationship
+            //modelBuilder.Entity<Booking>()
+            //    .HasOne(b => b.Appointment)
+            //    .WithMany()
+            //    .HasForeignKey(b => b.AppointmentId)
+            //    .OnDelete(DeleteBehavior.Restrict);
+            // Configure the TimeSlotId relationship
+            modelBuilder.Entity<Booking>()
+                .HasOne(b => b.TimeSlot)
+                .WithMany()
+                .HasForeignKey(b => b.TimeSlotId)
+                .OnDelete(DeleteBehavior.Restrict); // or DeleteBehavior.NoAction
+
+            // Configure other foreign keys similarly to avoid multiple cascading paths
+            modelBuilder.Entity<Booking>()
+                .HasOne(b => b.User)
+                .WithMany()
+                .HasForeignKey(b => b.UserId)
+                .OnDelete(DeleteBehavior.Restrict);
+
             modelBuilder.Entity<ApplicationUser>()
                 .Property(u => u.Email)
                 .IsRequired();
@@ -110,6 +145,7 @@ namespace DataAccessLayer.Data.Context
         UpdatedDate = null,
         IsDeleted = false
     }
+
 );
 
 
@@ -117,7 +153,9 @@ namespace DataAccessLayer.Data.Context
         public DbSet<Docktor> Docktor { get; set; }
         public DbSet<Specialty> Specialty { get; set; }
         public DbSet<Clinic> Clinic { get; set; }
-        
+        public DbSet<Appointment> Appointments { get; set; }
+        public DbSet<TimeSlot> TimeSlots { get; set; }
+        DbSet<Booking> Bookings { get; set; }
 
     }
 }

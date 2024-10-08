@@ -4,6 +4,7 @@ using DataAccessLayer.Data.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DataAccessLayer.Migrations
 {
     [DbContext(typeof(GoDoctorContext))]
-    partial class GoDoctorContextModelSnapshot : ModelSnapshot
+    [Migration("20241007173019_add Booking model3")]
+    partial class addBookingmodel3
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -113,90 +116,6 @@ namespace DataAccessLayer.Migrations
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
                     b.ToTable("AspNetUsers", (string)null);
-                });
-
-            modelBuilder.Entity("DataAccessLayer.Data.Models.Appointment", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<DateOnly>("AppointmentDay")
-                        .HasColumnType("date");
-
-                    b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("DoctorId")
-                        .HasColumnType("int");
-
-                    b.Property<bool?>("IsDeleted")
-                        .HasColumnType("bit");
-
-                    b.Property<DateTime?>("UpdatedDate")
-                        .HasColumnType("datetime2");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("DoctorId");
-
-                    b.ToTable("Appointments");
-                });
-
-            modelBuilder.Entity("DataAccessLayer.Data.Models.Booking", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("BookingState")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<decimal>("FinalPrice")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<bool?>("IsDeleted")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("PaymentIntentId")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("PaymentStatus")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("PaymentType")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("SessionId")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("TimeSlotId")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime?>("UpdatedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("UserId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("TimeSlotId");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("Bookings");
                 });
 
             modelBuilder.Entity("DataAccessLayer.Data.Models.Clinic", b =>
@@ -327,7 +246,7 @@ namespace DataAccessLayer.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2024, 10, 7, 20, 38, 50, 399, DateTimeKind.Local).AddTicks(3901),
+                            CreatedDate = new DateTime(2024, 10, 7, 20, 30, 18, 864, DateTimeKind.Local).AddTicks(7045),
                             Description = "Heart and cardiovascular system specialists.",
                             IsDeleted = false,
                             Name = "Cardiology"
@@ -335,7 +254,7 @@ namespace DataAccessLayer.Migrations
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2024, 10, 7, 20, 38, 50, 399, DateTimeKind.Local).AddTicks(3954),
+                            CreatedDate = new DateTime(2024, 10, 7, 20, 30, 18, 864, DateTimeKind.Local).AddTicks(7096),
                             Description = "Specializes in the treatment of nervous system disorders.",
                             IsDeleted = false,
                             Name = "Neurology"
@@ -343,7 +262,7 @@ namespace DataAccessLayer.Migrations
                         new
                         {
                             Id = 3,
-                            CreatedDate = new DateTime(2024, 10, 7, 20, 38, 50, 399, DateTimeKind.Local).AddTicks(3960),
+                            CreatedDate = new DateTime(2024, 10, 7, 20, 30, 18, 864, DateTimeKind.Local).AddTicks(7102),
                             Description = "Treats skin conditions and diseases.",
                             IsDeleted = false,
                             Name = "Dermatology"
@@ -351,7 +270,7 @@ namespace DataAccessLayer.Migrations
                         new
                         {
                             Id = 4,
-                            CreatedDate = new DateTime(2024, 10, 7, 20, 38, 50, 399, DateTimeKind.Local).AddTicks(3964),
+                            CreatedDate = new DateTime(2024, 10, 7, 20, 30, 18, 864, DateTimeKind.Local).AddTicks(7107),
                             Description = "Focused on children's health and well-being.",
                             IsDeleted = false,
                             Name = "Pediatrics"
@@ -359,7 +278,7 @@ namespace DataAccessLayer.Migrations
                         new
                         {
                             Id = 5,
-                            CreatedDate = new DateTime(2024, 10, 7, 20, 38, 50, 399, DateTimeKind.Local).AddTicks(3969),
+                            CreatedDate = new DateTime(2024, 10, 7, 20, 30, 18, 864, DateTimeKind.Local).AddTicks(7111),
                             Description = "Treats conditions related to bones, joints, and muscles.",
                             IsDeleted = false,
                             Name = "Orthopedics"
@@ -367,7 +286,7 @@ namespace DataAccessLayer.Migrations
                         new
                         {
                             Id = 6,
-                            CreatedDate = new DateTime(2024, 10, 7, 20, 38, 50, 399, DateTimeKind.Local).AddTicks(3973),
+                            CreatedDate = new DateTime(2024, 10, 7, 20, 30, 18, 864, DateTimeKind.Local).AddTicks(7115),
                             Description = "Specializes in the diagnosis and treatment of eye disorders.",
                             IsDeleted = false,
                             Name = "Ophthalmology"
@@ -375,7 +294,7 @@ namespace DataAccessLayer.Migrations
                         new
                         {
                             Id = 7,
-                            CreatedDate = new DateTime(2024, 10, 7, 20, 38, 50, 399, DateTimeKind.Local).AddTicks(3977),
+                            CreatedDate = new DateTime(2024, 10, 7, 20, 30, 18, 864, DateTimeKind.Local).AddTicks(7120),
                             Description = "Focuses on the health of the female reproductive systems.",
                             IsDeleted = false,
                             Name = "Gynecology"
@@ -383,44 +302,11 @@ namespace DataAccessLayer.Migrations
                         new
                         {
                             Id = 8,
-                            CreatedDate = new DateTime(2024, 10, 7, 20, 38, 50, 399, DateTimeKind.Local).AddTicks(3981),
+                            CreatedDate = new DateTime(2024, 10, 7, 20, 30, 18, 864, DateTimeKind.Local).AddTicks(7124),
                             Description = "Specializes in diagnosing and treating cancer.",
                             IsDeleted = false,
                             Name = "Oncology"
                         });
-                });
-
-            modelBuilder.Entity("DataAccessLayer.Data.Models.TimeSlot", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("AppointmentId")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("AppointmentTime")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<bool>("IsActive")
-                        .HasColumnType("bit");
-
-                    b.Property<bool?>("IsDeleted")
-                        .HasColumnType("bit");
-
-                    b.Property<DateTime?>("UpdatedDate")
-                        .HasColumnType("datetime2");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("AppointmentId");
-
-                    b.ToTable("TimeSlots");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -556,36 +442,6 @@ namespace DataAccessLayer.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("DataAccessLayer.Data.Models.Appointment", b =>
-                {
-                    b.HasOne("DataAccessLayer.Data.Models.Docktor", "Doctor")
-                        .WithMany()
-                        .HasForeignKey("DoctorId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Doctor");
-                });
-
-            modelBuilder.Entity("DataAccessLayer.Data.Models.Booking", b =>
-                {
-                    b.HasOne("DataAccessLayer.Data.Models.TimeSlot", "TimeSlot")
-                        .WithMany()
-                        .HasForeignKey("TimeSlotId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.HasOne("DataAccessLayer.Data.Models.ApplicationUser", "User")
-                        .WithMany()
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.Navigation("TimeSlot");
-
-                    b.Navigation("User");
-                });
-
             modelBuilder.Entity("DataAccessLayer.Data.Models.Clinic", b =>
                 {
                     b.HasOne("DataAccessLayer.Data.Models.Docktor", "Docktor")
@@ -614,17 +470,6 @@ namespace DataAccessLayer.Migrations
                     b.Navigation("ApplicationUser");
 
                     b.Navigation("Specialty");
-                });
-
-            modelBuilder.Entity("DataAccessLayer.Data.Models.TimeSlot", b =>
-                {
-                    b.HasOne("DataAccessLayer.Data.Models.Appointment", "Appointment")
-                        .WithMany()
-                        .HasForeignKey("AppointmentId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Appointment");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

@@ -23,5 +23,6 @@ namespace DataAccessLayer.Data.Models
         public int SpecialtyId { get; set; }
         public Specialty Specialty { get; set; }
         public decimal Price { get; set; }
+        ICollection<Appointment> Appointments { get; set; }
     }
 }
