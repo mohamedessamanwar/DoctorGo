@@ -47,11 +47,11 @@ namespace GoDoctor
                 options.AddPolicy("Admin", policy =>
                 {
                     policy.RequireRole("Admin");  // Specify the role(s) for this policy
-                }); 
-                 options.AddPolicy("Patient", policy =>
-                 {
-                     policy.RequireRole("Patient");  // Specify the role(s) for this policy
-                 });
+                });
+                options.AddPolicy("Patient", policy =>
+                {
+                    policy.RequireRole("Patient");  // Specify the role(s) for this policy
+                });
                 options.AddPolicy("Doctor", policy =>
                 {
                     policy.RequireRole("Doctor");  // Specify the role(s) for this policy

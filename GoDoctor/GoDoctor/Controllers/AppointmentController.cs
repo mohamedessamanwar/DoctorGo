@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace GoDoctor.Controllers
 {
-    [Authorize(Policy ="Doctor")]
+   
     public class AppointmentController : Controller
     {
         private readonly IAppointmentService appointmentService;
@@ -21,6 +21,7 @@ namespace GoDoctor.Controllers
             return View(addAppointment);
         }
         [HttpPost]
+        [Authorize(Roles = "Doctor")]
         public async Task <IActionResult> Create(AddAppointment addAppointment)
         {
             if (!ModelState.IsValid)
@@ -41,8 +42,12 @@ namespace GoDoctor.Controllers
             }
             return RedirectToAction("DoctorDashboard", "Doctor"); 
         }
-                
-                
+        [HttpGet] 
+        public async Task<IActionResult> ViewAllAppointmen(int doctorId)
+        {
+            var result = await appointmentService.GetAllAppointment(doctorId);
+            return View(result);
+        }
     }
 
 }

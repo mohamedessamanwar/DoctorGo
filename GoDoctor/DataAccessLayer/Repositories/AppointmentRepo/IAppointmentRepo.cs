@@ -10,5 +10,6 @@ namespace DataAccessLayer.Repositories.AppointmentRepo
 {
     public interface IAppointmentRepo : IGenericRepo<Appointment>
     {
+        Task<IEnumerable<Appointment>> GetAppointments(int DoctorId); 
     }
 }

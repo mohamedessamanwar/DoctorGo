@@ -1,0 +1,32 @@
+﻿@using BusinessAccessLayer.DataViews.Appointment
+@model IEnumerable<AppointmentView>
+@{
+    // Ensure the model is not null before proceeding.
+}
+@if (!Model.Any())
+{
+    <p>No Appointments Found</p>
+}
+else
+{
+    <table  class="table table-hover mt-3">
+        <thead>
+            <tr>
+                <th scope="col">Appointment Day</th>
+                <th>View available times</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var appointment in Model)
+            {
+                <tr class="table-secondary">
+                    <td>@appointment.AppointmentDay</td>
+                    <td>
+                        <a class="btn btn-primary" asp-controller="TimeSlot" asp-action="ViewTimeSlot" asp-route-appointmentId="@appointment.Id">View Tims</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+

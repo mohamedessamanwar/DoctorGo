@@ -28,28 +28,7 @@ namespace DataAccessLayer.Data.Context
             .HasIndex(u => u.Email)
             .IsUnique();
 
-
-            //// Prevent cascading delete for the UserId relationship
-            //modelBuilder.Entity<Booking>()
-            //    .HasOne(b => b.User)
-            //    .WithMany()
-            //    .HasForeignKey(b => b.UserId)
-            //    .OnDelete(DeleteBehavior.Restrict);  // or DeleteBehavior.NoAction
-
-            //// Configure DoctorId relationship
-            //modelBuilder.Entity<Booking>()
-            //    .HasOne(b => b.Doctor)
-            //    .WithMany()
-            //    .HasForeignKey(b => b.DoctorId)
-            //    .OnDelete(DeleteBehavior.Restrict);
-
-            //// Configure AppointmentId relationship
-            //modelBuilder.Entity<Booking>()
-            //    .HasOne(b => b.Appointment)
-            //    .WithMany()
-            //    .HasForeignKey(b => b.AppointmentId)
-            //    .OnDelete(DeleteBehavior.Restrict);
-            // Configure the TimeSlotId relationship
+            
             modelBuilder.Entity<Booking>()
                 .HasOne(b => b.TimeSlot)
                 .WithMany()

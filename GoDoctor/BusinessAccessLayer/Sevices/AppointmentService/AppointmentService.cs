@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace BusinessAccessLayer.Sevices.AppointmentService
 {
-    public class AppointmentService  : IAppointmentService
+    public class AppointmentService : IAppointmentService
     {
         private readonly IUnitOfWork unitOfWork;
 
@@ -35,18 +35,34 @@ namespace BusinessAccessLayer.Sevices.AppointmentService
                     AppointmentTime = e
 
                 }).ToList(),
-            };  
-            await  unitOfWork.AppointmentRepo.AddAsync(appointment);
-            var result =  await unitOfWork.CompleteAsync();
-            if(result == 0)
+            };
+            await unitOfWork.AppointmentRepo.AddAsync(appointment);
+            var result = await unitOfWork.CompleteAsync();
+            if (result == 0)
             {
-               return new CreateResult()
-               {
-                   IsAdded = false,
-                   Errors = "Some Thing Errors"
-               };
+                return new CreateResult()
+                {
+                    IsAdded = false,
+                    Errors = "Some Thing Errors"
+                };
             }
             return new CreateResult();
+        }
+
+        public async Task<List<AppointmentView>> GetAllAppointment(int DoctorId)
+        {
+            var result = await unitOfWork.AppointmentRepo.GetAppointments(DoctorId);
+            if (result == null)
+            {
+                return new List<AppointmentView>();
+
+            }
+            return result.Select(appointment => new AppointmentView() {
+                AppointmentDay = appointment.AppointmentDay,
+                Id = appointment.Id,
+            }
+            ).ToList();
+
         }
     }
 }

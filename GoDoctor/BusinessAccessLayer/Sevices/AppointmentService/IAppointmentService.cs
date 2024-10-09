@@ -10,6 +10,7 @@ namespace BusinessAccessLayer.Sevices.AppointmentService
 {
     public interface IAppointmentService
     {
-        Task<CreateResult> Create(AddAppointment addAppointment); 
+        Task<CreateResult> Create(AddAppointment addAppointment);
+        Task<List<AppointmentView>> GetAllAppointment(int DoctorId);
     }
 }

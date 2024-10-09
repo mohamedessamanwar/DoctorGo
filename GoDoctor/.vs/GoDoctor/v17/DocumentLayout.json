@@ -1,19 +1,156 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9CC451E4-3241-41ED-AC38-D55777A9FFF7}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\al-fajr\\desktop\\go doctor\\godoctor\\dataaccesslayer\\repositories\\timeslotrepo\\timeslotrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CC451E4-3241-41ED-AC38-D55777A9FFF7}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\repositories\\timeslotrepo\\timeslotrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85C91D78-4979-49F7-90B0-291B5E85018E}|GoDoctor\\GoDoctor.csproj|c:\\users\\al-fajr\\desktop\\go doctor\\godoctor\\godoctor\\views\\timeslot\\viewtimeslot.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{85C91D78-4979-49F7-90B0-291B5E85018E}|GoDoctor\\GoDoctor.csproj|solutionrelative:godoctor\\views\\timeslot\\viewtimeslot.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85C91D78-4979-49F7-90B0-291B5E85018E}|GoDoctor\\GoDoctor.csproj|c:\\users\\al-fajr\\desktop\\go doctor\\godoctor\\godoctor\\views\\appointment\\viewallappointmen.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{85C91D78-4979-49F7-90B0-291B5E85018E}|GoDoctor\\GoDoctor.csproj|solutionrelative:godoctor\\views\\appointment\\viewallappointmen.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85C91D78-4979-49F7-90B0-291B5E85018E}|GoDoctor\\GoDoctor.csproj|c:\\users\\al-fajr\\desktop\\go doctor\\godoctor\\godoctor\\controllers\\timeslotcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85C91D78-4979-49F7-90B0-291B5E85018E}|GoDoctor\\GoDoctor.csproj|solutionrelative:godoctor\\controllers\\timeslotcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E98982E-56A7-4DAB-8295-5BF3C1727AF1}|BusinessAccessLayer\\BusinessAccessLayer.csproj|c:\\users\\al-fajr\\desktop\\go doctor\\godoctor\\businessaccesslayer\\sevices\\timeslotservice\\timeslotservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E98982E-56A7-4DAB-8295-5BF3C1727AF1}|BusinessAccessLayer\\BusinessAccessLayer.csproj|solutionrelative:businessaccesslayer\\sevices\\timeslotservice\\timeslotservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CC451E4-3241-41ED-AC38-D55777A9FFF7}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\al-fajr\\desktop\\go doctor\\godoctor\\dataaccesslayer\\unitofworkrepo\\unitofwork .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CC451E4-3241-41ED-AC38-D55777A9FFF7}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\unitofworkrepo\\unitofwork .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E98982E-56A7-4DAB-8295-5BF3C1727AF1}|BusinessAccessLayer\\BusinessAccessLayer.csproj|c:\\users\\al-fajr\\desktop\\go doctor\\godoctor\\businessaccesslayer\\sevices\\timeslotservice\\itimeslotservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E98982E-56A7-4DAB-8295-5BF3C1727AF1}|BusinessAccessLayer\\BusinessAccessLayer.csproj|solutionrelative:businessaccesslayer\\sevices\\timeslotservice\\itimeslotservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CC451E4-3241-41ED-AC38-D55777A9FFF7}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\al-fajr\\desktop\\go doctor\\godoctor\\dataaccesslayer\\unitofworkrepo\\iunitofwork .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CC451E4-3241-41ED-AC38-D55777A9FFF7}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\unitofworkrepo\\iunitofwork .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 13,
-          "SelectedChildIndex": -1,
+          "DockedWidth": 387,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TimeSlotRepo.cs",
+              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\DataAccessLayer\\Repositories\\TimeSlotRepo\\TimeSlotRepo.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Repositories\\TimeSlotRepo\\TimeSlotRepo.cs",
+              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\DataAccessLayer\\Repositories\\TimeSlotRepo\\TimeSlotRepo.cs",
+              "RelativeToolTip": "DataAccessLayer\\Repositories\\TimeSlotRepo\\TimeSlotRepo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T08:44:54.034Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ViewAllAppointmen.cshtml",
+              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\GoDoctor\\Views\\Appointment\\ViewAllAppointmen.cshtml",
+              "RelativeDocumentMoniker": "GoDoctor\\Views\\Appointment\\ViewAllAppointmen.cshtml",
+              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\GoDoctor\\Views\\Appointment\\ViewAllAppointmen.cshtml",
+              "RelativeToolTip": "GoDoctor\\Views\\Appointment\\ViewAllAppointmen.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAgwBgAAACeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-09T08:32:48.441Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ViewTimeSlot.cshtml",
+              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\GoDoctor\\Views\\TimeSlot\\ViewTimeSlot.cshtml",
+              "RelativeDocumentMoniker": "GoDoctor\\Views\\TimeSlot\\ViewTimeSlot.cshtml",
+              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\GoDoctor\\Views\\TimeSlot\\ViewTimeSlot.cshtml",
+              "RelativeToolTip": "GoDoctor\\Views\\TimeSlot\\ViewTimeSlot.cshtml",
+              "ViewState": "AQIAABEAAAAAAAAAAAAgwCMAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-09T08:16:41.643Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TimeSlotController.cs",
+              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\GoDoctor\\Controllers\\TimeSlotController.cs",
+              "RelativeDocumentMoniker": "GoDoctor\\Controllers\\TimeSlotController.cs",
+              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\GoDoctor\\Controllers\\TimeSlotController.cs",
+              "RelativeToolTip": "GoDoctor\\Controllers\\TimeSlotController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABEAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T08:10:09.093Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TimeSlotService.cs",
+              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\BusinessAccessLayer\\Sevices\\TimeSlotService\\TimeSlotService.cs",
+              "RelativeDocumentMoniker": "BusinessAccessLayer\\Sevices\\TimeSlotService\\TimeSlotService.cs",
+              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\BusinessAccessLayer\\Sevices\\TimeSlotService\\TimeSlotService.cs",
+              "RelativeToolTip": "BusinessAccessLayer\\Sevices\\TimeSlotService\\TimeSlotService.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAAwBoAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T08:05:48.618Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UnitOfWork .cs",
+              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\DataAccessLayer\\UnitOfWorkRepo\\UnitOfWork .cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\UnitOfWorkRepo\\UnitOfWork .cs",
+              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\DataAccessLayer\\UnitOfWorkRepo\\UnitOfWork .cs",
+              "RelativeToolTip": "DataAccessLayer\\UnitOfWorkRepo\\UnitOfWork .cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAAACEAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T08:29:55.108Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IUnitOfWork .cs",
+              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\DataAccessLayer\\UnitOfWorkRepo\\IUnitOfWork .cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\UnitOfWorkRepo\\IUnitOfWork .cs",
+              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\DataAccessLayer\\UnitOfWorkRepo\\IUnitOfWork .cs",
+              "RelativeToolTip": "DataAccessLayer\\UnitOfWorkRepo\\IUnitOfWork .cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T08:29:44.143Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ITimeSlotService.cs",
+              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\BusinessAccessLayer\\Sevices\\TimeSlotService\\ITimeSlotService.cs",
+              "RelativeDocumentMoniker": "BusinessAccessLayer\\Sevices\\TimeSlotService\\ITimeSlotService.cs",
+              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\BusinessAccessLayer\\Sevices\\TimeSlotService\\ITimeSlotService.cs",
+              "RelativeToolTip": "BusinessAccessLayer\\Sevices\\TimeSlotService\\ITimeSlotService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T08:06:00.797Z",
+              "EditorCaption": ""
             }
           ]
         }

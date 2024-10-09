@@ -2,6 +2,7 @@
 using DataAccessLayer.Repositories.AppointmentRepo;
 using DataAccessLayer.Repositories.DoctorRepo;
 using DataAccessLayer.Repositories.SpecialtyRepo;
+using DataAccessLayer.Repositories.TimeSlotRepo;
 using Microsoft.EntityFrameworkCore.Storage;
 using System.Data;
 
@@ -19,6 +20,7 @@ namespace DataAccessLayer.UnitOfWorkRepo
         public IAppointmentRepo AppointmentRepo { get; }
         public ISpecialtyRepository SpecialtyRepository { get; }
          public IDoctorRepository doctorRepository { get; }
+        public ITimeSlotRepo timeSlotRepo { get; }
 
     }
 }
