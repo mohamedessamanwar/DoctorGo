@@ -27,11 +27,11 @@ else
                     <td>
                         @if(timeSlot.IsActive == true){
 
-                            <a class="btn btn-primary" asp-controller="TimeSlot" asp-action="ViewTimeSlot" asp-route-appointmentId="@timeSlot.Id">Booking Now</a>
+                            <a class="btn btn-primary " asp-controller="Booking"  asp-action="Book" asp-route-TimeSlotId="@timeSlot.Id">Booking Now</a>
                         }
                         else
                         {
-                            <a class="btn btn-primary disabled" asp-controller="TimeSlot" asp-action="ViewTimeSlot" asp-route-appointmentId="@timeSlot.Id">Booking Now</a>
+                            <a class="btn btn-primary disabled" asp-controller="Book" asp-action="Book" asp-route-TimeSlotId="@timeSlot.Id">Booking Now</a>
                             
                         }
                         

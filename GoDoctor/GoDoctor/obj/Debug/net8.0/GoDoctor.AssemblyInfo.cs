@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("9cc70ced-df48-462c-a82d-3459a76e7ef5")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("GoDoctor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+54383789279b3510a28be108ff3d2bd6bc622d89")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+204aee070c3335b37db3ec94257430d8ab8b7378")]
 [assembly: System.Reflection.AssemblyProductAttribute("GoDoctor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GoDoctor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

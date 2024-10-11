@@ -21,7 +21,7 @@ namespace DataAccessLayer.Repositories.AppointmentRepo
             DateOnly today = DateOnly.FromDateTime(DateTime.Now);
             return await context.Appointments.AsNoTracking()
                 .Where(a => a.DoctorId == DoctorId)
-                .Where(a => a.AppointmentDay == today)
+                .Where(a => a.AppointmentDay >= today)
                 .ToListAsync();
 
 

@@ -1,8 +1,11 @@
-﻿using BusinessAccessLayer.Sevices.AppointmentService;
+﻿using BusinessAccessLayer.Services.PaymentService;
+using BusinessAccessLayer.Sevices.AppointmentService;
 using BusinessAccessLayer.Sevices.AuthService;
+using BusinessAccessLayer.Sevices.BookingService;
 using BusinessAccessLayer.Sevices.DoctorService;
 using BusinessAccessLayer.Sevices.SpecialtyService;
 using BusinessAccessLayer.Sevices.TimeSlotService;
+using DataAccessLayer.Repositories.BookingRepo;
 using DataAccessLayer.Repositories.SpecialtyRepo;
 using DataAccessLayer.Repositories.TimeSlotRepo;
 using Microsoft.Extensions.Configuration;
@@ -19,6 +22,8 @@ namespace BusinessAccessLayer
             services.AddScoped<IDoctorService, DoctorService>();
             services.AddScoped<IAppointmentService, AppointmentService>();
             services.AddScoped<ITimeSlotService, TimeSlotService>();
+            services.AddScoped<IPayment, StripPayment>();
+            services.AddScoped<IBookingService, BookingService>();
             return services;
         }
 

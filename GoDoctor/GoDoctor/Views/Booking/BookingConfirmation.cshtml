@@ -1,0 +1,29 @@
+﻿@{
+    // Assuming this view receives a BookingResult model or some booking success state
+    var isBookingSuccessful = (bool)ViewBag.isBookingSuccessful ; // This should be replaced with actual booking success check
+}
+
+<div class="container mt-5">
+    @if (isBookingSuccessful)
+    {
+        <div class="alert alert-success" role="alert">
+            <h4 class="alert-heading">Booking Successful!</h4>
+            <p>Your booking has been confirmed. We have sent a confirmation email with all the details. Thank you for choosing us!</p>
+            <hr>
+            <p class="mb-0">
+                <span class="badge bg-success">Booking Confirmed</span>
+            </p>
+        </div>
+    }
+    else
+    {
+        <div class="alert alert-danger" role="alert">
+            <h4 class="alert-heading">Booking Failed!</h4>
+            <p>Unfortunately, we were unable to process your booking. Please try again later or contact support for assistance.</p>
+            <hr>
+            <p class="mb-0">
+                <span class="badge bg-danger">Booking Failed</span>
+            </p>
+        </div>
+    }
+</div>

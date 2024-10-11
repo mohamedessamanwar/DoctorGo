@@ -1,5 +1,6 @@
 ﻿using DataAccessLayer.Data.Context;
 using DataAccessLayer.Repositories.AppointmentRepo;
+using DataAccessLayer.Repositories.BookingRepo;
 using DataAccessLayer.Repositories.DoctorRepo;
 using DataAccessLayer.Repositories.SpecialtyRepo;
 using DataAccessLayer.Repositories.TimeSlotRepo;
@@ -21,6 +22,7 @@ namespace DataAccessLayer.UnitOfWorkRepo
         public ISpecialtyRepository SpecialtyRepository { get; }
          public IDoctorRepository doctorRepository { get; }
         public ITimeSlotRepo timeSlotRepo { get; }
+        public IBookingRepo BookingRepo { get; }
 
     }
 }

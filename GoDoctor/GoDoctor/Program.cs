@@ -69,6 +69,7 @@ namespace GoDoctor
 
             app.UseHttpsRedirection();
             app.UseCors("AllowSpecificOrigin"); // Use the CORS policy
+           // app.UseMiddleware<GlobalError>();
             app.UseStaticFiles();
        
             var staticFilesPath = Path.Combine(Environment.CurrentDirectory, "wwwroot", "Img", "Doctors");

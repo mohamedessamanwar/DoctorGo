@@ -22,7 +22,12 @@ namespace GoDoctor.Controllers
         {
             return View();
         }
+        [Route("Home/Errors")]
+        public IActionResult Errors()
+        {
+            return View(); // Returns the Error.cshtml view
+        }
 
-        
+
     }
 }

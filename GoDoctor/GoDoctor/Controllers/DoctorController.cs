@@ -68,6 +68,7 @@ namespace GoDoctor.Controllers
         [HttpGet]
         public async Task<IActionResult> ViewDoctors()
         {
+         //   throw new NotImplementedException();
             ViewBag.Specialties = await specialtyService.GetSpecialtiesToSelect();
             return View();
         }

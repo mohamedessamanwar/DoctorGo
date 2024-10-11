@@ -7,7 +7,7 @@ using System.Linq;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
-using static System.Runtime.InteropServices.JavaScript.JSType;
+
 
 namespace BusinessAccessLayer.Sevices.AuthService
 {
@@ -138,7 +138,9 @@ namespace BusinessAccessLayer.Sevices.AuthService
                     Errors = "Failed to sign in"
                 };
             }
-            var role = await _userManager.GetRolesAsync(user);
+           
+        
+        var role = await _userManager.GetRolesAsync(user);
 
 
             // Return success result
