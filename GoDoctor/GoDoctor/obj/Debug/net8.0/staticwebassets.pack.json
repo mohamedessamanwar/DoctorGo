@@ -61,6 +61,10 @@
       "PackagePath": "staticwebassets\\js\\Appointment.js"
     },
     {
+      "Id": "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\GoDoctor\\wwwroot\\js\\Comment.js",
+      "PackagePath": "staticwebassets\\js\\Comment.js"
+    },
+    {
       "Id": "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\GoDoctor\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

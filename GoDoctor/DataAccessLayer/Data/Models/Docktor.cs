@@ -17,12 +17,13 @@ namespace DataAccessLayer.Data.Models
         public ApplicationUser ApplicationUser { get; set; }
         [MaxLength(500)]
         public string Description { get; set; }
-        public ICollection<Clinic> Clinic { get; set; } = new List<Clinic>();
+        public Clinic Clinic { get; set; } 
         [MaxLength(100)]
         public string ImgeUrl {  get; set; } 
         public int SpecialtyId { get; set; }
         public Specialty Specialty { get; set; }
         public decimal Price { get; set; }
-        ICollection<Appointment> Appointments { get; set; }
+        public  ICollection<Appointment> Appointments { get; set; }
+        public ICollection<Comment> Comments { get; set; }
     }
 }

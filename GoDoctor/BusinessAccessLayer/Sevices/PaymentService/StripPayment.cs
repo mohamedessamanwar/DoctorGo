@@ -32,7 +32,7 @@ namespace BusinessAccessLayer.Services.PaymentService
                 LineItems = new List<SessionLineItemOptions>(),
                 Mode = "payment",
                 SuccessUrl = domain + $"/Booking/BookingConfirmation?bookId={booking.Id}",
-                CancelUrl = domain + $"/Booking/cancelBooking",
+                CancelUrl = domain + $"/Booking/BookingConfirmation?bookId={booking.Id}",
             };
             var sessionLineItem = new SessionLineItemOptions
             {

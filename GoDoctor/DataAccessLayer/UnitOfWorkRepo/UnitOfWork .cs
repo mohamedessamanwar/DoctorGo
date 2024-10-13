@@ -1,6 +1,7 @@
 ﻿using DataAccessLayer.Data.Context;
 using DataAccessLayer.Repositories.AppointmentRepo;
 using DataAccessLayer.Repositories.BookingRepo;
+using DataAccessLayer.Repositories.CommentRepo;
 using DataAccessLayer.Repositories.DoctorRepo;
 using DataAccessLayer.Repositories.SpecialtyRepo;
 using DataAccessLayer.Repositories.TimeSlotRepo;
@@ -25,7 +26,7 @@ namespace DataAccessLayer.UnitOfWorkRepo
             AppointmentRepo = new AppointmentRepo(context);
              timeSlotRepo = new TimeSlotRepo(context);
             BookingRepo = new BookingRepo(context);
-           
+           CommentRepo = new CommentRepo(context);
           
         }
         public int Complete()
@@ -45,6 +46,7 @@ namespace DataAccessLayer.UnitOfWorkRepo
         public IAppointmentRepo AppointmentRepo { get; private set; }
         public ITimeSlotRepo timeSlotRepo { get; } 
         public IBookingRepo BookingRepo { get; private set; }
+        public ICommentRepo CommentRepo { get; private set; }
         public async Task<IDbContextTransaction> BeginTransactionAsync(System.Data.IsolationLevel isolationLevel)
         {
             _transaction = await _context.Database.BeginTransactionAsync(isolationLevel);

@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using BusinessAccessLayer.HelperClasses;
+using BusinessAccessLayer.DataViews.BookingView;
 
 namespace BusinessAccessLayer.Sevices.BookingService
 {
@@ -75,7 +76,8 @@ namespace BusinessAccessLayer.Sevices.BookingService
                     };
 
                 }
-                catch (Exception ex) {
+                catch (Exception ex)
+                {
                     unitOfWork.Rollback();
                     return new BookingResult()
                     {
@@ -87,16 +89,28 @@ namespace BusinessAccessLayer.Sevices.BookingService
             }
         }
 
-
         public async Task<BookingResult> Confirmation(int bookId)
         {
-            var booking = await unitOfWork.BookingRepo.GetByIdAsync(bookId); //1
+            var booking = await unitOfWork.BookingRepo.GetByIdAsync(bookId); //1  include slote with tracking 
             var paymentStatus = payment.PaymentStatus(booking.SessionId);
             var session = payment.PaymentSession(booking.SessionId);
-            await UpdateStripePaymentId(booking, session.Id, session.PaymentIntentId); //2
+            // path if user InComplete payment .
+            if (session.PaymentIntentId == null)
+            {
+                await UpdateOrderStatus(booking, "InComplete");
+                // update slot .
+                // update booksatus .
+                await unitOfWork.CompleteAsync();
+                return new BookingResult()
+                {
+                    IsBook = false,
+                };
+            }
+            await UpdateStripePaymentId(booking, session.Id, session.PaymentIntentId);
+            // path if user Complete payment .
             if (paymentStatus == "paid")
             {
-                await UpdateOrderStatus(booking, "Complete"); // 2
+                await UpdateOrderStatus(booking, "Complete"); 
                 await unitOfWork.CompleteAsync();
                 return new BookingResult()
                 {
@@ -107,7 +121,8 @@ namespace BusinessAccessLayer.Sevices.BookingService
             if (!rp.status)
             {
                 await UpdateOrderStatus(booking, "Canceled Failed");
-                unitOfWork.BookingRepo.Delete(booking);
+                // update status booking .
+                // update time slot .
                 await unitOfWork.CompleteAsync();
                 return new BookingResult()
                 {
@@ -115,7 +130,8 @@ namespace BusinessAccessLayer.Sevices.BookingService
                 };
             }
             await UpdateOrderStatus(booking, "Canceled");
-            unitOfWork.BookingRepo.Delete(booking);
+            // update status booking .
+            // update time slot . 
             await unitOfWork.CompleteAsync();
             return new BookingResult()
             {
@@ -127,7 +143,7 @@ namespace BusinessAccessLayer.Sevices.BookingService
             booking.PaymentStatus = paymentPaid;
             booking.UpdatedDate = DateTime.UtcNow;
             unitOfWork.BookingRepo.Update(booking, nameof(booking.PaymentStatus), nameof(booking.UpdatedDate));
-            return; 
+            return;
         }
         private async Task UpdateStripePaymentId(Booking book, string id, string paymentIntentId)
         {
@@ -138,6 +154,25 @@ namespace BusinessAccessLayer.Sevices.BookingService
             return;
         }
 
+
+        public async Task<IEnumerable<DoctorBookingView>> GetDoctorBooking(string userId)
+        {
+            var result = await unitOfWork.BookingRepo.GetDoctorBooking(userId);
+            if (result == null)
+            {
+                return (IEnumerable<DoctorBookingView>)Enumerable.Empty<Booking>();
+            }
+            return result.Select(b => new DoctorBookingView()
+            {
+                AppointmentDay = b.TimeSlot.Appointment.AppointmentDay,
+                AppointmentTime = b.TimeSlot.AppointmentTime,
+                BookingState = b.BookingState,
+                PaymentStatus = b.PaymentStatus,
+                Name = b.User.FirstName + " " + b.User.LastName,
+                Email = b.User.Email,
+                City = b.User.City,
+            }).ToList();
+        }
     }
     }
 

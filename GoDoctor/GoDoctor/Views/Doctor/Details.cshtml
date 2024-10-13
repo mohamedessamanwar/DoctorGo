@@ -1,0 +1,77 @@
+﻿@using BusinessAccessLayer.DataViews.DoctorView
+@model DoctorDetailsView
+
+<div class="container mt-5">
+    <!-- Doctor Information Section -->
+    <div class="card mb-4 shadow-sm">
+        <div class="card-header bg-primary text-white">
+            <h1>Dr  @Model.Name</h1>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <!-- Doctor Image -->
+                <div class="col-md-4 text-center">
+                    <img src="@Model.image" alt="@Model.Name" class="img-fluid rounded-circle mb-3" style="max-width: 200px; height: auto;" />
+                </div>
+                <!-- Doctor Details -->
+                <div class="col-md-8">
+                    <h4 class="text-primary">Specialization</h4>
+                    <p class="font-weight-bold">@Model.specialtyName</p>
+                    <h4 class="text-primary">Specialization Description</h4>
+                    <p>@Model.specialtyDescription</p>
+                    <h4 class="text-primary">Clinic Information</h4>
+                    <p>
+                        <i class="fas fa-map-marker-alt"></i> @Model.ClinicAddress, @Model.ClinicCity
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Comments Section -->
+    <div class="card shadow-sm">
+        <div class ="text-primary">
+            <h3>Comments</h3>
+        </div>
+        <div class="card-body">
+            @if (Model.commentViews != null && Model.commentViews.Any())
+            {
+                <ul id="ul" class="list-unstyled">
+                    @foreach (var comment in Model.commentViews)
+                    {
+                        <li class="media mb-3">
+                           @*  <img src="/path/to/user-avatar.png" alt="User Avatar" class="mr-3 rounded-circle" style="width: 50px; height: 50px;" /> *@
+                            <div class="media-body">
+                                <h5 class="mt-0 mb-1">@comment.UserName</h5>
+                                <small class="text-muted">@comment.CommentAt.ToString("MMMM dd, yyyy 'at' hh:mm tt")</small>
+                                <p class="mt-2">@comment.Comment</p>
+                            </div>
+                        </li>
+                    }
+                </ul>
+            }
+            else
+            {
+                <p>No comments available.</p>
+            }
+        </div>
+    </div>
+
+    <!-- Add a Comment Form -->
+    <div class="card mt-4 shadow-sm">
+        <div class="card-header bg-info text-white">
+            <h3>Add a Comment</h3>
+        </div>
+        <div class="card-body">
+                <div class="form-group">
+                    <label for="commentText">Your Comment</label>
+                    <textarea  class="form-control" id="commentText" rows="3" placeholder="Write your comment here..."></textarea>
+                    <span id="span" class="text-danger"></span>
+                </div>
+                <input id="id" type="hidden"value="@Model.Id" />
+                <button type="submit" id="submit" class="btn btn-primary">Submit Comment</button>
+        </div>
+    </div>
+</div>
+
+<script src="~/js/comment.js"></script>

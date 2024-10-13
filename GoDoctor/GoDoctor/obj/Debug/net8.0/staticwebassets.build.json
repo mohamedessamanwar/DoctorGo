@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "K+np0G9SrhRdCR/L5Q97IsWJtr2KYEQ2qNQojb0T180=",
+  "Hash": "HK3whK/921NYAjwSF+rLkgJSNTG6TOqYXVYYMbMJquI=",
   "Source": "GoDoctor",
   "BasePath": "_content/GoDoctor",
   "Mode": "Default",
@@ -319,6 +319,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\Appointment.js"
+    },
+    {
+      "Identity": "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\GoDoctor\\wwwroot\\js\\Comment.js",
+      "SourceId": "GoDoctor",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\GoDoctor\\wwwroot\\",
+      "BasePath": "_content/GoDoctor",
+      "RelativePath": "js/Comment.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\Comment.js"
     },
     {
       "Identity": "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\GoDoctor\\wwwroot\\js\\site.js",

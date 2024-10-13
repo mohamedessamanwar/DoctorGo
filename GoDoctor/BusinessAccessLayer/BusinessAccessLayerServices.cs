@@ -2,6 +2,7 @@
 using BusinessAccessLayer.Sevices.AppointmentService;
 using BusinessAccessLayer.Sevices.AuthService;
 using BusinessAccessLayer.Sevices.BookingService;
+using BusinessAccessLayer.Sevices.CommentService;
 using BusinessAccessLayer.Sevices.DoctorService;
 using BusinessAccessLayer.Sevices.SpecialtyService;
 using BusinessAccessLayer.Sevices.TimeSlotService;
@@ -24,6 +25,7 @@ namespace BusinessAccessLayer
             services.AddScoped<ITimeSlotService, TimeSlotService>();
             services.AddScoped<IPayment, StripPayment>();
             services.AddScoped<IBookingService, BookingService>();
+            services.AddScoped< ICommentService ,CommentService>();
             return services;
         }
 

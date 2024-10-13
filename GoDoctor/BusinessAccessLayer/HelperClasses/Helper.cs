@@ -13,7 +13,7 @@ namespace BusinessAccessLayer.HelperClasses
         public static string AllowedExtensions = ".jpg,.png";
         public const int MaxFileSizeInMB = 1;
         public const int MaxFileSizeInBytes = MaxFileSizeInMB * 1024 * 1024;
-        public static string URLDoctor = "https://localhost:7138/Images/Doctor";
+        public static string URLDoctor = "https://localhost:44326/Images/Doctor";
 
         public static async Task<string> SaveImages(IFormFile file, string ImagePath, string Url)
         {

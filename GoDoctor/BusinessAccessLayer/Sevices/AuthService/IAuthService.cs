@@ -11,6 +11,6 @@ namespace BusinessAccessLayer.Sevices.AuthService
     {
         Task<AuthResult> Regestration(SignupView account);
         Task<AuthResult> LogIn(LoginView account);
-         Task LogOut();
+        Task LogOut();
     }
 }

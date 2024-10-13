@@ -1,39 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AL-FAJR\\AppData\\Roaming\\Microsoft\\UserSecrets\\9cc70ced-df48-462c-a82d-3459a76e7ef5\\secrets.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{85C91D78-4979-49F7-90B0-291B5E85018E}|GoDoctor\\GoDoctor.csproj|c:\\users\\al-fajr\\desktop\\go doctor\\godoctor\\godoctor\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{85C91D78-4979-49F7-90B0-291B5E85018E}|GoDoctor\\GoDoctor.csproj|solutionrelative:godoctor\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{85C91D78-4979-49F7-90B0-291B5E85018E}|GoDoctor\\GoDoctor.csproj|c:\\users\\al-fajr\\desktop\\go doctor\\godoctor\\godoctor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{85C91D78-4979-49F7-90B0-291B5E85018E}|GoDoctor\\GoDoctor.csproj|solutionrelative:godoctor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{85C91D78-4979-49F7-90B0-291B5E85018E}|GoDoctor\\GoDoctor.csproj|c:\\users\\al-fajr\\desktop\\go doctor\\godoctor\\godoctor\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{85C91D78-4979-49F7-90B0-291B5E85018E}|GoDoctor\\GoDoctor.csproj|solutionrelative:godoctor\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E98982E-56A7-4DAB-8295-5BF3C1727AF1}|BusinessAccessLayer\\BusinessAccessLayer.csproj|c:\\users\\al-fajr\\desktop\\go doctor\\godoctor\\businessaccesslayer\\sevices\\bookingservice\\bookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E98982E-56A7-4DAB-8295-5BF3C1727AF1}|BusinessAccessLayer\\BusinessAccessLayer.csproj|solutionrelative:businessaccesslayer\\sevices\\bookingservice\\bookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E98982E-56A7-4DAB-8295-5BF3C1727AF1}|BusinessAccessLayer\\BusinessAccessLayer.csproj|c:\\users\\al-fajr\\desktop\\go doctor\\godoctor\\businessaccesslayer\\sevices\\paymentservice\\strippayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E98982E-56A7-4DAB-8295-5BF3C1727AF1}|BusinessAccessLayer\\BusinessAccessLayer.csproj|solutionrelative:businessaccesslayer\\sevices\\paymentservice\\strippayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E98982E-56A7-4DAB-8295-5BF3C1727AF1}|BusinessAccessLayer\\BusinessAccessLayer.csproj|c:\\users\\al-fajr\\desktop\\go doctor\\godoctor\\businessaccesslayer\\sevices\\paymentservice\\ipayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E98982E-56A7-4DAB-8295-5BF3C1727AF1}|BusinessAccessLayer\\BusinessAccessLayer.csproj|solutionrelative:businessaccesslayer\\sevices\\paymentservice\\ipayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E98982E-56A7-4DAB-8295-5BF3C1727AF1}|BusinessAccessLayer\\BusinessAccessLayer.csproj|c:\\users\\al-fajr\\desktop\\go doctor\\godoctor\\businessaccesslayer\\sevices\\bookingservice\\ibookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E98982E-56A7-4DAB-8295-5BF3C1727AF1}|BusinessAccessLayer\\BusinessAccessLayer.csproj|solutionrelative:businessaccesslayer\\sevices\\bookingservice\\ibookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -41,115 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 387,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\GoDoctor\\appsettings.json",
-              "RelativeDocumentMoniker": "GoDoctor\\appsettings.json",
-              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\GoDoctor\\appsettings.json",
-              "RelativeToolTip": "GoDoctor\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAACAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-11T15:16:23.749Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\GoDoctor\\Program.cs",
-              "RelativeDocumentMoniker": "GoDoctor\\Program.cs",
-              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\GoDoctor\\Program.cs",
-              "RelativeToolTip": "GoDoctor\\Program.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-11T15:16:20.105Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "secrets.json",
-              "DocumentMoniker": "C:\\Users\\AL-FAJR\\AppData\\Roaming\\Microsoft\\UserSecrets\\9cc70ced-df48-462c-a82d-3459a76e7ef5\\secrets.json",
-              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Roaming\\Microsoft\\UserSecrets\\9cc70ced-df48-462c-a82d-3459a76e7ef5\\secrets.json",
-              "ToolTip": "C:\\Users\\AL-FAJR\\AppData\\Roaming\\Microsoft\\UserSecrets\\9cc70ced-df48-462c-a82d-3459a76e7ef5\\secrets.json",
-              "RelativeToolTip": "..\\..\\..\\AppData\\Roaming\\Microsoft\\UserSecrets\\9cc70ced-df48-462c-a82d-3459a76e7ef5\\secrets.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-11T15:16:09.278Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "IPayment.cs",
-              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\BusinessAccessLayer\\Sevices\\PaymentService\\IPayment.cs",
-              "RelativeDocumentMoniker": "BusinessAccessLayer\\Sevices\\PaymentService\\IPayment.cs",
-              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\BusinessAccessLayer\\Sevices\\PaymentService\\IPayment.cs",
-              "RelativeToolTip": "BusinessAccessLayer\\Sevices\\PaymentService\\IPayment.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-11T14:48:08.418Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "StripPayment.cs",
-              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\BusinessAccessLayer\\Sevices\\PaymentService\\StripPayment.cs",
-              "RelativeDocumentMoniker": "BusinessAccessLayer\\Sevices\\PaymentService\\StripPayment.cs",
-              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\BusinessAccessLayer\\Sevices\\PaymentService\\StripPayment.cs",
-              "RelativeToolTip": "BusinessAccessLayer\\Sevices\\PaymentService\\StripPayment.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAAAAAFIAAABOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-11T14:46:18.904Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "IBookingService.cs",
-              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\BusinessAccessLayer\\Sevices\\BookingService\\IBookingService.cs",
-              "RelativeDocumentMoniker": "BusinessAccessLayer\\Sevices\\BookingService\\IBookingService.cs",
-              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\BusinessAccessLayer\\Sevices\\BookingService\\IBookingService.cs",
-              "RelativeToolTip": "BusinessAccessLayer\\Sevices\\BookingService\\IBookingService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA2AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-11T12:56:50.063Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "BookingController.cs",
-              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\GoDoctor\\Controllers\\BookingController.cs",
-              "RelativeDocumentMoniker": "GoDoctor\\Controllers\\BookingController.cs",
-              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\GoDoctor\\Controllers\\BookingController.cs",
-              "RelativeToolTip": "GoDoctor\\Controllers\\BookingController.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAACkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-11T12:33:35.122Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "BookingService.cs",
-              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\BusinessAccessLayer\\Sevices\\BookingService\\BookingService.cs",
-              "RelativeDocumentMoniker": "BusinessAccessLayer\\Sevices\\BookingService\\BookingService.cs",
-              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\BusinessAccessLayer\\Sevices\\BookingService\\BookingService.cs",
-              "RelativeToolTip": "BusinessAccessLayer\\Sevices\\BookingService\\BookingService.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAAAFoAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-11T11:52:20.262Z",
-              "EditorCaption": ""
             }
           ]
         }

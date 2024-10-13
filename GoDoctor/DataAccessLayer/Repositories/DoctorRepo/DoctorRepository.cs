@@ -51,14 +51,20 @@ namespace DataAccessLayer.Repositories.DoctorRepo
             {
                 quary = quary.Where(d => string.Concat(d.ApplicationUser.FirstName, d.ApplicationUser.LastName) == doctor);
             }
-            return quary.Count();
+            return await quary.CountAsync();
         }
-
-
         public async Task<Docktor?> GetDocterByUserId(string userId) {
            return await context.Docktor.AsNoTracking().FirstOrDefaultAsync(d=> d.ApplicationUserId==userId);
            
          
+        }
+
+        public async Task<Docktor?> GetDocterById(int DocId)
+        {
+            return await context.Docktor.AsNoTracking()
+                .Include(d => d.Clinic).Include(d => d.Specialty).Include(d => d.ApplicationUser).Include(d => d.Comments)
+                .ThenInclude(c => c.User)
+                .FirstOrDefaultAsync(d => d.Id == DocId);
         }
     }
 }

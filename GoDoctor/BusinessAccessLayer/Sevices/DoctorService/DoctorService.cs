@@ -59,8 +59,7 @@ namespace BusinessAccessLayer.Sevices.DoctorService
                     Docktor doctor = new Docktor()
                     {
                         ApplicationUserId = result.UserId,
-                        Clinic = new List<Clinic>()
-                {
+                        Clinic =
                     new Clinic()
                     {
                         ClinicAddress = addDoctorView.ClinicAddress,
@@ -68,8 +67,8 @@ namespace BusinessAccessLayer.Sevices.DoctorService
                         PhoneNumber = addDoctorView.PhoneNumber,
                         CreatedDate = DateTime.Now,
                         IsDeleted = false,
-                    }
-                },
+
+                    },
                         CreatedDate = DateTime.Now,
                         IsDeleted = false,
                         Price = addDoctorView.Price,
@@ -108,14 +107,13 @@ namespace BusinessAccessLayer.Sevices.DoctorService
                     };
                 }
             }
-        } 
+        }
         #endregion
-
         public async Task<IEnumerable<DoctorSearchViewModel>> DoctorSearch(int specialty, string governorate, string doctor, int page)
         {
-            var result = await unitOfWork.doctorRepository.GetDocktors(specialty, governorate,doctor,page);
+            var result = await unitOfWork.doctorRepository.GetDocktors(specialty, governorate, doctor, page);
             var count = await unitOfWork.doctorRepository.GetDocktorsCount(specialty, governorate, doctor, page);
-            if(count == 0)
+            if (count == 0)
             {
                 return Enumerable.Empty<DoctorSearchViewModel>();
             }
@@ -123,7 +121,7 @@ namespace BusinessAccessLayer.Sevices.DoctorService
             {
                 CurrentPage = page,
                 Description = x.Description,
-                Name = string.Concat(x.ApplicationUser.FirstName,x.ApplicationUser.LastName),
+                Name = string.Concat(x.ApplicationUser.FirstName, x.ApplicationUser.LastName),
                 specialtyDescription = x.Specialty.Description,
                 specialtyName = x.Specialty.Name,
                 image = x.ImgeUrl,
@@ -131,6 +129,30 @@ namespace BusinessAccessLayer.Sevices.DoctorService
                 TotalPages = count,
 
             });
+        }
+
+        public async Task<DoctorDetailsView?> GetDocterById(int DocId)
+        {
+               var result = await unitOfWork.doctorRepository.GetDocterById(DocId);
+            return new DoctorDetailsView()
+            {
+                Id = result.Id,
+                specialtyDescription = result.Specialty.Description,
+                specialtyName = result.Specialty.Name,
+                image = result.ImgeUrl,
+                Name = result.ApplicationUser.FirstName + " " + result.ApplicationUser.LastName,
+                Description = result.Specialty.Description,
+                ClinicAddress = result.Clinic.ClinicAddress,
+                ClinicCity = result.Clinic.ClinicCity,
+                commentViews = result.Comments.Select(c => new DataViews.CommentView.DoctorCommentsView()
+                {
+                    Comment = c.CommentContent,
+                    UserName = c.User.FirstName + " " + c.User.LastName,
+                    CommentAt = c.CreatedDate,
+                    Id = c.Id,
+                })
+            };
+
         }
     }
 }

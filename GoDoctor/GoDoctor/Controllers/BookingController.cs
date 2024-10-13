@@ -1,5 +1,6 @@
 ﻿using BusinessAccessLayer.DataViews.Appointment;
 using BusinessAccessLayer.Sevices.BookingService;
+using DataAccessLayer.Data.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -37,5 +38,21 @@ namespace GoDoctor.Controllers
             return View();
 
         }
+        [HttpGet]
+        [Authorize]
+        public async Task<IActionResult> DoctorBooking()
+        {
+            var UserId = User.Claims.FirstOrDefault(c => c.Type == "uid").Value;
+            if (UserId == null)
+            {
+                RedirectToAction("Login", "Auth");
+            }
+            var result = await bookingService.GetDoctorBooking( UserId);
+            return View(result);
+
+
+        }
+
+
     }
 }

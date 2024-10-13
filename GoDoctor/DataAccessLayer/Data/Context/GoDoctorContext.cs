@@ -27,8 +27,14 @@ namespace DataAccessLayer.Data.Context
             modelBuilder.Entity<ApplicationUser>()
             .HasIndex(u => u.Email)
             .IsUnique();
+            // Configure Doctor and Comment relationship
+            modelBuilder.Entity<Comment>()
+                .HasOne(c => c.Doctor) // Each comment has one doctor
+                .WithMany(d => d.Comments) // A doctor can have many comments
+                .HasForeignKey(c => c.DoctorId) // Foreign key in Comment
+                .OnDelete(DeleteBehavior.Restrict); // Change to Restrict or NoAction to prevent cycles
 
-            
+
             modelBuilder.Entity<Booking>()
                 .HasOne(b => b.TimeSlot)
                 .WithMany()
@@ -134,7 +140,8 @@ namespace DataAccessLayer.Data.Context
         public DbSet<Clinic> Clinic { get; set; }
         public DbSet<Appointment> Appointments { get; set; }
         public DbSet<TimeSlot> TimeSlots { get; set; }
-        DbSet<Booking> Bookings { get; set; }
+        public  DbSet<Booking> Bookings { get; set; }
+        public DbSet<Comment> Comments { get; set; }
 
     }
 }

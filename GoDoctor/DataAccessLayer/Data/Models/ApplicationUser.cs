@@ -17,6 +17,7 @@ namespace DataAccessLayer.Data.Models
         public DateTime CreatedDate { get; set; }
         public DateTime? UpdatedDate { get; set; }
         public string? Code { get; set; }
+       public ICollection<Comment> Comments { get; set; }
        
 
     }

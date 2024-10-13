@@ -1,0 +1,47 @@
+﻿@using BusinessAccessLayer.DataViews.BookingView
+@model IEnumerable<DoctorBookingView>
+
+@{
+    ViewData["Title"] = "Bookings";
+}
+
+<div class="container mt-4">
+    <h2 class="mb-4">All Doctor Bookings</h2>
+
+    @if (Model == null || !Model.Any())
+    {
+        <div class="alert alert-warning" role="alert">
+            No bookings available at the moment.
+        </div>
+    }
+    else
+    {
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">City</th>
+                    <th scope="col">Appointment Day</th>
+                    <th scope="col">Appointment Time</th>
+                    <th scope="col">Booking State</th>
+                    <th scope="col">Payment Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var booking in Model)
+                {
+                    <tr class="table-primary">
+                        <th scope="row">@booking.Name</th>
+                        <td>@booking.Email</td>
+                        <td>@booking.City</td>
+                        <td>@booking.AppointmentDay.ToString("yyyy-MM-dd")</td>
+                        <td>@booking.AppointmentTime.ToString("hh\\:mm")</td>
+                        <td>@booking.BookingState</td>
+                        <td>@booking.PaymentStatus</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+</div>

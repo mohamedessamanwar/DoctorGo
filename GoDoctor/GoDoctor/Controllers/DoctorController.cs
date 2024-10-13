@@ -1,4 +1,5 @@
-﻿using BusinessAccessLayer.DataViews.DoctorView;
+﻿using BusinessAccessLayer.DataViews.CommentView;
+using BusinessAccessLayer.DataViews.DoctorView;
 using BusinessAccessLayer.Sevices.DoctorService;
 using BusinessAccessLayer.Sevices.SpecialtyService;
 using Microsoft.AspNetCore.Authorization;
@@ -88,6 +89,13 @@ namespace GoDoctor.Controllers
         public IActionResult DoctorDashboard()
         {
             return View();
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Details(int id)
+        {
+            var doctor = await doctorService.GetDocterById(id);
+            return View(doctor);
         }
     }
 }
