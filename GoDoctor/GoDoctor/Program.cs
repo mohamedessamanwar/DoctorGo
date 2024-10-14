@@ -1,4 +1,5 @@
 using BusinessAccessLayer;
+using BusinessAccessLayer.Hubs;
 using DataAccessLayer;
 using DataAccessLayer.Data.Context;
 using DataAccessLayer.Data.Models;
@@ -42,6 +43,7 @@ namespace GoDoctor
                                       .AllowAnyMethod()
                                       .AllowCredentials());
             });
+            builder.Services.AddSignalR();
             builder.Services.AddAuthorization(options =>
             {
                 options.AddPolicy("Admin", policy =>
@@ -80,7 +82,7 @@ namespace GoDoctor
         
                 RequestPath = "/Images/Doctor"
             });
-       
+            app.MapHub<CommentHub>("/commentHub");
             app.UseRouting();
             app.UseAuthentication();
             app.UseAuthorization();

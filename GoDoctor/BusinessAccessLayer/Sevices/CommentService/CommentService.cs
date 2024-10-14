@@ -1,6 +1,8 @@
 ﻿using BusinessAccessLayer.DataViews.CommentView;
+using BusinessAccessLayer.Hubs;
 using DataAccessLayer.Data.Models;
 using DataAccessLayer.UnitOfWorkRepo;
+using Microsoft.AspNetCore.SignalR;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,9 +14,11 @@ namespace BusinessAccessLayer.Sevices.CommentService
     public class CommentService : ICommentService
     {
         private readonly IUnitOfWork unitOfWork;
-        public CommentService(IUnitOfWork unitOfWork)
+        private readonly IHubContext<CommentHub> _hubContext;
+        public CommentService(IUnitOfWork unitOfWork, IHubContext<CommentHub> _hubContext)
         {
             this.unitOfWork = unitOfWork;
+            this._hubContext = _hubContext;
         }
         public async Task<DoctorCommentsView> AddComment(string UserId, CommentAddView commentAddView)
         {
@@ -35,17 +39,17 @@ namespace BusinessAccessLayer.Sevices.CommentService
                     await unitOfWork.CompleteAsync();  // Save the comment
 
                     var comm = await unitOfWork.CommentRepo.GetCommentWithUser(comment.Id);
-
-                    // Commit the transaction if everything is successful
-                    await transaction.CommitAsync();
-
-                    return new DoctorCommentsView
+                      var commentsView = new DoctorCommentsView
                     {
                         Id = comment.Id,
                         CommentAt = comment.CreatedDate,
                         Comment = comment.CommentContent,
                         UserName = comm.User.FirstName + " " + comm.User.LastName
                     };
+                    // Commit the transaction if everything is successful
+                    await transaction.CommitAsync();
+                    await _hubContext.Clients.All.SendAsync("ReceiveComment",commentsView);
+                    return commentsView;
                 }
                 catch (Exception)
                 {

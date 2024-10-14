@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "HK3whK/921NYAjwSF+rLkgJSNTG6TOqYXVYYMbMJquI=",
+  "Hash": "JFa9H8639G28q2NcbV2x3QbTRd05fAuOSWTvVOefYh0=",
   "Source": "GoDoctor",
   "BasePath": "_content/GoDoctor",
   "Mode": "Default",
@@ -1440,6 +1440,44 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\GoDoctor\\wwwroot\\lib\\microsoft\\signalr\\dist\\browser\\signalr.js",
+      "SourceId": "GoDoctor",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\GoDoctor\\wwwroot\\",
+      "BasePath": "_content/GoDoctor",
+      "RelativePath": "lib/microsoft/signalr/dist/browser/signalr.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\microsoft\\signalr\\dist\\browser\\signalr.js"
+    },
+    {
+      "Identity": "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\GoDoctor\\wwwroot\\lib\\microsoft\\signalr\\dist\\browser\\signalr.min.js",
+      "SourceId": "GoDoctor",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\GoDoctor\\wwwroot\\",
+      "BasePath": "_content/GoDoctor",
+      "RelativePath": "lib/microsoft/signalr/dist/browser/signalr.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\microsoft\\signalr\\dist\\browser\\signalr.min.js"
     }
   ]
 }

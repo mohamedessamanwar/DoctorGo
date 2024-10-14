@@ -258,3 +258,4 @@ C:\Users\AL-FAJR\Desktop\Go Doctor\GoDoctor\GoDoctor\bin\Debug\net8.0\Microsoft.
 C:\Users\AL-FAJR\Desktop\Go Doctor\GoDoctor\GoDoctor\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
 C:\Users\AL-FAJR\Desktop\Go Doctor\GoDoctor\GoDoctor\obj\Debug\net8.0\GoDoctor.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\AL-FAJR\Desktop\Go Doctor\GoDoctor\GoDoctor\bin\Debug\net8.0\Stripe.net.dll
+C:\Users\AL-FAJR\Desktop\Go Doctor\GoDoctor\GoDoctor\bin\Debug\net8.0\libman.json
