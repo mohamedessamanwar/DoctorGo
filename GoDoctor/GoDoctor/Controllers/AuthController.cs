@@ -2,6 +2,8 @@
 using BusinessAccessLayer.DataViews.AuthView;
 using BusinessAccessLayer.Sevices.AuthService;
 using Microsoft.AspNetCore.Identity;
+using Stripe;
+using Microsoft.IdentityModel.Tokens;
 namespace GoDoctor.Controllers
 {
     public class AuthController : Controller
@@ -84,6 +86,53 @@ namespace GoDoctor.Controllers
             await _authService.LogOut();
             // Redirect to the homepage or login page after logging out
             return RedirectToAction("Index", "Home");
+        }
+
+        [HttpGet]
+        public IActionResult ForgetPassword()
+        {
+            var LoginView = new ForgetPasswordView();
+            return View(LoginView);
+        }
+        [HttpPost]
+        public async Task<IActionResult> ForgetPassword(ForgetPasswordView forgetPasswordView)
+        {
+            if (!ModelState.IsValid) {
+                return View(forgetPasswordView);
+            
+            }
+            bool Result = await _authService.ForgetPassword(forgetPasswordView);
+            if (!Result)
+            {
+                ModelState.AddModelError("Email", "Email Is Invalid");
+                return View(forgetPasswordView);
+
+            }
+            return View("ConfirmationSendEmail");
+        }
+        [HttpGet]
+        public IActionResult ResetPassword(string token)
+        {
+            var LoginView = new ResetPasswordViewModel() { Token=token};
+            return View(LoginView);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> ResetPassword(ResetPasswordViewModel resetPasswordViewModel)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(resetPasswordViewModel);
+            }
+            var Result = await _authService.ResetPassword(resetPasswordViewModel);
+            if (!Result.IsNullOrEmpty())
+            {
+                ModelState.AddModelError("", Result);
+                return View(resetPasswordViewModel);
+
+            }
+            return RedirectToAction("Login" ,"Auth");
+
         }
     }
 }

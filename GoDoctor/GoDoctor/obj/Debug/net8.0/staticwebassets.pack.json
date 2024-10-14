@@ -65,6 +65,10 @@
       "PackagePath": "staticwebassets\\js\\Comment.js"
     },
     {
+      "Id": "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\GoDoctor\\wwwroot\\js\\ResetPassword.js",
+      "PackagePath": "staticwebassets\\js\\ResetPassword.js"
+    },
+    {
       "Id": "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\GoDoctor\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

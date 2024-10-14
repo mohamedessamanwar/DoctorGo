@@ -1,0 +1,17 @@
+﻿@model bool
+
+@{
+    ViewData["Title"] = "Confirmation Email Sent";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+@if (Model)
+{
+    <p>An email has been sent to your address with instructions to reset your password.</p>
+}
+else
+{
+    <p>There was an error sending the email. Please try again later.</p>
+}
+

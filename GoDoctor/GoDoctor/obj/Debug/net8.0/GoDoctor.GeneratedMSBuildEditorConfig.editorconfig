@@ -38,8 +38,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwb2ludG1lbnRcVmlld0FsbEFwcG9pbnRtZW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/AL-FAJR/Desktop/Go Doctor/GoDoctor/GoDoctor/Views/Auth/ConfirmationSendEmail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxDb25maXJtYXRpb25TZW5kRW1haWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/AL-FAJR/Desktop/Go Doctor/GoDoctor/GoDoctor/Views/Auth/ForgetPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxGb3JnZXRQYXNzd29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/AL-FAJR/Desktop/Go Doctor/GoDoctor/GoDoctor/Views/Auth/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/AL-FAJR/Desktop/Go Doctor/GoDoctor/GoDoctor/Views/Auth/ResetPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxSZXNldFBhc3N3b3JkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/AL-FAJR/Desktop/Go Doctor/GoDoctor/GoDoctor/Views/Auth/Signup.cshtml]

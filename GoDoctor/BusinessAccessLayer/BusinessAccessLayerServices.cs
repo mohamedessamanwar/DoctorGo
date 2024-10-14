@@ -1,4 +1,5 @@
-﻿using BusinessAccessLayer.Services.PaymentService;
+﻿using BusinessAccessLayer.Services.Email;
+using BusinessAccessLayer.Services.PaymentService;
 using BusinessAccessLayer.Sevices.AppointmentService;
 using BusinessAccessLayer.Sevices.AuthService;
 using BusinessAccessLayer.Sevices.BookingService;
@@ -26,6 +27,8 @@ namespace BusinessAccessLayer
             services.AddScoped<IPayment, StripPayment>();
             services.AddScoped<IBookingService, BookingService>();
             services.AddScoped< ICommentService ,CommentService>();
+            services.AddTransient<IMailingService, MailingService>();
+           // services.Configure<MailSetting>(configuration.GetSection("MailSetting"));
             return services;
         }
 

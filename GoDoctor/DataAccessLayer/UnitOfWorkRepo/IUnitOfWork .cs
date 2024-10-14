@@ -5,6 +5,7 @@ using DataAccessLayer.Repositories.CommentRepo;
 using DataAccessLayer.Repositories.DoctorRepo;
 using DataAccessLayer.Repositories.SpecialtyRepo;
 using DataAccessLayer.Repositories.TimeSlotRepo;
+using DataAccessLayer.Repositories.UserTokenRepo;
 using Microsoft.EntityFrameworkCore.Storage;
 using System.Data;
 
@@ -25,6 +26,7 @@ namespace DataAccessLayer.UnitOfWorkRepo
         public ITimeSlotRepo timeSlotRepo { get; }
         public IBookingRepo BookingRepo { get; }
         public ICommentRepo CommentRepo { get; }
+        public IUserTokenRepo userTokenRepo { get; }
 
     }
 }

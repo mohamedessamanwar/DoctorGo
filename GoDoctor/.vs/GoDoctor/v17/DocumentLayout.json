@@ -1,7 +1,16 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{85C91D78-4979-49F7-90B0-291B5E85018E}|GoDoctor\\GoDoctor.csproj|c:\\users\\al-fajr\\desktop\\go doctor\\godoctor\\godoctor\\godoctor.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{85C91D78-4979-49F7-90B0-291B5E85018E}|GoDoctor\\GoDoctor.csproj|solutionrelative:godoctor\\godoctor.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E98982E-56A7-4DAB-8295-5BF3C1727AF1}|BusinessAccessLayer\\BusinessAccessLayer.csproj|c:\\users\\al-fajr\\desktop\\go doctor\\godoctor\\businessaccesslayer\\businessaccesslayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{7E98982E-56A7-4DAB-8295-5BF3C1727AF1}|BusinessAccessLayer\\BusinessAccessLayer.csproj|solutionrelative:businessaccesslayer\\businessaccesslayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +18,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 387,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GoDoctor",
+              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\GoDoctor\\GoDoctor.csproj",
+              "RelativeDocumentMoniker": "GoDoctor\\GoDoctor.csproj",
+              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\GoDoctor\\GoDoctor.csproj",
+              "RelativeToolTip": "GoDoctor\\GoDoctor.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-10-14T13:20:05.657Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BusinessAccessLayer",
+              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\BusinessAccessLayer\\BusinessAccessLayer.csproj",
+              "RelativeDocumentMoniker": "BusinessAccessLayer\\BusinessAccessLayer.csproj",
+              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\BusinessAccessLayer\\BusinessAccessLayer.csproj",
+              "RelativeToolTip": "BusinessAccessLayer\\BusinessAccessLayer.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-10-14T13:20:03.261Z",
+              "EditorCaption": ""
             }
           ]
         }

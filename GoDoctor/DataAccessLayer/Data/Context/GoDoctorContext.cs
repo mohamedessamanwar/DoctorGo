@@ -142,6 +142,7 @@ namespace DataAccessLayer.Data.Context
         public DbSet<TimeSlot> TimeSlots { get; set; }
         public  DbSet<Booking> Bookings { get; set; }
         public DbSet<Comment> Comments { get; set; }
+        public DbSet<UserToken> UserTokens { get; set; }
 
     }
 }

@@ -1,12 +1,16 @@
 ﻿using BusinessAccessLayer.DataViews.AuthView;
+using BusinessAccessLayer.Services.Email;
 using DataAccessLayer.Data.Models;
+using DataAccessLayer.UnitOfWorkRepo;
 using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web;
 
 
 namespace BusinessAccessLayer.Sevices.AuthService
@@ -15,11 +19,15 @@ namespace BusinessAccessLayer.Sevices.AuthService
     {
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
+        private readonly IUnitOfWork unitOfWork ;
+        private readonly IMailingService mailingService;
 
-        public AuthService(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager)
+        public AuthService(UserManager<ApplicationUser> userManager, IMailingService mailingService, IUnitOfWork unitOfWork,SignInManager<ApplicationUser> signInManager)
         {
             _userManager = userManager;
             _signInManager = signInManager;
+            this.unitOfWork = unitOfWork;
+            this.mailingService = mailingService;
         }
 
         public async Task<AuthResult> Regestration(SignupView account)
@@ -155,6 +163,66 @@ namespace BusinessAccessLayer.Sevices.AuthService
         {
 
             await _signInManager.SignOutAsync();
+        }
+
+
+        public async Task<bool> ForgetPassword(ForgetPasswordView forgetPasswordView) 
+        {
+            // Find the user by email
+            var user = await _userManager.FindByEmailAsync(forgetPasswordView.Email);
+
+            // If the user doesn't exist, return false
+            if (user == null)
+            {
+                return false;
+            }
+
+            // Generate a password reset token
+            var token = await _userManager.GeneratePasswordResetTokenAsync(user);
+
+            // Create and save the user token
+            await unitOfWork.userTokenRepo.AddAsync(new UserToken
+            {
+                Token = token,
+                UserId = user.Id,
+                CreatedDate = DateTime.UtcNow,
+                IsDeleted = false,
+            });
+            await unitOfWork.CompleteAsync();
+            // Construct the password reset link
+            // code value have to be Encoded before sending the call.
+            // string codeHtmlVersion = HttpUtility.UrlEncode(token);
+            //HttpUtility.UrlEncode converted all plus signs (+) to empty spaces (" ") this is wrong,
+            //UrlEncode replaces "+" to
+            //"%2b". If you use + with UrlDecode, it will be replaced into whitespace character
+              string encodedToken = HttpUtility.UrlEncode(token.Replace("+", "%2b"));
+            var Domain = $"https://localhost:44326/Auth/ResetPassword/?token={encodedToken}";
+            await mailingService.SendEmailAsync(user.Email, "ResetPassword", Domain);
+
+
+            // Send the password reset email
+         //   var emailSent = await mailingService.SendEmailAsync(user.Email, "Reset Your Password", Domain);
+
+            return true; // Return true if the email was sent successfully
+        }
+        public async Task<string> ResetPassword(ResetPasswordViewModel model)
+        {
+            var decodedCode = HttpUtility.UrlDecode(model.Token);
+            var Token = await unitOfWork.userTokenRepo.GetUserToken(decodedCode);
+            if (Token == null) { return "Inavalid Token"; }
+            var user = await _userManager.FindByIdAsync(Token.UserId);
+            Token.IsDeleted = true;
+            await unitOfWork.CompleteAsync();
+            var result = await _userManager.ResetPasswordAsync(user,decodedCode,model.NewPassword);
+            if (!result.Succeeded) {
+                var errors = new StringBuilder();
+                foreach (var error in result.Errors) {
+                    errors.Append(error);
+                }
+                return result.ToString();
+            }
+            return "";
+
         }
 
     }

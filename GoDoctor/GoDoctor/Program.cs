@@ -1,5 +1,6 @@
 using BusinessAccessLayer;
 using BusinessAccessLayer.Hubs;
+using BusinessAccessLayer.Services.Email;
 using DataAccessLayer;
 using DataAccessLayer.Data.Context;
 using DataAccessLayer.Data.Models;
@@ -22,10 +23,12 @@ namespace GoDoctor
                 options.ExpireTimeSpan = TimeSpan.FromMinutes(3); // Default expiration time for cookies
                 options.SlidingExpiration = true; // Resets the expiration time on each request
             });
-            
+            builder.Services.Configure<MailSetting>(builder.Configuration.GetSection("MailSetting"));
+
             builder.Services.AddDbContext<GoDoctorContext>(option => option.UseSqlServer(builder.Configuration["ConnectionStrings:DefaultConnection"]));
             builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
-               .AddEntityFrameworkStores<GoDoctorContext>();
+               .AddEntityFrameworkStores<GoDoctorContext>().AddEntityFrameworkStores<GoDoctorContext>()
+               .AddDefaultTokenProviders(); 
             builder.Services.ConfigureApplicationCookie(options =>
             {
                 // Redirect to login page when not authenticated

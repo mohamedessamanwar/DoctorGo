@@ -5,6 +5,7 @@ using DataAccessLayer.Repositories.CommentRepo;
 using DataAccessLayer.Repositories.DoctorRepo;
 using DataAccessLayer.Repositories.SpecialtyRepo;
 using DataAccessLayer.Repositories.TimeSlotRepo;
+using DataAccessLayer.Repositories.UserTokenRepo;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage;
 using System.Data;
@@ -27,6 +28,7 @@ namespace DataAccessLayer.UnitOfWorkRepo
              timeSlotRepo = new TimeSlotRepo(context);
             BookingRepo = new BookingRepo(context);
            CommentRepo = new CommentRepo(context);
+            userTokenRepo = new UserTokenRepo(context);
           
         }
         public int Complete()
@@ -47,6 +49,7 @@ namespace DataAccessLayer.UnitOfWorkRepo
         public ITimeSlotRepo timeSlotRepo { get; } 
         public IBookingRepo BookingRepo { get; private set; }
         public ICommentRepo CommentRepo { get; private set; }
+        public IUserTokenRepo  userTokenRepo { get; private set; }
         public async Task<IDbContextTransaction> BeginTransactionAsync(System.Data.IsolationLevel isolationLevel)
         {
             _transaction = await _context.Database.BeginTransactionAsync(isolationLevel);

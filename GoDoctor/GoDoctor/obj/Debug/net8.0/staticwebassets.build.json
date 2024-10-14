@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "JFa9H8639G28q2NcbV2x3QbTRd05fAuOSWTvVOefYh0=",
+  "Hash": "Ev9obJvS2wy2EqyxMc+WtZlxgwkmeqbhM1HWFZCdb44=",
   "Source": "GoDoctor",
   "BasePath": "_content/GoDoctor",
   "Mode": "Default",
@@ -338,6 +338,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\Comment.js"
+    },
+    {
+      "Identity": "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\GoDoctor\\wwwroot\\js\\ResetPassword.js",
+      "SourceId": "GoDoctor",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\GoDoctor\\wwwroot\\",
+      "BasePath": "_content/GoDoctor",
+      "RelativePath": "js/ResetPassword.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\ResetPassword.js"
     },
     {
       "Identity": "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\GoDoctor\\wwwroot\\js\\site.js",

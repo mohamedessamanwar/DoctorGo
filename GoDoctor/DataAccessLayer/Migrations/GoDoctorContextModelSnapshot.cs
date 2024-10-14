@@ -366,7 +366,7 @@ namespace DataAccessLayer.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2024, 10, 13, 16, 33, 36, 632, DateTimeKind.Local).AddTicks(7590),
+                            CreatedDate = new DateTime(2024, 10, 14, 12, 26, 17, 889, DateTimeKind.Local).AddTicks(2048),
                             Description = "Heart and cardiovascular system specialists.",
                             IsDeleted = false,
                             Name = "Cardiology"
@@ -374,7 +374,7 @@ namespace DataAccessLayer.Migrations
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2024, 10, 13, 16, 33, 36, 632, DateTimeKind.Local).AddTicks(7644),
+                            CreatedDate = new DateTime(2024, 10, 14, 12, 26, 17, 889, DateTimeKind.Local).AddTicks(2094),
                             Description = "Specializes in the treatment of nervous system disorders.",
                             IsDeleted = false,
                             Name = "Neurology"
@@ -382,7 +382,7 @@ namespace DataAccessLayer.Migrations
                         new
                         {
                             Id = 3,
-                            CreatedDate = new DateTime(2024, 10, 13, 16, 33, 36, 632, DateTimeKind.Local).AddTicks(7648),
+                            CreatedDate = new DateTime(2024, 10, 14, 12, 26, 17, 889, DateTimeKind.Local).AddTicks(2098),
                             Description = "Treats skin conditions and diseases.",
                             IsDeleted = false,
                             Name = "Dermatology"
@@ -390,7 +390,7 @@ namespace DataAccessLayer.Migrations
                         new
                         {
                             Id = 4,
-                            CreatedDate = new DateTime(2024, 10, 13, 16, 33, 36, 632, DateTimeKind.Local).AddTicks(7653),
+                            CreatedDate = new DateTime(2024, 10, 14, 12, 26, 17, 889, DateTimeKind.Local).AddTicks(2204),
                             Description = "Focused on children's health and well-being.",
                             IsDeleted = false,
                             Name = "Pediatrics"
@@ -398,7 +398,7 @@ namespace DataAccessLayer.Migrations
                         new
                         {
                             Id = 5,
-                            CreatedDate = new DateTime(2024, 10, 13, 16, 33, 36, 632, DateTimeKind.Local).AddTicks(7657),
+                            CreatedDate = new DateTime(2024, 10, 14, 12, 26, 17, 889, DateTimeKind.Local).AddTicks(2218),
                             Description = "Treats conditions related to bones, joints, and muscles.",
                             IsDeleted = false,
                             Name = "Orthopedics"
@@ -406,7 +406,7 @@ namespace DataAccessLayer.Migrations
                         new
                         {
                             Id = 6,
-                            CreatedDate = new DateTime(2024, 10, 13, 16, 33, 36, 632, DateTimeKind.Local).AddTicks(7661),
+                            CreatedDate = new DateTime(2024, 10, 14, 12, 26, 17, 889, DateTimeKind.Local).AddTicks(2221),
                             Description = "Specializes in the diagnosis and treatment of eye disorders.",
                             IsDeleted = false,
                             Name = "Ophthalmology"
@@ -414,7 +414,7 @@ namespace DataAccessLayer.Migrations
                         new
                         {
                             Id = 7,
-                            CreatedDate = new DateTime(2024, 10, 13, 16, 33, 36, 632, DateTimeKind.Local).AddTicks(7665),
+                            CreatedDate = new DateTime(2024, 10, 14, 12, 26, 17, 889, DateTimeKind.Local).AddTicks(2224),
                             Description = "Focuses on the health of the female reproductive systems.",
                             IsDeleted = false,
                             Name = "Gynecology"
@@ -422,7 +422,7 @@ namespace DataAccessLayer.Migrations
                         new
                         {
                             Id = 8,
-                            CreatedDate = new DateTime(2024, 10, 13, 16, 33, 36, 632, DateTimeKind.Local).AddTicks(7670),
+                            CreatedDate = new DateTime(2024, 10, 14, 12, 26, 17, 889, DateTimeKind.Local).AddTicks(2227),
                             Description = "Specializes in diagnosing and treating cancer.",
                             IsDeleted = false,
                             Name = "Oncology"
@@ -460,6 +460,38 @@ namespace DataAccessLayer.Migrations
                     b.HasIndex("AppointmentId");
 
                     b.ToTable("TimeSlots");
+                });
+
+            modelBuilder.Entity("DataAccessLayer.Data.Models.UserToken", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool?>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Token")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("UpdatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("UserTokens");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -683,6 +715,17 @@ namespace DataAccessLayer.Migrations
                         .IsRequired();
 
                     b.Navigation("Appointment");
+                });
+
+            modelBuilder.Entity("DataAccessLayer.Data.Models.UserToken", b =>
+                {
+                    b.HasOne("DataAccessLayer.Data.Models.ApplicationUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
