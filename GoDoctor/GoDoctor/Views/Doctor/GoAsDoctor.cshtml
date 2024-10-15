@@ -1,5 +1,7 @@
 ﻿@model BusinessAccessLayer.DataViews.DoctorView.AddDoctorView
-
+@{
+    Layout = "_AdminLayout";
+}
 <div class="row justify-content-center mt-5">
     <div class="col-md-8 col-lg-6">
         <div class="card shadow-lg">
@@ -91,9 +93,11 @@
     </div>
 </div>
 
-@section Scripts {
+@* @section Scripts {
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
-    }
+    } *@
+<script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
 }
 

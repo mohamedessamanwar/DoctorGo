@@ -7,6 +7,7 @@ using DataAccessLayer.Data.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.FileProviders;
+using NToastNotify;
 
 namespace GoDoctor
 {
@@ -61,6 +62,13 @@ namespace GoDoctor
                 {
                     policy.RequireRole("Doctor");  // Specify the role(s) for this policy
                 });
+            });
+            builder.Services.AddMvc().AddNToastNotifyToastr(new ToastrOptions()
+            {
+                ProgressBar = true,
+                PositionClass = ToastPositions.TopRight,
+                PreventDuplicates = true,
+                CloseButton = true
             });
             var app = builder.Build();
 

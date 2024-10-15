@@ -48,7 +48,7 @@ namespace BusinessAccessLayer.Sevices.BookingService
                         UserId = UserId,
                         BookingState = "Proccessing",
                         PaymentStatus = "Proccessing",
-                        FinalPrice = 100,
+                        FinalPrice = await unitOfWork.AppointmentRepo.GetPrice(TimeSlot.AppointmentId),
                         CreatedDate = DateTime.Now,
                         IsDeleted = false,
                         PaymentType = "online"
@@ -99,6 +99,9 @@ namespace BusinessAccessLayer.Sevices.BookingService
             {
                 await UpdateOrderStatus(booking, "InComplete");
                 // update slot .
+                var TimeSlot = await unitOfWork.timeSlotRepo.GetByIdAsync(booking.TimeSlotId);
+                TimeSlot.IsActive=true;
+                unitOfWork.timeSlotRepo.Update(TimeSlot , nameof(TimeSlot.IsActive));
                 // update booksatus .
                 await unitOfWork.CompleteAsync();
                 return new BookingResult()
@@ -121,8 +124,9 @@ namespace BusinessAccessLayer.Sevices.BookingService
             if (!rp.status)
             {
                 await UpdateOrderStatus(booking, "Canceled Failed");
-                // update status booking .
-                // update time slot .
+                var TimeSlot1 = await unitOfWork.timeSlotRepo.GetByIdAsync(booking.TimeSlotId);
+                TimeSlot1.IsActive = true;
+                unitOfWork.timeSlotRepo.Update(TimeSlot1, nameof(TimeSlot1.IsActive));
                 await unitOfWork.CompleteAsync();
                 return new BookingResult()
                 {
@@ -130,8 +134,9 @@ namespace BusinessAccessLayer.Sevices.BookingService
                 };
             }
             await UpdateOrderStatus(booking, "Canceled");
-            // update status booking .
-            // update time slot . 
+            var TimeSlot2 = await unitOfWork.timeSlotRepo.GetByIdAsync(booking.TimeSlotId);
+            TimeSlot2.IsActive = true;
+            unitOfWork.timeSlotRepo.Update(TimeSlot2, nameof(TimeSlot2.IsActive));
             await unitOfWork.CompleteAsync();
             return new BookingResult()
             {
@@ -153,8 +158,6 @@ namespace BusinessAccessLayer.Sevices.BookingService
             unitOfWork.BookingRepo.Update(book, nameof(book.SessionId), nameof(book.UpdatedDate), nameof(book.PaymentIntentId));
             return;
         }
-
-
         public async Task<IEnumerable<DoctorBookingView>> GetDoctorBooking(string userId)
         {
             var result = await unitOfWork.BookingRepo.GetDoctorBooking(userId);

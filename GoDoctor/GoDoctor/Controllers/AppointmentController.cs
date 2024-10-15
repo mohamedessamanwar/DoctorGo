@@ -2,6 +2,7 @@
 using BusinessAccessLayer.Sevices.AppointmentService;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using NToastNotify;
 
 namespace GoDoctor.Controllers
 {
@@ -9,10 +10,11 @@ namespace GoDoctor.Controllers
     public class AppointmentController : Controller
     {
         private readonly IAppointmentService appointmentService;
-
-        public AppointmentController(IAppointmentService appointmentService)
+        private readonly IToastNotification toastNotification;
+        public AppointmentController(IAppointmentService appointmentService, IToastNotification toastNotification)
         {
             this.appointmentService = appointmentService;
+            this.toastNotification = toastNotification;
         }
 
         public IActionResult Create()
@@ -38,11 +40,14 @@ namespace GoDoctor.Controllers
             var result = await appointmentService.Create(addAppointment);
             if (result.IsAdded == false) { 
                ModelState.AddModelError("",result.Errors);
-               return View(addAppointment);
+                toastNotification.AddErrorToastMessage("Not Added Appointment ");
+                return View(addAppointment);
             }
+            toastNotification.AddInfoToastMessage("Added Appointment ");
             return RedirectToAction("DoctorDashboard", "Doctor"); 
         }
-        [HttpGet] 
+        [HttpGet]
+        [Authorize(Roles = "Doctor")]
         public async Task<IActionResult> ViewAllAppointmen(int doctorId)
         {
             var result = await appointmentService.GetAllAppointment(doctorId);

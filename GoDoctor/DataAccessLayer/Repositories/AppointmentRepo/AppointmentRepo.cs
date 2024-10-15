@@ -23,9 +23,11 @@ namespace DataAccessLayer.Repositories.AppointmentRepo
                 .Where(a => a.DoctorId == DoctorId)
                 .Where(a => a.AppointmentDay >= today)
                 .ToListAsync();
-
-
-
+        }
+        public async Task<decimal> GetPrice(int appId)
+        {
+            return await context.Appointments.AsNoTracking().Include(a => a.Doctor)
+                .Where(a => a.Id == appId).Select(a => a.Doctor.Price).FirstOrDefaultAsync();          
         }
     }
 }

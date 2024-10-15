@@ -17,7 +17,12 @@ namespace DataAccessLayer.Repositories.TimeSlotRepo
         }
         public async Task<IEnumerable<TimeSlot>> GetTimeSlotByAppointment(int appointmentId)
         {
-            return  await context.TimeSlots.Where(t=> t.AppointmentId == appointmentId).ToListAsync();
+            var currentTime = TimeOnly.FromDateTime(DateTime.Now);
+            return await context.TimeSlots
+                .Where(t => t.AppointmentId == appointmentId)
+                .Where(t => t.AppointmentTime >= currentTime)
+                .ToListAsync();
         }
+
     }
 }

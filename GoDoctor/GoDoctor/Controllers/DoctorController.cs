@@ -17,7 +17,7 @@ namespace GoDoctor.Controllers
             this.specialtyService = specialtyService;
             this.doctorService = doctorService;
         }
-
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> GoAsDoctor()
         {
             AddDoctorView addDoctorView = new AddDoctorView()

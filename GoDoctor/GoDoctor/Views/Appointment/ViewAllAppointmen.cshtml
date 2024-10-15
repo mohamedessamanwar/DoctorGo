@@ -1,7 +1,7 @@
 ﻿@using BusinessAccessLayer.DataViews.Appointment
 @model IEnumerable<AppointmentView>
 @{
-    // Ensure the model is not null before proceeding.
+    Layout = "_DoctorLayout";
 }
 @if (!Model.Any())
 {

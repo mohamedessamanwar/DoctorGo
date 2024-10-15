@@ -1,6 +1,6 @@
 ﻿
     document.getElementById("addTime").addEventListener("click", function () {
-        const timeInputs = document.getElementById("timeInputs");
+    const timeInputs = document.getElementById("timeInputs");
     const newInput = document.createElement("input");
     newInput.setAttribute("name", "AppointmentTime");
     newInput.setAttribute("type", "time");
