@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\AL-FAJR\\Desktop\\New folder (2)\\DoctorGo\\GoDoctor\\BusinessAccessLayer\\BusinessAccessLayer.csproj": {}
+    "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\BusinessAccessLayer\\BusinessAccessLayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\AL-FAJR\\Desktop\\New folder (2)\\DoctorGo\\GoDoctor\\BusinessAccessLayer\\BusinessAccessLayer.csproj": {
+    "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\BusinessAccessLayer\\BusinessAccessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\AL-FAJR\\Desktop\\New folder (2)\\DoctorGo\\GoDoctor\\BusinessAccessLayer\\BusinessAccessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\BusinessAccessLayer\\BusinessAccessLayer.csproj",
         "projectName": "BusinessAccessLayer",
-        "projectPath": "C:\\Users\\AL-FAJR\\Desktop\\New folder (2)\\DoctorGo\\GoDoctor\\BusinessAccessLayer\\BusinessAccessLayer.csproj",
+        "projectPath": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\BusinessAccessLayer\\BusinessAccessLayer.csproj",
         "packagesPath": "C:\\Users\\AL-FAJR\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\AL-FAJR\\Desktop\\New folder (2)\\DoctorGo\\GoDoctor\\BusinessAccessLayer\\obj\\",
+        "outputPath": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\BusinessAccessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\AL-FAJR\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -29,8 +29,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\AL-FAJR\\Desktop\\New folder (2)\\DoctorGo\\GoDoctor\\DataAccessLayer\\DataAccessLayer.csproj": {
-                "projectPath": "C:\\Users\\AL-FAJR\\Desktop\\New folder (2)\\DoctorGo\\GoDoctor\\DataAccessLayer\\DataAccessLayer.csproj"
+              "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\DataAccessLayer\\DataAccessLayer.csproj": {
+                "projectPath": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\DataAccessLayer\\DataAccessLayer.csproj"
               }
             }
           }
@@ -95,14 +95,14 @@
         }
       }
     },
-    "C:\\Users\\AL-FAJR\\Desktop\\New folder (2)\\DoctorGo\\GoDoctor\\DataAccessLayer\\DataAccessLayer.csproj": {
+    "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\DataAccessLayer\\DataAccessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\AL-FAJR\\Desktop\\New folder (2)\\DoctorGo\\GoDoctor\\DataAccessLayer\\DataAccessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\DataAccessLayer\\DataAccessLayer.csproj",
         "projectName": "DataAccessLayer",
-        "projectPath": "C:\\Users\\AL-FAJR\\Desktop\\New folder (2)\\DoctorGo\\GoDoctor\\DataAccessLayer\\DataAccessLayer.csproj",
+        "projectPath": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\DataAccessLayer\\DataAccessLayer.csproj",
         "packagesPath": "C:\\Users\\AL-FAJR\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\AL-FAJR\\Desktop\\New folder (2)\\DoctorGo\\GoDoctor\\DataAccessLayer\\obj\\",
+        "outputPath": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\DataAccessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\AL-FAJR\\AppData\\Roaming\\NuGet\\NuGet.Config",

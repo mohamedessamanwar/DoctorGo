@@ -1,0 +1,50 @@
+﻿@using BusinessAccessLayer.DataViews.DoctorView;
+@{
+    ViewBag.Title = "Specialty Management";
+}
+
+@{
+    Layout = "_AdminLayout";
+}
+
+<h2>Specialty Management</h2>
+
+<form method="post" asp-action="AddSpecialty" class="mb-4">
+    <div class="form-group">
+        <label for="name">Specialty Name</label>
+        <input type="text" id="name" name="name" class="form-control" placeholder="Enter specialty name" required />
+    </div>
+    <div class="form-group">
+        <label for="description">Specialty Description</label>
+        <textarea id="description" name="description" class="form-control" placeholder="Enter specialty description" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary mt-2">Add Specialty</button>
+</form>
+
+<!-- Specialty List -->
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Specialty ID</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var specialty in Model)
+        {
+            <tr>
+                <td>@specialty.Id</td>
+                <td>@specialty.Name</td>
+                <td>@specialty.Description</td>
+                <td>
+                    <form method="post" asp-action="DeleteSpecialty">
+                        <input type="hidden" name="specialtyId" value="@specialty.Id" />
+                        <button type="submit" class="btn btn-danger">Delete</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

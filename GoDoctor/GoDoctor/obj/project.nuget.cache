@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KcpRiz3o3Q8=",
+  "dgSpecHash": "Qrur7GobvCk=",
   "success": true,
-  "projectFilePath": "C:\\Users\\AL-FAJR\\Desktop\\New folder (2)\\DoctorGo\\GoDoctor\\GoDoctor\\GoDoctor.csproj",
+  "projectFilePath": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\GoDoctor\\GoDoctor.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\AL-FAJR\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\AL-FAJR\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

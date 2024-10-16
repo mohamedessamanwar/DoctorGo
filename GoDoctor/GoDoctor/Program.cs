@@ -4,6 +4,7 @@ using BusinessAccessLayer.Services.Email;
 using DataAccessLayer;
 using DataAccessLayer.Data.Context;
 using DataAccessLayer.Data.Models;
+using DataAccessLayer.Repositories.SpecialtyRepo;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.FileProviders;
@@ -70,6 +71,7 @@ namespace GoDoctor
                 PreventDuplicates = true,
                 CloseButton = true
             });
+            builder.Services.AddScoped<ISpecialtyRepository, SpecialtyRepository>();
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.

@@ -1,0 +1,60 @@
+﻿@using BusinessAccessLayer.DataViews.DoctorView;
+@{
+    Layout = "_AdminLayout";
+}
+
+<h2>Doctor Status List</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Doctor ID</th>
+            <th>Name</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var doctor in Model)
+        {
+            <tr>
+                <td>@doctor.DoctorId</td>
+                <td>@doctor.Name</td>
+                <td>
+                    <input type="checkbox"
+                           class="status-checkbox"
+                           data-doctor-id="@doctor.DoctorId"
+                    @(doctor.IsValid ? "checked" : "") />
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.status-checkbox').change(function () {
+            var doctorId = $(this).data('doctor-id');
+            var isValid = $(this).is(':checked');
+
+            $.ajax({
+                url: '@Url.Action("UpdateDoctorStatus", "Admin")',
+                type: 'POST',
+                data: {
+                    doctorId: doctorId,
+                    isValid: isValid
+                },
+                success: function (response) {
+                    if (response.success) {
+                        alert("Status updated successfully.");
+                    } else {
+                        alert("Failed to update status.");
+                    }
+                },
+                error: function (xhr, status, error) {
+                    alert("An error occurred: " + error);
+                }
+            });
+        });
+    });
+</script>

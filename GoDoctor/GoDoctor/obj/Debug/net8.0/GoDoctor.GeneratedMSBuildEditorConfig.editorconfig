@@ -17,115 +17,131 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = GoDoctor
 build_property.RootNamespace = GoDoctor
-build_property.ProjectDir = C:\Users\AL-FAJR\Desktop\New folder (2)\DoctorGo\GoDoctor\GoDoctor\
+build_property.ProjectDir = C:\Users\AL-FAJR\Desktop\New folder (3)\DoctorGo\GoDoctor\GoDoctor\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = true
-build_property.MSBuildProjectDirectory = C:\Users\AL-FAJR\Desktop\New folder (2)\DoctorGo\GoDoctor\GoDoctor
+build_property.MSBuildProjectDirectory = C:\Users\AL-FAJR\Desktop\New folder (3)\DoctorGo\GoDoctor\GoDoctor
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/AL-FAJR/Desktop/New folder (2)/DoctorGo/GoDoctor/GoDoctor/Views/Admin/Index.cshtml]
+[C:/Users/AL-FAJR/Desktop/New folder (3)/DoctorGo/GoDoctor/GoDoctor/Views/Admin/AddNewAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRkTmV3QWRtaW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/AL-FAJR/Desktop/New folder (3)/DoctorGo/GoDoctor/GoDoctor/Views/Admin/AdminList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRtaW5MaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/AL-FAJR/Desktop/New folder (3)/DoctorGo/GoDoctor/GoDoctor/Views/Admin/DoctorsStatus.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRG9jdG9yc1N0YXR1cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/AL-FAJR/Desktop/New folder (3)/DoctorGo/GoDoctor/GoDoctor/Views/Admin/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/AL-FAJR/Desktop/New folder (2)/DoctorGo/GoDoctor/GoDoctor/Views/Appointment/Create.cshtml]
+[C:/Users/AL-FAJR/Desktop/New folder (3)/DoctorGo/GoDoctor/GoDoctor/Views/Admin/SpecialtyManagement.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU3BlY2lhbHR5TWFuYWdlbWVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/AL-FAJR/Desktop/New folder (3)/DoctorGo/GoDoctor/GoDoctor/Views/Appointment/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwb2ludG1lbnRcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/AL-FAJR/Desktop/New folder (2)/DoctorGo/GoDoctor/GoDoctor/Views/Appointment/ViewAllAppointmen.cshtml]
+[C:/Users/AL-FAJR/Desktop/New folder (3)/DoctorGo/GoDoctor/GoDoctor/Views/Appointment/ViewAllAppointmen.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwb2ludG1lbnRcVmlld0FsbEFwcG9pbnRtZW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/AL-FAJR/Desktop/New folder (2)/DoctorGo/GoDoctor/GoDoctor/Views/Auth/ConfirmationSendEmail.cshtml]
+[C:/Users/AL-FAJR/Desktop/New folder (3)/DoctorGo/GoDoctor/GoDoctor/Views/Auth/ConfirmationSendEmail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxDb25maXJtYXRpb25TZW5kRW1haWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/AL-FAJR/Desktop/New folder (2)/DoctorGo/GoDoctor/GoDoctor/Views/Auth/ForgetPassword.cshtml]
+[C:/Users/AL-FAJR/Desktop/New folder (3)/DoctorGo/GoDoctor/GoDoctor/Views/Auth/ForgetPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxGb3JnZXRQYXNzd29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/AL-FAJR/Desktop/New folder (2)/DoctorGo/GoDoctor/GoDoctor/Views/Auth/Login.cshtml]
+[C:/Users/AL-FAJR/Desktop/New folder (3)/DoctorGo/GoDoctor/GoDoctor/Views/Auth/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/AL-FAJR/Desktop/New folder (2)/DoctorGo/GoDoctor/GoDoctor/Views/Auth/ResetPassword.cshtml]
+[C:/Users/AL-FAJR/Desktop/New folder (3)/DoctorGo/GoDoctor/GoDoctor/Views/Auth/ResetPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxSZXNldFBhc3N3b3JkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/AL-FAJR/Desktop/New folder (2)/DoctorGo/GoDoctor/GoDoctor/Views/Auth/Signup.cshtml]
+[C:/Users/AL-FAJR/Desktop/New folder (3)/DoctorGo/GoDoctor/GoDoctor/Views/Auth/Signup.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxTaWdudXAuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/AL-FAJR/Desktop/New folder (2)/DoctorGo/GoDoctor/GoDoctor/Views/Booking/BookingConfirmation.cshtml]
+[C:/Users/AL-FAJR/Desktop/New folder (3)/DoctorGo/GoDoctor/GoDoctor/Views/Booking/BookingConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ1xCb29raW5nQ29uZmlybWF0aW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/AL-FAJR/Desktop/New folder (2)/DoctorGo/GoDoctor/GoDoctor/Views/Booking/DoctorBooking.cshtml]
+[C:/Users/AL-FAJR/Desktop/New folder (3)/DoctorGo/GoDoctor/GoDoctor/Views/Booking/DoctorBooking.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ1xEb2N0b3JCb29raW5nLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/AL-FAJR/Desktop/New folder (2)/DoctorGo/GoDoctor/GoDoctor/Views/Doctor/Details.cshtml]
+[C:/Users/AL-FAJR/Desktop/New folder (3)/DoctorGo/GoDoctor/GoDoctor/Views/Doctor/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/AL-FAJR/Desktop/New folder (2)/DoctorGo/GoDoctor/GoDoctor/Views/Doctor/DoctorDashboard.cshtml]
+[C:/Users/AL-FAJR/Desktop/New folder (3)/DoctorGo/GoDoctor/GoDoctor/Views/Doctor/DoctorDashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yXERvY3RvckRhc2hib2FyZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/AL-FAJR/Desktop/New folder (2)/DoctorGo/GoDoctor/GoDoctor/Views/Doctor/GoAsDoctor.cshtml]
+[C:/Users/AL-FAJR/Desktop/New folder (3)/DoctorGo/GoDoctor/GoDoctor/Views/Doctor/GoAsDoctor.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yXEdvQXNEb2N0b3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/AL-FAJR/Desktop/New folder (2)/DoctorGo/GoDoctor/GoDoctor/Views/Doctor/ViewDoctors.cshtml]
+[C:/Users/AL-FAJR/Desktop/New folder (3)/DoctorGo/GoDoctor/GoDoctor/Views/Doctor/ViewDoctors.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yXFZpZXdEb2N0b3JzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/AL-FAJR/Desktop/New folder (2)/DoctorGo/GoDoctor/GoDoctor/Views/Home/Errors.cshtml]
+[C:/Users/AL-FAJR/Desktop/New folder (3)/DoctorGo/GoDoctor/GoDoctor/Views/Home/Errors.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFcnJvcnMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/AL-FAJR/Desktop/New folder (2)/DoctorGo/GoDoctor/GoDoctor/Views/Home/Index.cshtml]
+[C:/Users/AL-FAJR/Desktop/New folder (3)/DoctorGo/GoDoctor/GoDoctor/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/AL-FAJR/Desktop/New folder (2)/DoctorGo/GoDoctor/GoDoctor/Views/Home/Privacy.cshtml]
+[C:/Users/AL-FAJR/Desktop/New folder (3)/DoctorGo/GoDoctor/GoDoctor/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/AL-FAJR/Desktop/New folder (2)/DoctorGo/GoDoctor/GoDoctor/Views/Shared/Error.cshtml]
+[C:/Users/AL-FAJR/Desktop/New folder (3)/DoctorGo/GoDoctor/GoDoctor/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/AL-FAJR/Desktop/New folder (2)/DoctorGo/GoDoctor/GoDoctor/Views/Shared/_AdminLayout.cshtml]
+[C:/Users/AL-FAJR/Desktop/New folder (3)/DoctorGo/GoDoctor/GoDoctor/Views/Shared/_AdminLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZG1pbkxheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/AL-FAJR/Desktop/New folder (2)/DoctorGo/GoDoctor/GoDoctor/Views/Shared/_DoctorLayout.cshtml]
+[C:/Users/AL-FAJR/Desktop/New folder (3)/DoctorGo/GoDoctor/GoDoctor/Views/Shared/_DoctorLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Eb2N0b3JMYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/AL-FAJR/Desktop/New folder (2)/DoctorGo/GoDoctor/GoDoctor/Views/Shared/_Header.cshtml]
+[C:/Users/AL-FAJR/Desktop/New folder (3)/DoctorGo/GoDoctor/GoDoctor/Views/Shared/_Header.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9IZWFkZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/AL-FAJR/Desktop/New folder (2)/DoctorGo/GoDoctor/GoDoctor/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/AL-FAJR/Desktop/New folder (3)/DoctorGo/GoDoctor/GoDoctor/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/AL-FAJR/Desktop/New folder (2)/DoctorGo/GoDoctor/GoDoctor/Views/TimeSlot/ViewTimeSlot.cshtml]
+[C:/Users/AL-FAJR/Desktop/New folder (3)/DoctorGo/GoDoctor/GoDoctor/Views/TimeSlot/ViewTimeSlot.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGltZVNsb3RcVmlld1RpbWVTbG90LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/AL-FAJR/Desktop/New folder (2)/DoctorGo/GoDoctor/GoDoctor/Views/_ViewImports.cshtml]
+[C:/Users/AL-FAJR/Desktop/New folder (3)/DoctorGo/GoDoctor/GoDoctor/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/AL-FAJR/Desktop/New folder (2)/DoctorGo/GoDoctor/GoDoctor/Views/_ViewStart.cshtml]
+[C:/Users/AL-FAJR/Desktop/New folder (3)/DoctorGo/GoDoctor/GoDoctor/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/AL-FAJR/Desktop/New folder (2)/DoctorGo/GoDoctor/GoDoctor/Views/Shared/_Layout.cshtml]
+[C:/Users/AL-FAJR/Desktop/New folder (3)/DoctorGo/GoDoctor/GoDoctor/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-l1qyr95kkm

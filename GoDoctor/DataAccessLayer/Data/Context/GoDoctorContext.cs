@@ -14,7 +14,7 @@ namespace DataAccessLayer.Data.Context
                 // Configure your database connection string here
                 optionsBuilder.UseSqlServer("Data Source=.;Initial Catalog=GoDoctor;Integrated Security=True;TrustServerCertificate=True");
 
-
+                
             }
         }
         public GoDoctorContext(DbContextOptions<GoDoctorContext> options):base(options)

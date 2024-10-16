@@ -12,5 +12,7 @@ namespace BusinessAccessLayer.Sevices.DoctorService
         Task<CreateResult> AddDoctor(AddDoctorView addDoctorView);
         Task<IEnumerable<DoctorSearchViewModel>> DoctorSearch(int specialty, string governorate, string doctor, int page);
         Task<DoctorDetailsView?> GetDocterById(int DocId);
+        Task<IEnumerable<DoctorStatusViewModel>> GetAllDoctorsStatus();
+        Task<bool> UpdateDoctorStatus(int doctorId, bool isValid);
     }
 }

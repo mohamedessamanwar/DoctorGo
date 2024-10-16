@@ -154,5 +154,35 @@ namespace BusinessAccessLayer.Sevices.DoctorService
             };
 
         }
+
+        public async Task<IEnumerable<DoctorStatusViewModel>> GetAllDoctorsStatus()
+        {
+            var doctors = await unitOfWork.doctorRepository.GetAllDoctors();
+            if (doctors == null)
+            {
+                return Enumerable.Empty<DoctorStatusViewModel>();
+            }
+
+            return doctors.Select(d => new DoctorStatusViewModel
+            {
+                DoctorId = d.Id,
+                Name = $"{d.ApplicationUser.FirstName} {d.ApplicationUser.LastName}",
+                IsValid = d.IsValid
+            });
+        }
+
+
+        public async Task<bool> UpdateDoctorStatus(int doctorId, bool isValid)
+        {
+            var doctor = await unitOfWork.doctorRepository.GetByIdAsync(doctorId);
+            if (doctor != null)
+            {
+                doctor.IsValid = isValid;
+                await unitOfWork.CompleteAsync();
+                return true;
+            }
+            return false; // Indicate failure if doctor not found
+        }
+
     }
 }

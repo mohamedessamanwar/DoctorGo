@@ -10,6 +10,9 @@ namespace DataAccessLayer.Repositories.SpecialtyRepo
 {
     public interface ISpecialtyRepository: IGenericRepo<Specialty>
     {
-        Task<IEnumerable<Specialty>> GetSpecialtiesToSelect(); 
+        Task<IEnumerable<Specialty>> GetSpecialtiesToSelect();
+        Task AddAsync(Specialty specialty);
+        Task<bool> DeleteAsync(int specialtyId);
+        Task<IEnumerable<Specialty>> GetAllAsync();
     }
 }
