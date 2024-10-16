@@ -11,6 +11,7 @@ namespace BusinessAccessLayer.Sevices.AuthService
     {
         Task<AuthResult> Regestration(SignupView account);
         Task<AuthResult> LogIn(LoginView account);
+        Task<AuthResult> AddNewAdmin(SignupView signupVie);
         Task<bool> ForgetPassword(ForgetPasswordView forgetPasswordView); 
         Task LogOut();
         Task<string> ResetPassword(ResetPasswordViewModel model);

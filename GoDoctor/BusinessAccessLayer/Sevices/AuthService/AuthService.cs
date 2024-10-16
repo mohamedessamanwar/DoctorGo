@@ -56,7 +56,7 @@ namespace BusinessAccessLayer.Sevices.AuthService
                 }; 
             }
             // Add to role 
-            if (account.Role != null) {
+           if (account.Role != null) {
                 await _userManager.AddToRoleAsync(user, "Doctor");
             }
             else
@@ -82,6 +82,7 @@ namespace BusinessAccessLayer.Sevices.AuthService
             };
 
         }
+
 
         private async Task<string> AddClaimsAsync(ApplicationUser user)
         {
@@ -159,6 +160,51 @@ namespace BusinessAccessLayer.Sevices.AuthService
             }; 
 
         }
+        public async Task<AuthResult> AddNewAdmin(SignupView account)
+        {
+            ApplicationUser user = new ApplicationUser();
+            user.UserName = account.Email.Split("@")[0];
+            user.Email = account.Email;
+            user.FirstName = account.Firstname;
+            user.LastName = account.Lastname;
+            user.City = account.City;
+            user.CreatedDate = DateTime.Now;
+            user.UpdatedDate = DateTime.Now;
+            var result = await _userManager.CreateAsync(user, account.Password);
+            if (!result.Succeeded)
+            {
+                StringBuilder Errors = new StringBuilder();
+                foreach (var error in result.Errors)
+                {
+                    Errors.Append(error.Description);
+                }
+                return new AuthResult
+                {
+                    Errors = Errors.ToString(),
+                    IsAuth = false
+                };
+            }
+            
+            await _userManager.AddToRoleAsync(user, "Admin");   
+            var role = await AddClaimsAsync(user);
+            if (role is not null)
+            {
+                return new AuthResult
+                {
+                    Errors = role,
+                    IsAuth = false
+                };
+
+            }
+            // Create cookie and sign in user
+            await _signInManager.SignInAsync(user, false);
+            return new AuthResult()
+            {
+                UserId = user.Id
+            };
+
+        }
+
         public async Task LogOut()
         {
 

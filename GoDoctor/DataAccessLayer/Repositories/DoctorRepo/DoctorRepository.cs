@@ -66,5 +66,11 @@ namespace DataAccessLayer.Repositories.DoctorRepo
                 .ThenInclude(c => c.User)
                 .FirstOrDefaultAsync(d => d.Id == DocId);
         }
+        public async Task<IEnumerable<Docktor>> GetAllDoctors()
+        {
+            return await context.Docktor
+                .Include(d => d.ApplicationUser) // Include related user info
+                .ToListAsync();
+        }
     }
 }
