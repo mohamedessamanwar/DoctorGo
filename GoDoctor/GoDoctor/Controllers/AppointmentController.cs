@@ -47,7 +47,7 @@ namespace GoDoctor.Controllers
             return RedirectToAction("DoctorDashboard", "Doctor"); 
         }
         [HttpGet]
-        [Authorize(Roles = "Doctor")]
+       // [Authorize(Roles = "Doctor")]
         public async Task<IActionResult> ViewAllAppointmen(int doctorId)
         {
             var result = await appointmentService.GetAllAppointment(doctorId);

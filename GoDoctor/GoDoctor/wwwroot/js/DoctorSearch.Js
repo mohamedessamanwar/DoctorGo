@@ -41,6 +41,7 @@ function renderDoctors(doctors) {
         </div>
         <div class="card-footer text-center bg-transparent border-0">
             <a href="/Appointment/ViewAllAppointmen?doctorId=${doctor.id}" class="btn btn-outline-primary btn-sm">View Doctor</a>
+            <a href="/Doctor/Details/${doctor.id}" class="btn btn-outline-primary btn-sm">View Doctor</a>
         </div>
     </div>`;
 

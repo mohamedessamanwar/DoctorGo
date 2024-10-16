@@ -22,7 +22,7 @@ namespace GoDoctor.Controllers
             {
                 return BadRequest(new { Message = "Invalid comment data." });
             }
-            var UserId = User.Claims.FirstOrDefault(c => c.Type == "uid").Value;
+            var UserId = User.Claims.FirstOrDefault(c => c.Type == "Id").Value;
             if (UserId == null)
             {
                 RedirectToAction("Login", "Auth");
