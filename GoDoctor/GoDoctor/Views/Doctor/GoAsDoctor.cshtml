@@ -2,102 +2,216 @@
 @{
     Layout = "_AdminLayout";
 }
-<div class="row justify-content-center mt-5">
-    <div class="col-md-8 col-lg-6">
-        <div class="card shadow-lg">
-            <div class="card-header bg-primary text-white text-center">
-                <h3>Add Doctor</h3>
-            </div>
-            <div class="card-body p-4">
-                <form asp-action="GoAsDoctor" asp-controller="Doctor" method="post" enctype="multipart/form-data">
 
-                    <div asp-validation-summary="All" class="text-danger"></div>
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+            <div class="card shadow-lg border-0">
+                <div class="card-header bg-primary text-white text-center py-3">
+                    <h3 class="mb-0">Add Doctor</h3>
+                </div>
+                <div class="card-body p-4">
+                    <form asp-action="GoAsDoctor" asp-controller="Doctor" method="post" enctype="multipart/form-data">
+                        <div asp-validation-summary="All" class="text-danger mb-3"></div>
 
-                    <div class="form-group">
-                        <label asp-for="Email" class="font-weight-bold">Email</label>
-                        <input asp-for="Email" class="form-control" placeholder="Enter your email">
-                        <span asp-validation-for="Email" class="text-danger"></span>
-                    </div>
+                        <div class="mb-3">
+                            <label asp-for="Email" class="form-label">Email</label>
+                            <input asp-for="Email" class="form-control" placeholder="Enter doctor's email">
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
 
-                    <div class="form-group">
-                        <label asp-for="Firstname" class="font-weight-bold">First Name</label>
-                        <input asp-for="Firstname" class="form-control" placeholder="Enter your first name">
-                        <span asp-validation-for="Firstname" class="text-danger"></span>
-                    </div>
+                        <div class="mb-3">
+                            <label asp-for="Firstname" class="form-label">First Name</label>
+                            <input asp-for="Firstname" class="form-control" placeholder="Enter doctor's first name">
+                            <span asp-validation-for="Firstname" class="text-danger"></span>
+                        </div>
 
-                    <div class="form-group">
-                        <label asp-for="Lastname" class="font-weight-bold">Last Name</label>
-                        <input asp-for="Lastname" class="form-control" placeholder="Enter your last name">
-                        <span asp-validation-for="Lastname" class="text-danger"></span>
-                    </div>
+                        <div class="mb-3">
+                            <label asp-for="Lastname" class="form-label">Last Name</label>
+                            <input asp-for="Lastname" class="form-control" placeholder="Enter doctor's last name">
+                            <span asp-validation-for="Lastname" class="text-danger"></span>
+                        </div>
 
-                    <div class="form-group">
-                        <label asp-for="PhoneNumber" class="font-weight-bold">Phone Number</label>
-                        <input asp-for="PhoneNumber" class="form-control" placeholder="Enter your phone number">
-                        <span asp-validation-for="PhoneNumber" class="text-danger"></span>
-                    </div>
+                        <div class="mb-3">
+                            <label asp-for="PhoneNumber" class="form-label">Phone Number</label>
+                            <input asp-for="PhoneNumber" class="form-control" placeholder="Enter doctor's phone number">
+                            <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                        </div>
 
-                    <div class="form-group">
-                        <label asp-for="City" class="font-weight-bold">City</label>
-                        <input asp-for="City" class="form-control" placeholder="Enter your city">
-                        <span asp-validation-for="City" class="text-danger"></span>
-                    </div>
+                        <div class="mb-3">
+                            <label asp-for="City" class="form-label">City</label>
+                            <select asp-for="City" class="form-select">
+                                <option value="">Select a city</option>
+                                <option value="Cairo">Cairo</option>
+                                <option value="Giza">Giza</option>
+                                <option value="Alexandria">Alexandria</option>
+                                <option value="Port Said">Port Said</option>
+                                <option value="Suez">Suez</option>
+                                <option value="Mansoura">Mansoura</option>
+                                <option value="Tanta">Tanta</option>
+                                <option value="Ismailia">Ismailia</option>
+                                <option value="Fayoum">Fayoum</option>
+                                <option value="Zagazig">Zagazig</option>
+                                <option value="Asyut">Asyut</option>
+                                <option value="Sohag">Sohag</option>
+                                <option value="Luxor">Luxor</option>
+                                <option value="Aswan">Aswan</option>
+                                <option value="Damanhur">Damanhur</option>
+                                <option value="Damietta">Damietta</option>
+                                <option value="Minya">Minya</option>
+                                <option value="Beni Suef">Beni Suef</option>
+                                <option value="Qena">Qena</option>
+                                <option value="Kafr El Sheikh">Kafr El Sheikh</option>
+                                <option value="Hurghada">Hurghada</option>
+                                <option value="Sharm El Sheikh">Sharm El Sheikh</option>
+                                <option value="El-Mahalla El-Kubra">El-Mahalla El-Kubra</option>
+                                <option value="Banha">Banha</option>
+                                <option value="Arish">Arish</option>
+                                <option value="Qalyub">Qalyub</option>
+                                <option value="Helwan">Helwan</option>
+                            </select>
+                            <span asp-validation-for="City" class="text-danger"></span>
+                        </div>
 
-                    <div class="form-group">
-                        <label asp-for="Description" class="font-weight-bold">Description</label>
-                        <textarea asp-for="Description" class="form-control" placeholder="Describe the doctor"></textarea>
-                        <span asp-validation-for="Description" class="text-danger"></span>
-                    </div>
+                        <div class="mb-3">
+                            <label asp-for="Description" class="form-label">Description</label>
+                            <textarea asp-for="Description" class="form-control" rows="3" placeholder="Describe the doctor's qualifications and experience"></textarea>
+                            <span asp-validation-for="Description" class="text-danger"></span>
+                        </div>
 
-                    <div class="form-group">
-                        <label asp-for="SpecialtyId" class="form-label mt-4"></label>
-                        <select class="form-select" asp-for="SpecialtyId" asp-items="Model.Specialties">
-                            <option></option>
-                        </select>
-                        <span asp-validation-for="SpecialtyId" class="text-danger"></span>
-                    </div>
+                        <div class="mb-3">
+                            <label asp-for="SpecialtyId" class="form-label">Specialty</label>
+                            <select class="form-select" asp-for="SpecialtyId" asp-items="Model.Specialties">
+                                <option value="">Select a specialty</option>
+                            </select>
+                            <span asp-validation-for="SpecialtyId" class="text-danger"></span>
+                        </div>
 
-                    <div class="form-group">
-                        <label asp-for="ClinicAddress" class="font-weight-bold">Clinic Address</label>
-                        <input asp-for="ClinicAddress" class="form-control" placeholder="Enter the clinic address">
-                        <span asp-validation-for="ClinicAddress" class="text-danger"></span>
-                    </div>
+                        <div class="mb-3">
+                            <label asp-for="ClinicAddress" class="form-label">Clinic Address</label>
+                            <input asp-for="ClinicAddress" class="form-control" placeholder="Enter the clinic address">
+                            <span asp-validation-for="ClinicAddress" class="text-danger"></span>
+                        </div>
 
-                    <div class="form-group">
-                        <label asp-for="ClinicCity" class="font-weight-bold">Clinic City</label>
-                        <input asp-for="ClinicCity" class="form-control" placeholder="Enter the clinic city">
-                        <span asp-validation-for="ClinicCity" class="text-danger"></span>
-                    </div>
-                    <div class="form-group">
-                        <label asp-for="Price" class="font-weight-bold">Examination price</label>
-                        <input asp-for="Price" class="form-control" placeholder="Examination price">
-                        <span asp-validation-for="Price" class="text-danger"></span>
-                    </div>
+                        <div class="mb-3">
+                            <label asp-for="ClinicCity" class="form-label">Clinic City</label>
+                            <select asp-for="ClinicCity" class="form-select">
+                                <option value="">Select a city</option>
+                                <option value="Cairo">Cairo</option>
+                                <option value="Giza">Giza</option>
+                                <option value="Alexandria">Alexandria</option>
+                                <option value="Port Said">Port Said</option>
+                                <option value="Suez">Suez</option>
+                                <option value="Mansoura">Mansoura</option>
+                                <option value="Tanta">Tanta</option>
+                                <option value="Ismailia">Ismailia</option>
+                                <option value="Fayoum">Fayoum</option>
+                                <option value="Zagazig">Zagazig</option>
+                                <option value="Asyut">Asyut</option>
+                                <option value="Sohag">Sohag</option>
+                                <option value="Luxor">Luxor</option>
+                                <option value="Aswan">Aswan</option>
+                                <option value="Damanhur">Damanhur</option>
+                                <option value="Damietta">Damietta</option>
+                                <option value="Minya">Minya</option>
+                                <option value="Beni Suef">Beni Suef</option>
+                                <option value="Qena">Qena</option>
+                                <option value="Kafr El Sheikh">Kafr El Sheikh</option>
+                                <option value="Hurghada">Hurghada</option>
+                                <option value="Sharm El Sheikh">Sharm El Sheikh</option>
+                                <option value="El-Mahalla El-Kubra">El-Mahalla El-Kubra</option>
+                                <option value="Banha">Banha</option>
+                                <option value="Arish">Arish</option>
+                                <option value="Qalyub">Qalyub</option>
+                                <option value="Helwan">Helwan</option>
+                            </select>
+                            <span asp-validation-for="ClinicCity" class="text-danger"></span>
+                        </div>
 
-                    <div class="form-group">
-                        <label asp-for="Password" class="font-weight-bold">Password</label>
-                        <input asp-for="Password" class="form-control" type="password" placeholder="Enter password">
-                        <span asp-validation-for="Password" class="text-danger"></span>
-                    </div>
+                        <div class="mb-3">
+                            <label asp-for="Price" class="form-label">Examination Price</label>
+                            <div class="input-group">
+                                <span class="input-group-text">$</span>
+                                <input asp-for="Price" class="form-control" placeholder="Enter examination price">
+                            </div>
+                            <span asp-validation-for="Price" class="text-danger"></span>
+                        </div>
 
-                    <div class="form-group">
-                        <label asp-for="Image" class="font-weight-bold">Profile Image</label>
-                        <input asp-for="Image" class="form-control-file" type="file">
-                        <span asp-validation-for="Image" class="text-danger"></span>
-                    </div>
+                        <div class="mb-3">
+                            <label asp-for="Password" class="form-label">Password</label>
+                            <input asp-for="Password" class="form-control" type="password" placeholder="Enter password">
+                            <span asp-validation-for="Password" class="text-danger"></span>
+                        </div>
 
-                    <button type="submit" class="btn btn-primary btn-block">Add Doctor</button>
-                </form>
+                        <div class="mb-4">
+                            <label asp-for="Image" class="form-label">Profile Image</label>
+                            <input asp-for="Image" class="form-control" type="file" accept="image/*">
+                            <span asp-validation-for="Image" class="text-danger"></span>
+                        </div>
+
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary btn-lg">Add Doctor</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
-@* @section Scripts {
-    @{
-        await Html.RenderPartialAsync("_ValidationScriptsPartial");
-    } *@
 <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
 <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
-}
 
+<style>
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #f0f4f8;
+        color: #333;
+    }
+
+    .card {
+        border-radius: 15px;
+        transition: all 0.3s ease;
+    }
+
+    .card:hover {
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+
+    .card-header {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        background-color: #4a90e2;
+    }
+
+    .form-control, .form-select {
+        border-radius: 8px;
+        border: 1px solid #ced4da;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    }
+
+    .form-control:focus, .form-select:focus {
+        border-color: #4a90e2;
+        box-shadow: 0 0 0 0.2rem rgba(74, 144, 226, 0.25);
+    }
+
+    .btn-primary {
+        background-color: #4a90e2;
+        border-color: #4a90e2;
+        border-radius: 8px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+    }
+
+    .btn-primary:hover {
+        background-color: #3a7bc8;
+        border-color: #3a7bc8;
+        transform: translateY(-2px);
+    }
+
+    .form-label {
+        font-weight: 500;
+        color: #4a5568;
+    }
+</style>

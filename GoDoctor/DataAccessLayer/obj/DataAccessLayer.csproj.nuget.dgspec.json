@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\DataAccessLayer\\DataAccessLayer.csproj": {}
+    "C:\\Users\\DELL\\Source\\Repos\\DoctorGo\\GoDoctor\\DataAccessLayer\\DataAccessLayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\DataAccessLayer\\DataAccessLayer.csproj": {
+    "C:\\Users\\DELL\\Source\\Repos\\DoctorGo\\GoDoctor\\DataAccessLayer\\DataAccessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\DataAccessLayer\\DataAccessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\DELL\\Source\\Repos\\DoctorGo\\GoDoctor\\DataAccessLayer\\DataAccessLayer.csproj",
         "projectName": "DataAccessLayer",
-        "projectPath": "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\DataAccessLayer\\DataAccessLayer.csproj",
-        "packagesPath": "C:\\Users\\AL-FAJR\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\AL-FAJR\\Desktop\\Go Doctor\\GoDoctor\\DataAccessLayer\\obj\\",
+        "projectPath": "C:\\Users\\DELL\\Source\\Repos\\DoctorGo\\GoDoctor\\DataAccessLayer\\DataAccessLayer.csproj",
+        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\DELL\\Source\\Repos\\DoctorGo\\GoDoctor\\DataAccessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\AL-FAJR\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -81,7 +81,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

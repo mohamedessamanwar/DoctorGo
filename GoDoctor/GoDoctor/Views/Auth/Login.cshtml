@@ -1,33 +1,44 @@
 ﻿@model BusinessAccessLayer.DataViews.AuthView.LoginView
+@{
+    ViewData["Title"] = "Login";
+}
 
-<div class="row justify-content-center mt-5">
-    <div class="col-md-8 col-lg-6">
-        <!-- Increased the column size for larger form -->
-        <div class="card shadow-lg">
-            <!-- Used shadow-lg for a larger shadow effect -->
-            <div class="card-header bg-primary text-white text-center">
-                <h3>LogIN</h3>
-            </div>
-            <div class="card-body p-4">
-                <!-- Added padding for more space around form elements -->
-                <form asp-action="Login" asp-controller="Auth" method="post">
-                    <div asp-validation-summary="All"></div>
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label asp-for="Email" class="font-weight-bold">Email</label>
-                            <input asp-for="Email" class="form-control" id="inputEmail4" placeholder="Enter your email" />
+<div class="container">
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-8 col-lg-6">
+            <div class="card shadow-lg border-0 rounded-lg mt-5">
+                <div class="card-header bg-primary text-white text-center py-4">
+                    <h3 class="font-weight-light my-2">Login</h3>
+                </div>
+                <div class="card-body p-5">
+                    <form asp-action="Login" asp-controller="Auth" method="post">
+                        <div asp-validation-summary="All" class="text-danger mb-4"></div>
+
+                        <div class="form-floating mb-3">
+                            <input asp-for="Email" class="form-control" id="inputEmail" type="email" placeholder="name@example.com" required />
+                            <label asp-for="Email">Email address</label>
                             <span asp-validation-for="Email" class="text-danger"></span>
                         </div>
-                        <div class="form-group">
-                            <label asp-for="Password" class="font-weight-bold">Password</label>
-                            <input asp-for="Password" class="form-control" id="inputPassword4" placeholder="Enter your password" />
+
+                        <div class="form-floating mb-3">
+                            <input asp-for="Password" class="form-control" id="inputPassword" type="password" placeholder="Password" required />
+                            <label asp-for="Password">Password</label>
                             <span asp-validation-for="Password" class="text-danger"></span>
                         </div>
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-block mt-2">Login</button> <!-- Added btn-block to make button span full width -->
-                </form>
-                <div class="text-center mt-3">
-                    <a href="@Url.Action("ForgetPassword", "Auth")" class="text-primary">Forgot Password?</a> <!-- Added the link to Forgot Password -->
+
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" id="inputRememberPassword" type="checkbox" value="" />
+                            <label class="form-check-label" for="inputRememberPassword">Remember password</label>
+                        </div>
+
+                        <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
+                            <a class="small" href="@Url.Action("ForgetPassword", "Auth")">Forgot Password?</a>
+                            <button type="submit" class="btn btn-primary">Login</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="card-footer text-center py-3">
+                    <div class="small"><a href="@Url.Action("Signup", "Auth")">Need an account? Sign up!</a></div>
                 </div>
             </div>
         </div>
@@ -39,3 +50,38 @@
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
 }
+
+<style>
+    body {
+        background-color: #f8f9fa;
+    }
+    .card {
+        border: none;
+        transition: all 0.3s ease-in-out;
+    }
+   
+    .btn-primary {
+        background-color: #0056b3;
+        border-color: #0056b3;
+    }
+    .btn-primary:hover {
+        background-color: #003d82;
+        border-color: #003d82;
+    }
+    .form-floating > .form-control:focus ~ label,
+    .form-floating > .form-control:not(:placeholder-shown) ~ label {
+        color: #0056b3;
+    }
+    .form-control:focus {
+        border-color: #0056b3;
+        box-shadow: 0 0 0 0.2rem rgba(0, 86, 179, 0.25);
+    }
+    a {
+        color: #0056b3;
+        text-decoration: none;
+    }
+    a:hover {
+        color: #003d82;
+        text-decoration: underline;
+    }
+</style>

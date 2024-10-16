@@ -4,74 +4,184 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - GoDoctor</title>
-    @*  <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" /> *@
     <link href="~/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-@*     <link rel="stylesheet" href="~/GoDoctor.styles.css" asp-append-version="true" /> *@
+    <style>
+        /* Custom styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f0f8ff;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        main {
+            padding: 2rem 0;
+        }
+        /* Improved Navbar Styles */
+        .navbar {
+            padding: 1rem 0;
+        }
+
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .navbar-nav .nav-link {
+            font-size: 1.1rem;
+            padding: 0.5rem 1rem;
+            margin: 0 0.2rem;
+            transition: all 0.3s ease;
+        }
+
+            .navbar-nav .nav-link:hover {
+                background-color: rgba(255, 255, 255, 0.1);
+                border-radius: 5px;
+            }
+
+        .navbar-nav .btn {
+            padding: 0.5rem 1rem;
+            margin-left: 0.5rem;
+            transition: all 0.3s ease;
+        }
+
+            .navbar-nav .btn:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+        /* Footer styles */
+        footer {
+            background-color: #0052a3;
+            color: #ffffff;
+            padding: 2rem 0;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 1rem;
+        }
+
+        .footer-section ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .footer-section li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+    </style>
 </head>
-
 <body>
-
     <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Go Doctor</a>
+            <a class="navbar-brand" asp-controller="Home" asp-action="Index">Go Doctor</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarColor01">
                 <ul class="navbar-nav me-auto">
-
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">
+                        <a class="nav-link active" asp-controller="Home" asp-action="Index">
                             Home
                             <span class="visually-hidden">(current)</span>
                         </a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="Doctor" asp-action="ViewDoctors">Doctors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
                     @if (!User.Identity.IsAuthenticated)
                     {
-                        <li class="nav-item d-flex justify-content-between justify-content-center">
-                            <a asp-controller="Auth" asp-action="Signup" class="nav-link">Signup</a>
-                            <a asp-controller="Auth" asp-action="Login" class="nav-link">Login</a>
+                        <li class="nav-item">
+                            <a asp-controller="Auth" asp-action="Signup" class="btn btn-outline-light">Sign Up</a>
                         </li>
-
+                        <li class="nav-item">
+                            <a asp-controller="Auth" asp-action="Login" class="btn btn-light">Log In</a>
+                        </li>
                     }
                     else
                     {
                         <li class="nav-item">
-                            <a asp-controller="Auth" asp-action="Logout" class="nav-link">LogOut</a>
+                            <span class="nav-link">Welcome, @User.Claims.FirstOrDefault(c => c.Type == "UserName")?.Value</span>
                         </li>
-                        <li>
-                            <p class="text-bg-light">@User.Claims.FirstOrDefault(c => c.Type == "UserName")?.Value</p>
+                        <li class="nav-item">
+                            <a asp-controller="Auth" asp-action="Logout" class="btn btn-outline-light">Log Out</a>
                         </li>
-
                     }
-                    @*    @if (User.Identity.IsAuthenticated && User.IsInRole("Patient"))
-                    { *@
-                    <li class="nav-item d-flex justify-content-between justify-content-center">
-                        <a asp-controller="Doctor" asp-action="ViewDoctors" class="nav-link">Doctors</a>
-
-                    </li>
-                    @* } *@
-
-
-
-
                 </ul>
-
             </div>
         </div>
     </nav>
+
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-  @*   <footer class="border-top footer text-muted">
+    <footer>
         <div class="container">
-            &copy; 2024 - GoDoctor - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>GoDoctor</h3>
+                    <p>Find and book the best doctors near you.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Find a Doctor</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>1234 Medical Drive</p>
+                    <p>Healthville, HV 56789</p>
+                    <p>contact@godoctor.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 GoDoctor. All rights reserved.</p>
+            </div>
         </div>
-    </footer> *@
+    </footer>
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

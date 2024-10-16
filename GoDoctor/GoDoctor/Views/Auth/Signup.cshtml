@@ -1,65 +1,80 @@
 ﻿@model BusinessAccessLayer.DataViews.AuthView.SignupView
 @{
+    ViewData["Title"] = "Sign Up";
 }
-<div class="row justify-content-center mt-5">
-    <div class="col-md-8 col-lg-6">
-        <!-- Increased the column size for larger form -->
-        <div class="card shadow-lg">
-            <!-- Used shadow-lg for a larger shadow effect -->
-            <div class="card-header bg-primary text-white text-center">
-                <h3>Sign Up</h3>
-            </div>
-            <div class="card-body p-4">
-                <!-- Added padding for more space around form elements -->
-                <form asp-action="Signup" asp-controller="Auth" method="post">
 
-                    <div asp-validation-summary="All"></div>
-                    <div class="form-row">
-                        <div class="form-group ">
-                            <label asp-for="Email" class="font-weight-bold">Email</label>
-                            <input asp-for="Email" class="form-control" id="inputEmail4" placeholder="Enter your email">
+<div class="container">
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-8 col-lg-6">
+            <div class="card shadow-lg border-0 rounded-lg mt-5">
+                <div class="card-header bg-primary text-white text-center py-4">
+                    <h3 class="font-weight-light my-2">Create Account</h3>
+                </div>
+                <div class="card-body p-5">
+                    <form asp-action="Signup" asp-controller="Auth" method="post">
+                        <div asp-validation-summary="All" class="text-danger mb-4"></div>
+
+                        <div class="form-floating mb-3">
+                            <input asp-for="Email" class="form-control" id="inputEmail" placeholder="name@example.com" required>
+                            <label asp-for="Email">Email address</label>
                             <span asp-validation-for="Email" class="text-danger"></span>
                         </div>
-                       
-                    </div>
-                    <div class="form-group">
-                        <label asp-for="Firstname" class="font-weight-bold">First Name</label>
-                        <input asp-for="Firstname" class="form-control" id="inputFirstname" placeholder="Enter your first name">
-                        <span asp-validation-for="Firstname" class="text-danger"></span>
-                    </div>
-                    <div class="form-group">
-                        <label asp-for="Lastname" class="font-weight-bold">Last Name</label>
-                        <input asp-for="Lastname" class="form-control" id="inputLastname" placeholder="Enter your last name">
-                        <span asp-validation-for="Lastname" class="text-danger"></span>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group ">
-                            <label asp-for="City" class="font-weight-bold">City</label>
-                            <input asp-for="City" class="form-control" id="inputCity" placeholder="Enter your city">
+
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <div class="form-floating mb-3 mb-md-0">
+                                    <input asp-for="Firstname" class="form-control" id="inputFirstName" placeholder="Enter your first name" required>
+                                    <label asp-for="Firstname">First name</label>
+                                    <span asp-validation-for="Firstname" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input asp-for="Lastname" class="form-control" id="inputLastName" placeholder="Enter your last name" required>
+                                    <label asp-for="Lastname">Last name</label>
+                                    <span asp-validation-for="Lastname" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input asp-for="City" class="form-control" id="inputCity" placeholder="Enter your city" required>
+                            <label asp-for="City">City</label>
                             <span asp-validation-for="City" class="text-danger"></span>
                         </div>
-                        <div class="form-group ">
-                            <label asp-for="Password" class="font-weight-bold">Password</label>
-                            <input asp-for="Password" class="form-control" id="inputPassword4" placeholder="Enter your password">
-                            <span asp-validation-for="Password" class="text-danger"></span>
-                        </div>
-                        <div class="form-group ">
-                            <label asp-for="ConfirmPassword" class="font-weight-bold">Confirm Password</label>
-                            <input asp-for="ConfirmPassword" class="form-control" id="inputConfirmPassword" placeholder="Confirm your password">
-                            <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="gridCheck">
-                         
-                        </div>
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-block">Sign up</button> <!-- Added btn-block to make button span full width -->
-                </form>
 
-  
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <div class="form-floating mb-3 mb-md-0">
+                                    <input asp-for="Password" class="form-control" id="inputPassword" type="password" placeholder="Create a password" required>
+                                    <label asp-for="Password">Password</label>
+                                    <span asp-validation-for="Password" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating mb-3 mb-md-0">
+                                    <input asp-for="ConfirmPassword" class="form-control" id="inputConfirmPassword" type="password" placeholder="Confirm password" required>
+                                    <label asp-for="ConfirmPassword">Confirm Password</label>
+                                    <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
 
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" id="agreeTerms" required>
+                            <label class="form-check-label" for="agreeTerms">
+                                I agree to the terms and conditions
+                            </label>
+                        </div>
+
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary btn-lg">Create Account</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="card-footer text-center py-3">
+                    <div class="small"><a href="/Auth/Login">Have an account? Go to login</a></div>
+                </div>
             </div>
         </div>
     </div>
@@ -70,3 +85,35 @@
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
 }
+
+<style>
+    body {
+        background-color: #f8f9fa;
+    }
+
+    .card {
+        border: none;
+        transition: all 0.3s ease-in-out;
+    }
+
+      
+    .btn-primary {
+        background-color: #0056b3;
+        border-color: #0056b3;
+    }
+
+        .btn-primary:hover {
+            background-color: #003d82;
+            border-color: #003d82;
+        }
+
+    .form-floating > .form-control:focus ~ label,
+    .form-floating > .form-control:not(:placeholder-shown) ~ label {
+        color: #0056b3;
+    }
+
+    .form-control:focus {
+        border-color: #0056b3;
+        box-shadow: 0 0 0 0.2rem rgba(0, 86, 179, 0.25);
+    }
+</style>

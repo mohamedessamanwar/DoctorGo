@@ -14,3 +14,19 @@ C:\Users\AL-FAJR\Desktop\Go Doctor\GoDoctor\BusinessAccessLayer\obj\Debug\net8.0
 C:\Users\AL-FAJR\Desktop\Go Doctor\GoDoctor\BusinessAccessLayer\bin\Debug\net8.0\DataAccessLayer.dll
 C:\Users\AL-FAJR\Desktop\Go Doctor\GoDoctor\BusinessAccessLayer\bin\Debug\net8.0\DataAccessLayer.pdb
 C:\Users\AL-FAJR\Desktop\Go Doctor\GoDoctor\BusinessAccessLayer\obj\Debug\net8.0\Business.395A7FC9.Up2Date
+C:\Users\DELL\Source\Repos\DoctorGo\GoDoctor\BusinessAccessLayer\bin\Debug\net8.0\BusinessAccessLayer.deps.json
+C:\Users\DELL\Source\Repos\DoctorGo\GoDoctor\BusinessAccessLayer\bin\Debug\net8.0\BusinessAccessLayer.dll
+C:\Users\DELL\Source\Repos\DoctorGo\GoDoctor\BusinessAccessLayer\bin\Debug\net8.0\BusinessAccessLayer.pdb
+C:\Users\DELL\Source\Repos\DoctorGo\GoDoctor\BusinessAccessLayer\bin\Debug\net8.0\DataAccessLayer.dll
+C:\Users\DELL\Source\Repos\DoctorGo\GoDoctor\BusinessAccessLayer\bin\Debug\net8.0\DataAccessLayer.pdb
+C:\Users\DELL\Source\Repos\DoctorGo\GoDoctor\BusinessAccessLayer\obj\Debug\net8.0\BusinessAccessLayer.csproj.AssemblyReference.cache
+C:\Users\DELL\Source\Repos\DoctorGo\GoDoctor\BusinessAccessLayer\obj\Debug\net8.0\BusinessAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\Source\Repos\DoctorGo\GoDoctor\BusinessAccessLayer\obj\Debug\net8.0\BusinessAccessLayer.AssemblyInfoInputs.cache
+C:\Users\DELL\Source\Repos\DoctorGo\GoDoctor\BusinessAccessLayer\obj\Debug\net8.0\BusinessAccessLayer.AssemblyInfo.cs
+C:\Users\DELL\Source\Repos\DoctorGo\GoDoctor\BusinessAccessLayer\obj\Debug\net8.0\BusinessAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Source\Repos\DoctorGo\GoDoctor\BusinessAccessLayer\obj\Debug\net8.0\BusinessAccessLayer.sourcelink.json
+C:\Users\DELL\Source\Repos\DoctorGo\GoDoctor\BusinessAccessLayer\obj\Debug\net8.0\Business.395A7FC9.Up2Date
+C:\Users\DELL\Source\Repos\DoctorGo\GoDoctor\BusinessAccessLayer\obj\Debug\net8.0\BusinessAccessLayer.dll
+C:\Users\DELL\Source\Repos\DoctorGo\GoDoctor\BusinessAccessLayer\obj\Debug\net8.0\refint\BusinessAccessLayer.dll
+C:\Users\DELL\Source\Repos\DoctorGo\GoDoctor\BusinessAccessLayer\obj\Debug\net8.0\BusinessAccessLayer.pdb
+C:\Users\DELL\Source\Repos\DoctorGo\GoDoctor\BusinessAccessLayer\obj\Debug\net8.0\ref\BusinessAccessLayer.dll

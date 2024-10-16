@@ -126,10 +126,7 @@ html {
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
-    .card:hover {
-        transform: scale(1.03); /* Slight zoom on hover */
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Larger shadow on hover */
-    }
+ 
 
 .card-title {
     font-weight: bold;
