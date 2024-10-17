@@ -74,8 +74,13 @@ namespace BusinessAccessLayer.Sevices.AuthService
                 };
 
             }
+            if (account.Role == null)
+            {
+                await _signInManager.SignInAsync(user, false);
+
+            }
             // Create cookie and sign in user
-            await _signInManager.SignInAsync(user, false);
+          
             return new AuthResult()
             {
                 UserId = user.Id
@@ -197,7 +202,8 @@ namespace BusinessAccessLayer.Sevices.AuthService
 
             }
             // Create cookie and sign in user
-            await _signInManager.SignInAsync(user, false);
+            // await _signInManager.SignInAsync(user, false);
+            await mailingService.SendEmailAsync(user.Email, "NewAdmin", $"Your Email is{user.Email} and your password is Mo7amad_2001"); 
             return new AuthResult()
             {
                 UserId = user.Id
@@ -269,6 +275,31 @@ namespace BusinessAccessLayer.Sevices.AuthService
             }
             return "";
 
+        }
+
+
+        public async Task<string> ResetPassword(ResetPasswordView resetPasswordView, string userId)
+        {
+            // Find the user by their ID
+            var user = await _userManager.FindByIdAsync(userId);
+
+            if (user == null)
+            {
+                return "User not found";
+            }
+
+            // Attempt to change the password using the old and new password provided
+            var result = await _userManager.ChangePasswordAsync(user, resetPasswordView.OldPassword, resetPasswordView.NewPassword);
+
+            // Check if the operation succeeded
+            if (result.Succeeded)
+            {
+                return "";
+            }
+
+            // If it failed, return the error messages
+            var errors = string.Join(", ", result.Errors.Select(e => e.Description));
+            return $"Error changing password: {errors}";
         }
 
     }

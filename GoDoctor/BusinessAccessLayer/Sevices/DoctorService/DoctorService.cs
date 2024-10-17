@@ -1,5 +1,6 @@
 ﻿using BusinessAccessLayer.DataViews.AuthView;
 using BusinessAccessLayer.DataViews.DoctorView;
+using BusinessAccessLayer.Services.Email;
 using BusinessAccessLayer.Sevices.AuthService;
 using DataAccessLayer.Data.Models;
 using DataAccessLayer.Repositories.DoctorRepo;
@@ -18,12 +19,14 @@ namespace BusinessAccessLayer.Sevices.DoctorService
     {
         private readonly IUnitOfWork unitOfWork;
         private readonly IAuthService authService;
+        private readonly IMailingService mailingService;
 
-        public DoctorService(IUnitOfWork unitOfWork, IAuthService authService)
+        public DoctorService(IUnitOfWork unitOfWork, IAuthService authService, IMailingService mailingService)
         {
 
             this.unitOfWork = unitOfWork;
             this.authService = authService;
+            this.mailingService = mailingService;
         }
         #region Add Doc 
         public async Task<CreateResult> AddDoctor(AddDoctorView addDoctorView)
@@ -92,6 +95,7 @@ namespace BusinessAccessLayer.Sevices.DoctorService
 
                     // Commit transaction
                     await t.CommitAsync();
+                    await mailingService.SendEmailAsync(addDoctorView.Email, "NewDoctor", $"Your Email is{addDoctorView.Email} and your password is Mo7amad_2001");
                     return new CreateResult()
                     {
                         IsAdded = true

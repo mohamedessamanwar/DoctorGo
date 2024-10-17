@@ -15,7 +15,7 @@ namespace GoDoctor.Controllers
             this.bookingService = bookingService;
         }
         [HttpGet]
-        [Authorize]
+        [Authorize("Patient")]
         public async Task<IActionResult> Book(int TimeSlotId)
         {
             var UserId = User.Claims.FirstOrDefault(c => c.Type == "Id").Value;
@@ -39,10 +39,10 @@ namespace GoDoctor.Controllers
 
         }
         [HttpGet]
-        [Authorize]
+        [Authorize("Doctor")]
         public async Task<IActionResult> DoctorBooking()
         {
-            var UserId = User.Claims.FirstOrDefault(c => c.Type == "uid").Value;
+            var UserId = User.Claims.FirstOrDefault(c => c.Type == "Id").Value;
             if (UserId == null)
             {
                 RedirectToAction("Login", "Auth");

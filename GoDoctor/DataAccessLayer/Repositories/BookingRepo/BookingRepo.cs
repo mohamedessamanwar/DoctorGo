@@ -19,6 +19,7 @@ namespace DataAccessLayer.Repositories.BookingRepo
         {
             return await context.Bookings.AsNoTracking().Include(b => b.User).Include(b => b.TimeSlot).
                ThenInclude(t => t.Appointment).ThenInclude(a => a.Doctor).Where(b => b.TimeSlot.Appointment.Doctor.ApplicationUserId == userId).Where(b=>b.TimeSlot.Appointment.AppointmentDay==DateOnly.FromDateTime(DateTime.Now))
+               .Where(a=>a.PaymentStatus== "Complete")
                .ToListAsync();             
         }
     }

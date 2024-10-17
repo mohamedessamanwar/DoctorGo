@@ -1,0 +1,14 @@
+﻿@{
+    ViewBag.Title = "Password Reset Success";
+    Layout = "_AdminLayout";
+}
+
+<h2>Doctor added Successful</h2>
+
+<div class="alert alert-success">
+    Your password has been successfully changed.
+</div>
+
+<p>
+    You can now <a href="@Url.Action("Login", "Account")">log in</a> with your new password.
+</p>

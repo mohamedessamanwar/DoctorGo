@@ -16,7 +16,7 @@ namespace GoDoctor.Controllers
             this.appointmentService = appointmentService;
             this.toastNotification = toastNotification;
         }
-
+        [Authorize(Roles = "Doctor")]
         public IActionResult Create()
         {
             AddAppointment addAppointment = new AddAppointment();
@@ -47,7 +47,7 @@ namespace GoDoctor.Controllers
             return RedirectToAction("DoctorDashboard", "Doctor"); 
         }
         [HttpGet]
-       // [Authorize(Roles = "Doctor")]
+
         public async Task<IActionResult> ViewAllAppointmen(int doctorId)
         {
             var result = await appointmentService.GetAllAppointment(doctorId);

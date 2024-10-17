@@ -3,131 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7E98982E-56A7-4DAB-8295-5BF3C1727AF1}|BusinessAccessLayer\\BusinessAccessLayer.csproj|c:\\users\\al-fajr\\desktop\\new folder (3)\\doctorgo\\godoctor\\businessaccesslayer\\helperclasses\\helper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E98982E-56A7-4DAB-8295-5BF3C1727AF1}|BusinessAccessLayer\\BusinessAccessLayer.csproj|solutionrelative:businessaccesslayer\\helperclasses\\helper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{85C91D78-4979-49F7-90B0-291B5E85018E}|GoDoctor\\GoDoctor.csproj|c:\\users\\al-fajr\\desktop\\new folder (3)\\doctorgo\\godoctor\\godoctor\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85C91D78-4979-49F7-90B0-291B5E85018E}|GoDoctor\\GoDoctor.csproj|solutionrelative:godoctor\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7E98982E-56A7-4DAB-8295-5BF3C1727AF1}|BusinessAccessLayer\\BusinessAccessLayer.csproj|c:\\users\\al-fajr\\desktop\\new folder (3)\\doctorgo\\godoctor\\businessaccesslayer\\sevices\\authservice\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7E98982E-56A7-4DAB-8295-5BF3C1727AF1}|BusinessAccessLayer\\BusinessAccessLayer.csproj|solutionrelative:businessaccesslayer\\sevices\\authservice\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{85C91D78-4979-49F7-90B0-291B5E85018E}|GoDoctor\\GoDoctor.csproj|c:\\users\\al-fajr\\desktop\\new folder (3)\\doctorgo\\godoctor\\godoctor\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{85C91D78-4979-49F7-90B0-291B5E85018E}|GoDoctor\\GoDoctor.csproj|solutionrelative:godoctor\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{85C91D78-4979-49F7-90B0-291B5E85018E}|GoDoctor\\GoDoctor.csproj|c:\\users\\al-fajr\\desktop\\new folder (3)\\doctorgo\\godoctor\\godoctor\\views\\auth\\resetpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{85C91D78-4979-49F7-90B0-291B5E85018E}|GoDoctor\\GoDoctor.csproj|solutionrelative:godoctor\\views\\auth\\resetpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E98982E-56A7-4DAB-8295-5BF3C1727AF1}|BusinessAccessLayer\\BusinessAccessLayer.csproj|c:\\users\\al-fajr\\desktop\\new folder (3)\\doctorgo\\godoctor\\businessaccesslayer\\dataviews\\authview\\signupview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E98982E-56A7-4DAB-8295-5BF3C1727AF1}|BusinessAccessLayer\\BusinessAccessLayer.csproj|solutionrelative:businessaccesslayer\\dataviews\\authview\\signupview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E98982E-56A7-4DAB-8295-5BF3C1727AF1}|BusinessAccessLayer\\BusinessAccessLayer.csproj|c:\\users\\al-fajr\\desktop\\new folder (3)\\doctorgo\\godoctor\\businessaccesslayer\\sevices\\authservice\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E98982E-56A7-4DAB-8295-5BF3C1727AF1}|BusinessAccessLayer\\BusinessAccessLayer.csproj|solutionrelative:businessaccesslayer\\sevices\\authservice\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{85C91D78-4979-49F7-90B0-291B5E85018E}|GoDoctor\\GoDoctor.csproj|c:\\users\\al-fajr\\desktop\\new folder (3)\\doctorgo\\godoctor\\godoctor\\controllers\\doctorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{85C91D78-4979-49F7-90B0-291B5E85018E}|GoDoctor\\GoDoctor.csproj|solutionrelative:godoctor\\controllers\\doctorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{85C91D78-4979-49F7-90B0-291B5E85018E}|GoDoctor\\GoDoctor.csproj|c:\\users\\al-fajr\\desktop\\new folder (3)\\doctorgo\\godoctor\\godoctor\\views\\admin\\addnewadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{85C91D78-4979-49F7-90B0-291B5E85018E}|GoDoctor\\GoDoctor.csproj|solutionrelative:godoctor\\views\\admin\\addnewadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{85C91D78-4979-49F7-90B0-291B5E85018E}|GoDoctor\\GoDoctor.csproj|c:\\users\\al-fajr\\desktop\\new folder (3)\\doctorgo\\godoctor\\godoctor\\views\\admin\\adminlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{85C91D78-4979-49F7-90B0-291B5E85018E}|GoDoctor\\GoDoctor.csproj|solutionrelative:godoctor\\views\\admin\\adminlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{85C91D78-4979-49F7-90B0-291B5E85018E}|GoDoctor\\GoDoctor.csproj|c:\\users\\al-fajr\\desktop\\new folder (3)\\doctorgo\\godoctor\\godoctor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{85C91D78-4979-49F7-90B0-291B5E85018E}|GoDoctor\\GoDoctor.csproj|solutionrelative:godoctor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E98982E-56A7-4DAB-8295-5BF3C1727AF1}|BusinessAccessLayer\\BusinessAccessLayer.csproj|c:\\users\\al-fajr\\desktop\\new folder (3)\\doctorgo\\godoctor\\businessaccesslayer\\dataviews\\authview\\authresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E98982E-56A7-4DAB-8295-5BF3C1727AF1}|BusinessAccessLayer\\BusinessAccessLayer.csproj|solutionrelative:businessaccesslayer\\dataviews\\authview\\authresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E98982E-56A7-4DAB-8295-5BF3C1727AF1}|BusinessAccessLayer\\BusinessAccessLayer.csproj|c:\\users\\al-fajr\\desktop\\new folder (3)\\doctorgo\\godoctor\\businessaccesslayer\\dataviews\\doctorview\\specialtyviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E98982E-56A7-4DAB-8295-5BF3C1727AF1}|BusinessAccessLayer\\BusinessAccessLayer.csproj|solutionrelative:businessaccesslayer\\dataviews\\doctorview\\specialtyviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E98982E-56A7-4DAB-8295-5BF3C1727AF1}|BusinessAccessLayer\\BusinessAccessLayer.csproj|c:\\users\\al-fajr\\desktop\\new folder (3)\\doctorgo\\godoctor\\businessaccesslayer\\dataviews\\doctorview\\createresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E98982E-56A7-4DAB-8295-5BF3C1727AF1}|BusinessAccessLayer\\BusinessAccessLayer.csproj|solutionrelative:businessaccesslayer\\dataviews\\doctorview\\createresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E98982E-56A7-4DAB-8295-5BF3C1727AF1}|BusinessAccessLayer\\BusinessAccessLayer.csproj|c:\\users\\al-fajr\\desktop\\new folder (3)\\doctorgo\\godoctor\\businessaccesslayer\\dataviews\\doctorview\\doctordetailsview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E98982E-56A7-4DAB-8295-5BF3C1727AF1}|BusinessAccessLayer\\BusinessAccessLayer.csproj|solutionrelative:businessaccesslayer\\dataviews\\doctorview\\doctordetailsview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E98982E-56A7-4DAB-8295-5BF3C1727AF1}|BusinessAccessLayer\\BusinessAccessLayer.csproj|c:\\users\\al-fajr\\desktop\\new folder (3)\\doctorgo\\godoctor\\businessaccesslayer\\dataviews\\doctorview\\doctorsearchviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E98982E-56A7-4DAB-8295-5BF3C1727AF1}|BusinessAccessLayer\\BusinessAccessLayer.csproj|solutionrelative:businessaccesslayer\\dataviews\\doctorview\\doctorsearchviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E98982E-56A7-4DAB-8295-5BF3C1727AF1}|BusinessAccessLayer\\BusinessAccessLayer.csproj|c:\\users\\al-fajr\\desktop\\new folder (3)\\doctorgo\\godoctor\\businessaccesslayer\\dataviews\\doctorview\\doctorstatusviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E98982E-56A7-4DAB-8295-5BF3C1727AF1}|BusinessAccessLayer\\BusinessAccessLayer.csproj|solutionrelative:businessaccesslayer\\dataviews\\doctorview\\doctorstatusviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E98982E-56A7-4DAB-8295-5BF3C1727AF1}|BusinessAccessLayer\\BusinessAccessLayer.csproj|c:\\users\\al-fajr\\desktop\\new folder (3)\\doctorgo\\godoctor\\businessaccesslayer\\dataviews\\doctorview\\doctorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E98982E-56A7-4DAB-8295-5BF3C1727AF1}|BusinessAccessLayer\\BusinessAccessLayer.csproj|solutionrelative:businessaccesslayer\\dataviews\\doctorview\\doctorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E98982E-56A7-4DAB-8295-5BF3C1727AF1}|BusinessAccessLayer\\BusinessAccessLayer.csproj|c:\\users\\al-fajr\\desktop\\new folder (3)\\doctorgo\\godoctor\\businessaccesslayer\\sevices\\specialtyservice\\ispecialtyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E98982E-56A7-4DAB-8295-5BF3C1727AF1}|BusinessAccessLayer\\BusinessAccessLayer.csproj|solutionrelative:businessaccesslayer\\sevices\\specialtyservice\\ispecialtyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E98982E-56A7-4DAB-8295-5BF3C1727AF1}|BusinessAccessLayer\\BusinessAccessLayer.csproj|c:\\users\\al-fajr\\desktop\\new folder (3)\\doctorgo\\godoctor\\businessaccesslayer\\sevices\\doctorservice\\idoctorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E98982E-56A7-4DAB-8295-5BF3C1727AF1}|BusinessAccessLayer\\BusinessAccessLayer.csproj|solutionrelative:businessaccesslayer\\sevices\\doctorservice\\idoctorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9CC451E4-3241-41ED-AC38-D55777A9FFF7}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\al-fajr\\desktop\\new folder (3)\\doctorgo\\godoctor\\dataaccesslayer\\repositories\\specialtyrepo\\ispecialtyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9CC451E4-3241-41ED-AC38-D55777A9FFF7}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\repositories\\specialtyrepo\\ispecialtyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9CC451E4-3241-41ED-AC38-D55777A9FFF7}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\al-fajr\\desktop\\new folder (3)\\doctorgo\\godoctor\\dataaccesslayer\\repositories\\doctorrepo\\idoctorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9CC451E4-3241-41ED-AC38-D55777A9FFF7}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\repositories\\doctorrepo\\idoctorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E98982E-56A7-4DAB-8295-5BF3C1727AF1}|BusinessAccessLayer\\BusinessAccessLayer.csproj|c:\\users\\al-fajr\\desktop\\new folder (3)\\doctorgo\\godoctor\\businessaccesslayer\\sevices\\doctorservice\\doctorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E98982E-56A7-4DAB-8295-5BF3C1727AF1}|BusinessAccessLayer\\BusinessAccessLayer.csproj|solutionrelative:businessaccesslayer\\sevices\\doctorservice\\doctorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E98982E-56A7-4DAB-8295-5BF3C1727AF1}|BusinessAccessLayer\\BusinessAccessLayer.csproj|c:\\users\\al-fajr\\desktop\\new folder (3)\\doctorgo\\godoctor\\businessaccesslayer\\sevices\\specialtyservice\\specialtyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E98982E-56A7-4DAB-8295-5BF3C1727AF1}|BusinessAccessLayer\\BusinessAccessLayer.csproj|solutionrelative:businessaccesslayer\\sevices\\specialtyservice\\specialtyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9CC451E4-3241-41ED-AC38-D55777A9FFF7}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\al-fajr\\desktop\\new folder (3)\\doctorgo\\godoctor\\dataaccesslayer\\repositories\\specialtyrepo\\specialtyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9CC451E4-3241-41ED-AC38-D55777A9FFF7}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\repositories\\specialtyrepo\\specialtyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9CC451E4-3241-41ED-AC38-D55777A9FFF7}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\al-fajr\\desktop\\new folder (3)\\doctorgo\\godoctor\\dataaccesslayer\\repositories\\doctorrepo\\doctorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9CC451E4-3241-41ED-AC38-D55777A9FFF7}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\repositories\\doctorrepo\\doctorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AL-FAJR\\AppData\\Roaming\\Microsoft\\UserSecrets\\9cc70ced-df48-462c-a82d-3459a76e7ef5\\secrets.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{85C91D78-4979-49F7-90B0-291B5E85018E}|GoDoctor\\GoDoctor.csproj|c:\\users\\al-fajr\\desktop\\new folder (3)\\doctorgo\\godoctor\\godoctor\\views\\booking\\doctorbooking.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{85C91D78-4979-49F7-90B0-291B5E85018E}|GoDoctor\\GoDoctor.csproj|solutionrelative:godoctor\\views\\booking\\doctorbooking.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{85C91D78-4979-49F7-90B0-291B5E85018E}|GoDoctor\\GoDoctor.csproj|c:\\users\\al-fajr\\desktop\\new folder (3)\\doctorgo\\godoctor\\godoctor\\views\\appointment\\viewallappointmen.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{85C91D78-4979-49F7-90B0-291B5E85018E}|GoDoctor\\GoDoctor.csproj|solutionrelative:godoctor\\views\\appointment\\viewallappointmen.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{85C91D78-4979-49F7-90B0-291B5E85018E}|GoDoctor\\GoDoctor.csproj|c:\\users\\al-fajr\\desktop\\new folder (3)\\doctorgo\\godoctor\\godoctor\\views\\timeslot\\viewtimeslot.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{85C91D78-4979-49F7-90B0-291B5E85018E}|GoDoctor\\GoDoctor.csproj|solutionrelative:godoctor\\views\\timeslot\\viewtimeslot.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E98982E-56A7-4DAB-8295-5BF3C1727AF1}|BusinessAccessLayer\\BusinessAccessLayer.csproj|c:\\users\\al-fajr\\desktop\\new folder (3)\\doctorgo\\godoctor\\businessaccesslayer\\sevices\\bookingservice\\bookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E98982E-56A7-4DAB-8295-5BF3C1727AF1}|BusinessAccessLayer\\BusinessAccessLayer.csproj|solutionrelative:businessaccesslayer\\sevices\\bookingservice\\bookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{85C91D78-4979-49F7-90B0-291B5E85018E}|GoDoctor\\GoDoctor.csproj|c:\\users\\al-fajr\\desktop\\new folder (3)\\doctorgo\\godoctor\\godoctor\\controllers\\appointmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{85C91D78-4979-49F7-90B0-291B5E85018E}|GoDoctor\\GoDoctor.csproj|solutionrelative:godoctor\\controllers\\appointmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{85C91D78-4979-49F7-90B0-291B5E85018E}|GoDoctor\\GoDoctor.csproj|c:\\users\\al-fajr\\desktop\\new folder (3)\\doctorgo\\godoctor\\godoctor\\controllers\\commentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{85C91D78-4979-49F7-90B0-291B5E85018E}|GoDoctor\\GoDoctor.csproj|solutionrelative:godoctor\\controllers\\commentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{85C91D78-4979-49F7-90B0-291B5E85018E}|GoDoctor\\GoDoctor.csproj|c:\\users\\al-fajr\\desktop\\new folder (3)\\doctorgo\\godoctor\\godoctor\\wwwroot\\js\\doctorsearch.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{85C91D78-4979-49F7-90B0-291B5E85018E}|GoDoctor\\GoDoctor.csproj|solutionrelative:godoctor\\wwwroot\\js\\doctorsearch.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{85C91D78-4979-49F7-90B0-291B5E85018E}|GoDoctor\\GoDoctor.csproj|c:\\users\\al-fajr\\desktop\\new folder (3)\\doctorgo\\godoctor\\godoctor\\views\\doctor\\goasdoctor.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{85C91D78-4979-49F7-90B0-291B5E85018E}|GoDoctor\\GoDoctor.csproj|solutionrelative:godoctor\\views\\doctor\\goasdoctor.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -137,8 +26,47 @@
       "DocumentGroups": [
         {
           "DockedWidth": 387,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GoAsDoctor.cshtml",
+              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\GoDoctor\\Views\\Doctor\\GoAsDoctor.cshtml",
+              "RelativeDocumentMoniker": "GoDoctor\\Views\\Doctor\\GoAsDoctor.cshtml",
+              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\GoDoctor\\Views\\Doctor\\GoAsDoctor.cshtml",
+              "RelativeToolTip": "GoDoctor\\Views\\Doctor\\GoAsDoctor.cshtml",
+              "ViewState": "AQIAAI0AAAAAAAAAAAAAAKMAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-17T18:48:11.499Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\GoDoctor\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "GoDoctor\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\GoDoctor\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "GoDoctor\\Controllers\\AuthController.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAIwBIAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T18:39:59.975Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ResetPassword.cshtml",
+              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\GoDoctor\\Views\\Auth\\ResetPassword.cshtml",
+              "RelativeDocumentMoniker": "GoDoctor\\Views\\Auth\\ResetPassword.cshtml",
+              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\GoDoctor\\Views\\Auth\\ResetPassword.cshtml",
+              "RelativeToolTip": "GoDoctor\\Views\\Auth\\ResetPassword.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-17T18:38:03.498Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -147,385 +75,10 @@
               "RelativeDocumentMoniker": "BusinessAccessLayer\\Sevices\\AuthService\\AuthService.cs",
               "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\BusinessAccessLayer\\Sevices\\AuthService\\AuthService.cs",
               "RelativeToolTip": "BusinessAccessLayer\\Sevices\\AuthService\\AuthService.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAAANUAAAAAAAAA",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAIwB4AAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T11:30:04.577Z",
+              "WhenOpened": "2024-10-17T18:36:22.042Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AddNewAdmin.cshtml",
-              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\GoDoctor\\Views\\Admin\\AddNewAdmin.cshtml",
-              "RelativeDocumentMoniker": "GoDoctor\\Views\\Admin\\AddNewAdmin.cshtml",
-              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\GoDoctor\\Views\\Admin\\AddNewAdmin.cshtml",
-              "RelativeToolTip": "GoDoctor\\Views\\Admin\\AddNewAdmin.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAD0AAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-16T12:24:06.143Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AdminList.cshtml",
-              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\GoDoctor\\Views\\Admin\\AdminList.cshtml",
-              "RelativeDocumentMoniker": "GoDoctor\\Views\\Admin\\AdminList.cshtml",
-              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\GoDoctor\\Views\\Admin\\AdminList.cshtml",
-              "RelativeToolTip": "GoDoctor\\Views\\Admin\\AdminList.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-16T12:24:52.14Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IAuthService.cs",
-              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\BusinessAccessLayer\\Sevices\\AuthService\\IAuthService.cs",
-              "RelativeDocumentMoniker": "BusinessAccessLayer\\Sevices\\AuthService\\IAuthService.cs",
-              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\BusinessAccessLayer\\Sevices\\AuthService\\IAuthService.cs",
-              "RelativeToolTip": "BusinessAccessLayer\\Sevices\\AuthService\\IAuthService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAA7AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T11:33:17.028Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "SignupView.cs",
-              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\BusinessAccessLayer\\DataViews\\AuthView\\SignupView.cs",
-              "RelativeDocumentMoniker": "BusinessAccessLayer\\DataViews\\AuthView\\SignupView.cs",
-              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\BusinessAccessLayer\\DataViews\\AuthView\\SignupView.cs",
-              "RelativeToolTip": "BusinessAccessLayer\\DataViews\\AuthView\\SignupView.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAAAAkAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T11:47:46.441Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "DoctorController.cs",
-              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\GoDoctor\\Controllers\\DoctorController.cs",
-              "RelativeDocumentMoniker": "GoDoctor\\Controllers\\DoctorController.cs",
-              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\GoDoctor\\Controllers\\DoctorController.cs",
-              "RelativeToolTip": "GoDoctor\\Controllers\\DoctorController.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAkwBQAAAA1AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T06:29:19.225Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Helper.cs",
-              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\BusinessAccessLayer\\HelperClasses\\Helper.cs",
-              "RelativeDocumentMoniker": "BusinessAccessLayer\\HelperClasses\\Helper.cs",
-              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\BusinessAccessLayer\\HelperClasses\\Helper.cs",
-              "RelativeToolTip": "BusinessAccessLayer\\HelperClasses\\Helper.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T06:55:33.515Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AdminController.cs",
-              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\GoDoctor\\Controllers\\AdminController.cs",
-              "RelativeDocumentMoniker": "GoDoctor\\Controllers\\AdminController.cs",
-              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\GoDoctor\\Controllers\\AdminController.cs",
-              "RelativeToolTip": "GoDoctor\\Controllers\\AdminController.cs",
-              "ViewState": "AQIAAFUAAAAAAAAAAAAAAFsAAAA/AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T14:32:41.788Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\GoDoctor\\Program.cs",
-              "RelativeDocumentMoniker": "GoDoctor\\Program.cs",
-              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\GoDoctor\\Program.cs",
-              "RelativeToolTip": "GoDoctor\\Program.cs",
-              "ViewState": "AQIAADgAAAAAAAAAAAAgwEYAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T12:20:30.462Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AuthResult.cs",
-              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\BusinessAccessLayer\\DataViews\\AuthView\\AuthResult.cs",
-              "RelativeDocumentMoniker": "BusinessAccessLayer\\DataViews\\AuthView\\AuthResult.cs",
-              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\BusinessAccessLayer\\DataViews\\AuthView\\AuthResult.cs",
-              "RelativeToolTip": "BusinessAccessLayer\\DataViews\\AuthView\\AuthResult.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T12:16:39.301Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "SpecialtyViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\BusinessAccessLayer\\DataViews\\DoctorView\\SpecialtyViewModel.cs",
-              "RelativeDocumentMoniker": "BusinessAccessLayer\\DataViews\\DoctorView\\SpecialtyViewModel.cs",
-              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\BusinessAccessLayer\\DataViews\\DoctorView\\SpecialtyViewModel.cs",
-              "RelativeToolTip": "BusinessAccessLayer\\DataViews\\DoctorView\\SpecialtyViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T12:15:09.428Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "CreateResult.cs",
-              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\BusinessAccessLayer\\DataViews\\DoctorView\\CreateResult.cs",
-              "RelativeDocumentMoniker": "BusinessAccessLayer\\DataViews\\DoctorView\\CreateResult.cs",
-              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\BusinessAccessLayer\\DataViews\\DoctorView\\CreateResult.cs",
-              "RelativeToolTip": "BusinessAccessLayer\\DataViews\\DoctorView\\CreateResult.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T12:15:06.526Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "DoctorDetailsView.cs",
-              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\BusinessAccessLayer\\DataViews\\DoctorView\\DoctorDetailsView.cs",
-              "RelativeDocumentMoniker": "BusinessAccessLayer\\DataViews\\DoctorView\\DoctorDetailsView.cs",
-              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\BusinessAccessLayer\\DataViews\\DoctorView\\DoctorDetailsView.cs",
-              "RelativeToolTip": "BusinessAccessLayer\\DataViews\\DoctorView\\DoctorDetailsView.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T12:15:00.874Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "DoctorSearchViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\BusinessAccessLayer\\DataViews\\DoctorView\\DoctorSearchViewModel.cs",
-              "RelativeDocumentMoniker": "BusinessAccessLayer\\DataViews\\DoctorView\\DoctorSearchViewModel.cs",
-              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\BusinessAccessLayer\\DataViews\\DoctorView\\DoctorSearchViewModel.cs",
-              "RelativeToolTip": "BusinessAccessLayer\\DataViews\\DoctorView\\DoctorSearchViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T12:14:57.395Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "DoctorStatusViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\BusinessAccessLayer\\DataViews\\DoctorView\\DoctorStatusViewModel.cs",
-              "RelativeDocumentMoniker": "BusinessAccessLayer\\DataViews\\DoctorView\\DoctorStatusViewModel.cs",
-              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\BusinessAccessLayer\\DataViews\\DoctorView\\DoctorStatusViewModel.cs",
-              "RelativeToolTip": "BusinessAccessLayer\\DataViews\\DoctorView\\DoctorStatusViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T12:14:54.743Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "DoctorViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\BusinessAccessLayer\\DataViews\\DoctorView\\DoctorViewModel.cs",
-              "RelativeDocumentMoniker": "BusinessAccessLayer\\DataViews\\DoctorView\\DoctorViewModel.cs",
-              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\BusinessAccessLayer\\DataViews\\DoctorView\\DoctorViewModel.cs",
-              "RelativeToolTip": "BusinessAccessLayer\\DataViews\\DoctorView\\DoctorViewModel.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAsAAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T12:14:49.252Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "IDoctorService.cs",
-              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\BusinessAccessLayer\\Sevices\\DoctorService\\IDoctorService.cs",
-              "RelativeDocumentMoniker": "BusinessAccessLayer\\Sevices\\DoctorService\\IDoctorService.cs",
-              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\BusinessAccessLayer\\Sevices\\DoctorService\\IDoctorService.cs",
-              "RelativeToolTip": "BusinessAccessLayer\\Sevices\\DoctorService\\IDoctorService.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T11:52:34.763Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "ISpecialtyService.cs",
-              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\BusinessAccessLayer\\Sevices\\SpecialtyService\\ISpecialtyService.cs",
-              "RelativeDocumentMoniker": "BusinessAccessLayer\\Sevices\\SpecialtyService\\ISpecialtyService.cs",
-              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\BusinessAccessLayer\\Sevices\\SpecialtyService\\ISpecialtyService.cs",
-              "RelativeToolTip": "BusinessAccessLayer\\Sevices\\SpecialtyService\\ISpecialtyService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T12:02:12.128Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "ISpecialtyRepository.cs",
-              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\DataAccessLayer\\Repositories\\SpecialtyRepo\\ISpecialtyRepository.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\Repositories\\SpecialtyRepo\\ISpecialtyRepository.cs",
-              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\DataAccessLayer\\Repositories\\SpecialtyRepo\\ISpecialtyRepository.cs",
-              "RelativeToolTip": "DataAccessLayer\\Repositories\\SpecialtyRepo\\ISpecialtyRepository.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAQwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T12:05:03.613Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "IDoctorRepository.cs",
-              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\DataAccessLayer\\Repositories\\DoctorRepo\\IDoctorRepository.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\Repositories\\DoctorRepo\\IDoctorRepository.cs",
-              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\DataAccessLayer\\Repositories\\DoctorRepo\\IDoctorRepository.cs",
-              "RelativeToolTip": "DataAccessLayer\\Repositories\\DoctorRepo\\IDoctorRepository.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T11:58:24.297Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "DoctorService.cs",
-              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\BusinessAccessLayer\\Sevices\\DoctorService\\DoctorService.cs",
-              "RelativeDocumentMoniker": "BusinessAccessLayer\\Sevices\\DoctorService\\DoctorService.cs",
-              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\BusinessAccessLayer\\Sevices\\DoctorService\\DoctorService.cs",
-              "RelativeToolTip": "BusinessAccessLayer\\Sevices\\DoctorService\\DoctorService.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAmwJcAAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T11:56:06.696Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "SpecialtyService.cs",
-              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\BusinessAccessLayer\\Sevices\\SpecialtyService\\SpecialtyService.cs",
-              "RelativeDocumentMoniker": "BusinessAccessLayer\\Sevices\\SpecialtyService\\SpecialtyService.cs",
-              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\BusinessAccessLayer\\Sevices\\SpecialtyService\\SpecialtyService.cs",
-              "RelativeToolTip": "BusinessAccessLayer\\Sevices\\SpecialtyService\\SpecialtyService.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAAwCkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T12:03:20.793Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "SpecialtyRepository.cs",
-              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\DataAccessLayer\\Repositories\\SpecialtyRepo\\SpecialtyRepository.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\Repositories\\SpecialtyRepo\\SpecialtyRepository.cs",
-              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\DataAccessLayer\\Repositories\\SpecialtyRepo\\SpecialtyRepository.cs",
-              "RelativeToolTip": "DataAccessLayer\\Repositories\\SpecialtyRepo\\SpecialtyRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T12:05:43.835Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "DoctorRepository.cs",
-              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\DataAccessLayer\\Repositories\\DoctorRepo\\DoctorRepository.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\Repositories\\DoctorRepo\\DoctorRepository.cs",
-              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\DataAccessLayer\\Repositories\\DoctorRepo\\DoctorRepository.cs",
-              "RelativeToolTip": "DataAccessLayer\\Repositories\\DoctorRepo\\DoctorRepository.cs",
-              "ViewState": "AQIAADcAAAAAAAAAAAA3wEMAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T11:59:43.948Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "secrets.json",
-              "DocumentMoniker": "C:\\Users\\AL-FAJR\\AppData\\Roaming\\Microsoft\\UserSecrets\\9cc70ced-df48-462c-a82d-3459a76e7ef5\\secrets.json",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Roaming\\Microsoft\\UserSecrets\\9cc70ced-df48-462c-a82d-3459a76e7ef5\\secrets.json",
-              "ToolTip": "C:\\Users\\AL-FAJR\\AppData\\Roaming\\Microsoft\\UserSecrets\\9cc70ced-df48-462c-a82d-3459a76e7ef5\\secrets.json",
-              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Roaming\\Microsoft\\UserSecrets\\9cc70ced-df48-462c-a82d-3459a76e7ef5\\secrets.json",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-16T07:26:35.671Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "DoctorBooking.cshtml",
-              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\GoDoctor\\Views\\Booking\\DoctorBooking.cshtml",
-              "RelativeDocumentMoniker": "GoDoctor\\Views\\Booking\\DoctorBooking.cshtml",
-              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\GoDoctor\\Views\\Booking\\DoctorBooking.cshtml",
-              "RelativeToolTip": "GoDoctor\\Views\\Booking\\DoctorBooking.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-16T07:17:31.635Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "ViewAllAppointmen.cshtml",
-              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\GoDoctor\\Views\\Appointment\\ViewAllAppointmen.cshtml",
-              "RelativeDocumentMoniker": "GoDoctor\\Views\\Appointment\\ViewAllAppointmen.cshtml",
-              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\GoDoctor\\Views\\Appointment\\ViewAllAppointmen.cshtml",
-              "RelativeToolTip": "GoDoctor\\Views\\Appointment\\ViewAllAppointmen.cshtml",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAAAAMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-16T07:16:27.305Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "ViewTimeSlot.cshtml",
-              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\GoDoctor\\Views\\TimeSlot\\ViewTimeSlot.cshtml",
-              "RelativeDocumentMoniker": "GoDoctor\\Views\\TimeSlot\\ViewTimeSlot.cshtml",
-              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\GoDoctor\\Views\\TimeSlot\\ViewTimeSlot.cshtml",
-              "RelativeToolTip": "GoDoctor\\Views\\TimeSlot\\ViewTimeSlot.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-16T07:16:08.027Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "BookingService.cs",
-              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\BusinessAccessLayer\\Sevices\\BookingService\\BookingService.cs",
-              "RelativeDocumentMoniker": "BusinessAccessLayer\\Sevices\\BookingService\\BookingService.cs",
-              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\BusinessAccessLayer\\Sevices\\BookingService\\BookingService.cs",
-              "RelativeToolTip": "BusinessAccessLayer\\Sevices\\BookingService\\BookingService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAJAAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T07:08:40.964Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "CommentController.cs",
-              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\GoDoctor\\Controllers\\CommentController.cs",
-              "RelativeDocumentMoniker": "GoDoctor\\Controllers\\CommentController.cs",
-              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\GoDoctor\\Controllers\\CommentController.cs",
-              "RelativeToolTip": "GoDoctor\\Controllers\\CommentController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAABGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T07:01:16.857Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "AppointmentController.cs",
-              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\GoDoctor\\Controllers\\AppointmentController.cs",
-              "RelativeDocumentMoniker": "GoDoctor\\Controllers\\AppointmentController.cs",
-              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\GoDoctor\\Controllers\\AppointmentController.cs",
-              "RelativeToolTip": "GoDoctor\\Controllers\\AppointmentController.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAAADEAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T06:59:49.469Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "DoctorSearch.Js",
-              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\GoDoctor\\wwwroot\\js\\DoctorSearch.Js",
-              "RelativeDocumentMoniker": "GoDoctor\\wwwroot\\js\\DoctorSearch.Js",
-              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\GoDoctor\\wwwroot\\js\\DoctorSearch.Js",
-              "RelativeToolTip": "GoDoctor\\wwwroot\\js\\DoctorSearch.Js",
-              "ViewState": "AQIAABwAAAAAAAAAAAAAAC8AAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-10-16T06:43:26.263Z"
             }
           ]
         },

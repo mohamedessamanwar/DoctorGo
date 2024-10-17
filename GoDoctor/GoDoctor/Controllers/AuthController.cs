@@ -4,6 +4,7 @@ using BusinessAccessLayer.Sevices.AuthService;
 using Microsoft.AspNetCore.Identity;
 using Stripe;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.AspNetCore.Authorization;
 namespace GoDoctor.Controllers
 {
     public class AuthController : Controller
@@ -78,8 +79,8 @@ namespace GoDoctor.Controllers
 
         }
 
-       // [HttpPost]
-      //  [ValidateAntiForgeryToken] // Protects against CSRF attacks
+        // [HttpPost]
+        //  [ValidateAntiForgeryToken] // Protects against CSRF attacks
         public async Task<IActionResult> Logout()
         {
             // Sign the user out
@@ -97,9 +98,10 @@ namespace GoDoctor.Controllers
         [HttpPost]
         public async Task<IActionResult> ForgetPassword(ForgetPasswordView forgetPasswordView)
         {
-            if (!ModelState.IsValid) {
+            if (!ModelState.IsValid)
+            {
                 return View(forgetPasswordView);
-            
+
             }
             bool Result = await _authService.ForgetPassword(forgetPasswordView);
             if (!Result)
@@ -113,7 +115,7 @@ namespace GoDoctor.Controllers
         [HttpGet]
         public IActionResult ResetPassword(string token)
         {
-            var LoginView = new ResetPasswordViewModel() { Token=token};
+            var LoginView = new ResetPasswordViewModel() { Token = token };
             return View(LoginView);
         }
 
@@ -131,8 +133,44 @@ namespace GoDoctor.Controllers
                 return View(resetPasswordViewModel);
 
             }
-            return RedirectToAction("Login" ,"Auth");
+            return RedirectToAction("Login", "Auth");
 
         }
+
+        [HttpGet]
+        [Authorize]
+        public IActionResult ResetPasswordView()
+        {
+            var view = new ResetPasswordView();
+            return View(view);
+        }
+        [HttpPost]
+        [Authorize]
+
+        public async Task<IActionResult> ResetPasswordView(ResetPasswordView resetPasswordView)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(resetPasswordView);
+            }
+
+            // Get the user ID from claims
+            var UserId = User.Claims.FirstOrDefault(c => c.Type == "Id")?.Value;
+            if (UserId == null)
+            {
+                return RedirectToAction("Login", "Auth");  // Added 'return' to stop execution if user is not logged in
+            }
+
+            // Call the reset password service
+            var result = await _authService.ResetPassword(resetPasswordView, UserId);
+
+            if (!string.IsNullOrEmpty(result))
+            {
+                ModelState.AddModelError("", result);  // Add a generic error to ModelState
+                return View(resetPasswordView);  // Re-render view with the error
+            }
+            return RedirectToAction("Login", "Auth");
+        }
+
     }
 }

@@ -18,6 +18,7 @@ namespace GoDoctor.Controllers
             this.doctorService = doctorService;
         }
         [Authorize(Roles = "Admin")]
+        [HttpGet]
         public async Task<IActionResult> GoAsDoctor()
         {
             AddDoctorView addDoctorView = new AddDoctorView()
@@ -27,7 +28,6 @@ namespace GoDoctor.Controllers
             return View(addDoctorView);
         }
         [HttpPost]
-        [ValidateAntiForgeryToken]
         public async Task<IActionResult> GoAsDoctor(AddDoctorView addDoctorView)
         {
             // Ensure the model is valid (check data annotations, etc.)
@@ -46,7 +46,7 @@ namespace GoDoctor.Controllers
                 if (result.IsAdded)
                 {
                     // Success: Redirect to a success page or show success message
-                    return RedirectToAction("DoctorSuccess"); // Create a success action or page
+                    return View("DoctorSuccess"); // Create a success action or page
                 }
                 else
                 {

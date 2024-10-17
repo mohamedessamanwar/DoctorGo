@@ -14,6 +14,7 @@ namespace BusinessAccessLayer.Sevices.AuthService
         Task<AuthResult> AddNewAdmin(SignupView signupVie);
         Task<bool> ForgetPassword(ForgetPasswordView forgetPasswordView); 
         Task LogOut();
+        Task<string> ResetPassword(ResetPasswordView resetPasswordView, string userId); 
         Task<string> ResetPassword(ResetPasswordViewModel model);
     }
 }

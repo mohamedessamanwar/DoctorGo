@@ -70,6 +70,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxSZXNldFBhc3N3b3JkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/AL-FAJR/Desktop/New folder (3)/DoctorGo/GoDoctor/GoDoctor/Views/Auth/ResetPasswordView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxSZXNldFBhc3N3b3JkVmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/AL-FAJR/Desktop/New folder (3)/DoctorGo/GoDoctor/GoDoctor/Views/Auth/ResetSucsess.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxSZXNldFN1Y3Nlc3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/AL-FAJR/Desktop/New folder (3)/DoctorGo/GoDoctor/GoDoctor/Views/Auth/Signup.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxTaWdudXAuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -88,6 +96,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/AL-FAJR/Desktop/New folder (3)/DoctorGo/GoDoctor/GoDoctor/Views/Doctor/DoctorDashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yXERvY3RvckRhc2hib2FyZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/AL-FAJR/Desktop/New folder (3)/DoctorGo/GoDoctor/GoDoctor/Views/Doctor/DoctorSuccess.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yXERvY3RvclN1Y2Nlc3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/AL-FAJR/Desktop/New folder (3)/DoctorGo/GoDoctor/GoDoctor/Views/Doctor/GoAsDoctor.cshtml]
