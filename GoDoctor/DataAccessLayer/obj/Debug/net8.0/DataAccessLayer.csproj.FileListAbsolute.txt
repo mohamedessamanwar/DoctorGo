@@ -72,3 +72,18 @@ C:\Users\AL-FAJR\Desktop\New folder (3)\DoctorGo\GoDoctor\DataAccessLayer\obj\De
 C:\Users\AL-FAJR\Desktop\New folder (3)\DoctorGo\GoDoctor\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.pdb
 C:\Users\AL-FAJR\Desktop\New folder (3)\DoctorGo\GoDoctor\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.genruntimeconfig.cache
 C:\Users\AL-FAJR\Desktop\New folder (3)\DoctorGo\GoDoctor\DataAccessLayer\obj\Debug\net8.0\ref\DataAccessLayer.dll
+C:\Users\DELL\OneDrive\Desktop\doctorGO\GoDoctor\DataAccessLayer\bin\Debug\net8.0\DataAccessLayer.deps.json
+C:\Users\DELL\OneDrive\Desktop\doctorGO\GoDoctor\DataAccessLayer\bin\Debug\net8.0\DataAccessLayer.runtimeconfig.json
+C:\Users\DELL\OneDrive\Desktop\doctorGO\GoDoctor\DataAccessLayer\bin\Debug\net8.0\DataAccessLayer.dll
+C:\Users\DELL\OneDrive\Desktop\doctorGO\GoDoctor\DataAccessLayer\bin\Debug\net8.0\DataAccessLayer.pdb
+C:\Users\DELL\OneDrive\Desktop\doctorGO\GoDoctor\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\DELL\OneDrive\Desktop\doctorGO\GoDoctor\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\OneDrive\Desktop\doctorGO\GoDoctor\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.AssemblyInfoInputs.cache
+C:\Users\DELL\OneDrive\Desktop\doctorGO\GoDoctor\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.AssemblyInfo.cs
+C:\Users\DELL\OneDrive\Desktop\doctorGO\GoDoctor\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\DELL\OneDrive\Desktop\doctorGO\GoDoctor\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.sourcelink.json
+C:\Users\DELL\OneDrive\Desktop\doctorGO\GoDoctor\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.dll
+C:\Users\DELL\OneDrive\Desktop\doctorGO\GoDoctor\DataAccessLayer\obj\Debug\net8.0\refint\DataAccessLayer.dll
+C:\Users\DELL\OneDrive\Desktop\doctorGO\GoDoctor\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.pdb
+C:\Users\DELL\OneDrive\Desktop\doctorGO\GoDoctor\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.genruntimeconfig.cache
+C:\Users\DELL\OneDrive\Desktop\doctorGO\GoDoctor\DataAccessLayer\obj\Debug\net8.0\ref\DataAccessLayer.dll

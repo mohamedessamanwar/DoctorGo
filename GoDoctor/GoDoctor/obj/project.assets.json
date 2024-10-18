@@ -14085,19 +14085,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\AL-FAJR\\.nuget\\packages\\": {}
+    "C:\\Users\\DELL\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\GoDoctor\\GoDoctor.csproj",
+      "projectUniqueName": "C:\\Users\\DELL\\OneDrive\\Desktop\\doctorGO\\GoDoctor\\GoDoctor\\GoDoctor.csproj",
       "projectName": "GoDoctor",
-      "projectPath": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\GoDoctor\\GoDoctor.csproj",
-      "packagesPath": "C:\\Users\\AL-FAJR\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\GoDoctor\\obj\\",
+      "projectPath": "C:\\Users\\DELL\\OneDrive\\Desktop\\doctorGO\\GoDoctor\\GoDoctor\\GoDoctor.csproj",
+      "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\DELL\\OneDrive\\Desktop\\doctorGO\\GoDoctor\\GoDoctor\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\AL-FAJR\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -14112,11 +14112,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\BusinessAccessLayer\\BusinessAccessLayer.csproj": {
-              "projectPath": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\BusinessAccessLayer\\BusinessAccessLayer.csproj"
+            "C:\\Users\\DELL\\OneDrive\\Desktop\\doctorGO\\GoDoctor\\BusinessAccessLayer\\BusinessAccessLayer.csproj": {
+              "projectPath": "C:\\Users\\DELL\\OneDrive\\Desktop\\doctorGO\\GoDoctor\\BusinessAccessLayer\\BusinessAccessLayer.csproj"
             },
-            "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\DataAccessLayer\\DataAccessLayer.csproj": {
-              "projectPath": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\DataAccessLayer\\DataAccessLayer.csproj"
+            "C:\\Users\\DELL\\OneDrive\\Desktop\\doctorGO\\GoDoctor\\DataAccessLayer\\DataAccessLayer.csproj": {
+              "projectPath": "C:\\Users\\DELL\\OneDrive\\Desktop\\doctorGO\\GoDoctor\\DataAccessLayer\\DataAccessLayer.csproj"
             }
           }
         }
@@ -14168,7 +14168,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

@@ -9,7 +9,7 @@ namespace BusinessAccessLayer.HelperClasses
 {
     public static class Helper
     {
-        public const string ImagesDoctorPath = "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\GoDoctor\\wwwroot\\Img\\Doctors";
+        public const string ImagesDoctorPath = "C:\\Users\\DELL\\OneDrive\\Desktop\\doctorGO\\GoDoctor\\GoDoctor\\wwwroot\\Img\\Doctors";
         public static string AllowedExtensions = ".jpg,.png";
         public const int MaxFileSizeInMB = 1;
         public const int MaxFileSizeInBytes = MaxFileSizeInMB * 1024 * 1024;

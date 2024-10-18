@@ -1,78 +1,131 @@
 ﻿@using BusinessAccessLayer.DataViews.DoctorView
 @model DoctorDetailsView
 
-<div class="container mt-5">
-    <!-- Doctor Information Section -->
-    <div class="card mb-4 shadow-sm">
-        <div class="card-header bg-primary text-white">
-            <h1>Dr  @Model.Name</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. @Model.Name - Doctor Details</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .card {
+            border: none;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        }
+
+        .card-header {
+            background-color: #007bff;
+            color: white;
+            border-bottom: none;
+        }
+
+        .doctor-image {
+            max-width: 200px;
+            height: auto;
+            border: 5px solid #007bff;
+        }
+
+        .comment-avatar {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+
+            .btn-primary:hover {
+                background-color: #0056b3;
+                border-color: #0056b3;
+            }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <!-- Doctor Information Section -->
+        <div class="card mb-4">
+            <div class="card-header">
+                <h1 class="mb-0">Dr. @Model.Name</h1>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <!-- Doctor Image -->
+                    <div class="col-md-4 text-center">
+                        <img src="@Model.image" alt="@Model.Name" class="img-fluid rounded-circle doctor-image mb-3" />
+                    </div>
+                    <!-- Doctor Details -->
+                    <div class="col-md-8">
+                        <h4 class="text-primary">Specialization</h4>
+                        <p class="fw-bold">@Model.specialtyName</p>
+                        <h4 class="text-primary">Specialization Description</h4>
+                        <p>@Model.specialtyDescription</p>
+                        <h4 class="text-primary">Clinic Information</h4>
+                        <p>
+                            <i class="fas fa-map-marker-alt me-2"></i> @Model.ClinicAddress, @Model.ClinicCity
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="card-body">
-            <div class="row">
-                <!-- Doctor Image -->
-                <div class="col-md-4 text-center">
-                    <img src="@Model.image" alt="@Model.Name" class="img-fluid rounded-circle mb-3" style="max-width: 200px; height: auto;" />
+
+        <!-- Comments Section -->
+        <div class="card mb-4">
+            <div class="card-header">
+                <h3 class="mb-0">Comments</h3>
+            </div>
+            <div class="card-body">
+                @if (Model.commentViews != null && Model.commentViews.Any())
+                {
+                    <ul id="ul" class="list-unstyled">
+                        @foreach (var comment in Model.commentViews)
+                        {
+                            <li class="mb-4">
+                                <div class="d-flex">
+                                    <img src="https://via.placeholder.com/50" alt="User Avatar" class="rounded-circle comment-avatar me-3" />
+                                    <div>
+                                        <h5 class="mb-1">@comment.UserName</h5>
+                                        <small class="text-muted">@comment.CommentAt.ToString("MMMM dd, yyyy 'at' hh:mm tt")</small>
+                                        <p class="mt-2">@comment.Comment</p>
+                                    </div>
+                                </div>
+                            </li>
+                        }
+                    </ul>
+                }
+                else
+                {
+                    <p class="text-muted">No comments available.</p>
+                }
+            </div>
+        </div>
+
+        <!-- Add a Comment Form -->
+        <div class="card">
+            <div class="card-header">
+                <h3 class="mb-0">Add a Comment</h3>
+            </div>
+            <div class="card-body">
+                <div class="mb-3">
+                    <label for="commentText" class="form-label">Your Comment</label>
+                    <textarea class="form-control" id="commentText" rows="3" placeholder="Write your comment here..."></textarea>
+                    <span id="span" class="text-danger"></span>
                 </div>
-                <!-- Doctor Details -->
-                <div class="col-md-8">
-                    <h4 class="text-primary">Specialization</h4>
-                    <p class="font-weight-bold">@Model.specialtyName</p>
-                    <h4 class="text-primary">Specialization Description</h4>
-                    <p>@Model.specialtyDescription</p>
-                    <h4 class="text-primary">Clinic Information</h4>
-                    <p>
-                        <i class="fas fa-map-marker-alt"></i> @Model.ClinicAddress, @Model.ClinicCity
-                    </p>
-                </div>
+                <input id="id" type="hidden" value="@Model.Id" />
+                <button type="submit" id="submit" class="btn btn-primary">Submit Comment</button>
             </div>
         </div>
     </div>
 
-    <!-- Comments Section -->
-    <div class="card shadow-sm">
-        <div class ="text-primary">
-            <h3>Comments</h3>
-        </div>
-        <div class="card-body">
-            @if (Model.commentViews != null && Model.commentViews.Any())
-            {
-                <ul id="ul" class="list-unstyled">
-                    @foreach (var comment in Model.commentViews)
-                    {
-                        <li class="media mb-3">
-                           @*  <img src="/path/to/user-avatar.png" alt="User Avatar" class="mr-3 rounded-circle" style="width: 50px; height: 50px;" /> *@
-                            <div class="media-body">
-                                <h5 class="mt-0 mb-1">@comment.UserName</h5>
-                                <small class="text-muted">@comment.CommentAt.ToString("MMMM dd, yyyy 'at' hh:mm tt")</small>
-                                <p class="mt-2">@comment.Comment</p>
-                            </div>
-                        </li>
-                    }
-                </ul>
-            }
-            else
-            {
-                <p>No comments available.</p>
-            }
-        </div>
-    </div>
-
-    <!-- Add a Comment Form -->
-    <div class="card mt-4 shadow-sm">
-        <div class="card-header bg-info text-white">
-            <h3>Add a Comment</h3>
-        </div>
-        <div class="card-body">
-                <div class="form-group">
-                    <label for="commentText">Your Comment</label>
-                    <textarea  class="form-control" id="commentText" rows="3" placeholder="Write your comment here..."></textarea>
-                    <span id="span" class="text-danger"></span>
-                </div>
-                <input id="id" type="hidden"value="@Model.Id" />
-                <button type="submit" id="submit" class="btn btn-primary">Submit Comment</button>
-        </div>
-    </div>
-</div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/7.0.0/signalr.min.js"></script>
-<script src="~/js/comment.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/7.0.0/signalr.min.js"></script>
+    <script src="~/js/comment.js"></script>
+</body>
+</html>

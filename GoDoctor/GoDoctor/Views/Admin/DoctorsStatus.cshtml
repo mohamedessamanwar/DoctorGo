@@ -3,58 +3,127 @@
     Layout = "_AdminLayout";
 }
 
-<h2>Doctor Status List</h2>
-
-<table class="table">
-    <thead>
-        <tr>
-            <th>Doctor ID</th>
-            <th>Name</th>
-            <th>Status</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var doctor in Model)
-        {
-            <tr>
-                <td>@doctor.DoctorId</td>
-                <td>@doctor.Name</td>
-                <td>
-                    <input type="checkbox"
-                           class="status-checkbox"
-                           data-doctor-id="@doctor.DoctorId"
-                    @(doctor.IsValid ? "checked" : "") />
-                </td>
-            </tr>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Status List</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        html {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
         }
-    </tbody>
-</table>
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script>
-    $(document).ready(function () {
-        $('.status-checkbox').change(function () {
-            var doctorId = $(this).data('doctor-id');
-            var isValid = $(this).is(':checked');
+        #container {
+            max-width: 1000px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
 
-            $.ajax({
-                url: '@Url.Action("UpdateDoctorStatus", "Admin")',
-                type: 'POST',
-                data: {
-                    doctorId: doctorId,
-                    isValid: isValid
-                },
-                success: function (response) {
-                    if (response.success) {
-                        alert("Status updated successfully.");
-                    } else {
-                        alert("Failed to update status.");
-                    }
-                },
-                error: function (xhr, status, error) {
-                    alert("An error occurred: " + error);
+        #pageTitle {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        #doctorTable {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+            #doctorTable th, #doctorTable td {
+                padding: 12px;
+                text-align: left;
+                border-bottom: 1px solid #e0e0e0;
+            }
+
+            #doctorTable th {
+                background-color: #3498db;
+                color: #fff;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+
+            #doctorTable tr:hover {
+                background-color: #f5f5f5;
+            }
+
+        .status-checkbox {
+            width: 18px;
+            height: 18px;
+        }
+
+        .status-cell {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h2 id="pageTitle">Doctor Status List</h2>
+
+        <table id="doctorTable">
+            <thead>
+                <tr>
+                    <th>Doctor ID</th>
+                    <th>Name</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var doctor in Model)
+                {
+                    <tr id="doctorRow-@doctor.DoctorId">
+                        <td id="doctorId-@doctor.DoctorId">@doctor.DoctorId</td>
+                        <td id="doctorName-@doctor.DoctorId">@doctor.Name</td>
+                        <td class="status-cell">
+                            <input type="checkbox"
+                                   id="statusCheckbox-@doctor.DoctorId"
+                                   class="status-checkbox"
+                                   data-doctor-id="@doctor.DoctorId"
+                            @(doctor.IsValid ? "checked" : "") />
+                        </td>
+                    </tr>
                 }
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.status-checkbox').change(function () {
+                var doctorId = $(this).data('doctor-id');
+                var isValid = $(this).is(':checked');
+
+                $.ajax({
+                    url: '@Url.Action("UpdateDoctorStatus", "Admin")',
+                    type: 'POST',
+                    data: {
+                        doctorId: doctorId,
+                        isValid: isValid
+                    },
+                    success: function (response) {
+                        if (response.success) {
+                            alert("Status updated successfully.");
+                        } else {
+                            alert("Failed to update status.");
+                        }
+                    },
+                    error: function (xhr, status, error) {
+                        alert("An error occurred: " + error);
+                    }
+                });
             });
         });
-    });
-</script>
+    </script>
+</body>
+</html>

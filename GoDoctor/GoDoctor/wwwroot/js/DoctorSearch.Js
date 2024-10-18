@@ -1,108 +1,94 @@
 ﻿async function getDoctors(page) {
-    let specialty = document.getElementById('specialty').value;
-    let governorate = document.getElementById('governorate').value;
-    let doctor = document.getElementById('doctor').value;
-    //let page = 1;
-    console.log('Specialty:', specialty);
-    console.log('Governorate:', governorate);
-    console.log('Doctor:', doctor);
-    
-    let result = await fetch(`https://localhost:44326/Doctor/ViewDoctors1?specialty=${specialty}&governorate=${governorate}&doctor=${doctor}&page=${page}`, {
-        method: 'GET',
-        credentials: 'include'
-    });
+    const specialty = document.getElementById('specialty').value;
+    const governorate = document.getElementById('governorate').value;
+    const doctor = document.getElementById('doctor').value;
 
-    if (!result.ok) {
-        // Handle not found or error response
-        const errorData = await result.json();
-        const parentCard = document.getElementById("ParentCard");
-        parentCard.innerHTML = `<p>${errorData.massage}</p>`;
-        return;
-    }
-
-    let data = await result.json();
-    renderDoctors(data.data);
-    MakePagination(data.data.totalPages,data.data.CurrentPage,10)
-}
-
-function renderDoctors(doctors) {
-    const parentCard = document.getElementById("ParentCard");
-    parentCard.innerHTML = ''; // Clear previous results
-
-    doctors.forEach(doctor => {
-        const card = `
-    <div class="card m-2 shadow-sm col-lg-4 col-md-6 mb-4 rounded border-0">
-        <img src="${doctor.image}" alt="${doctor.name}" class="card-img-top rounded-top">
-        <div class="card-body">
-            <h3 class="card-title text-primary">${doctor.name}</h3>
-            <h5 class="card-subtitle mb-2 text-muted">${doctor.specialtyName}</h5>
-            <p class="card-text">${doctor.specialtyDescription}</p>
-            <p class="card-text">${doctor.description}</p>
-        </div>
-        <div class="card-footer text-center bg-transparent border-0">
-            <a href="/Appointment/ViewAllAppointmen?doctorId=${doctor.id}" class="btn btn-outline-primary btn-sm">View Doctor</a>
-            <a href="/Doctor/Details/${doctor.id}" class="btn btn-outline-primary btn-sm">View Doctor</a>
-        </div>
-    </div>`;
-
-        parentCard.innerHTML += card;
-    });
-}
-
-// Wrap your function calls in an async function to use await
-async function fetchDataAndRender() {
     try {
-        await getDoctors(1);
+        const response = await fetch(`https://localhost:44326/Doctor/ViewDoctors1?specialty=${specialty}&governorate=${governorate}&doctor=${doctor}&page=${page}`, {
+            method: 'GET',
+            credentials: 'include'
+        });
+
+        if (!response.ok) {
+            const errorData = await response.json();
+            document.getElementById("ParentCard").innerHTML = `<p class="text-danger">${errorData.message}</p>`;
+            return;
+        }
+
+        const data = await response.json();
+        renderDoctors(data.data);
+        renderPagination(data.data.totalPages, data.data.CurrentPage);
     } catch (error) {
         console.error('An error occurred:', error);
     }
 }
 
-// Call the async function to fetch and render data
-fetchDataAndRender();
+function renderDoctors(doctors) {
+    const parentCard = document.getElementById("ParentCard");
+    parentCard.innerHTML = `
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            ${doctors.map(doctor => `
+                <div class="col mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="${doctor.image}" alt="${doctor.name}" class="card-img-top" style="height: 250px; object-fit: contain;">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">${doctor.name}</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">${doctor.specialtyName}</h6>
+                            <p class="card-text">${doctor.description}</p>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <div class="d-flex justify-content-between">
+                                <a href="/Doctor/Details/${doctor.id}" class="btn btn-outline-primary btn-lg px-4 py-2 rounded text-center flex-grow-1 me-2 shadow-sm" 
+                                    style="font-size: 1rem; white-space: normal;">View<br>Profile</a>
+                                <a href="/Appointment/ViewAllAppointmen?doctorId=${doctor.id}" class="btn btn-primary btn-lg px-4 py-2 rounded shadow-sm flex-grow-1" 
+                                    style="font-size: 1rem;">Book Appointment</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `).join('')}
+        </div>
+    `;
+}
 
-document.getElementById('submit').addEventListener('click', async (event) => {
-    event.preventDefault(); // Prevent default form submission behavior
+function formatDoctorName(name) {
+    // Splits the doctor's name by space and adds a non-breaking space (&nbsp;) between first and last name
+    const nameParts = name.split(' ');
+    if (nameParts.length >= 2) {
+        return `${nameParts[0]}&nbsp;${nameParts.slice(1).join(' ')}`;
+    }
+    return name; // Return the name as-is if it doesn't have a space
+}
 
-    // Call the async function to fetch and render data
-    await fetchDataAndRender();
+function renderPagination(totalPages, currentPage) {
+    const pagination = document.getElementById('pagination-container');
+    pagination.innerHTML = `
+        <nav aria-label="Page navigation" class="mt-4">
+            <ul class="pagination justify-content-center">
+                <li class="page-item ${currentPage === 1 ? 'disabled' : ''}">
+                    <a class="page-link" href="#" onclick="getDoctors(${currentPage - 1}); return false;" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+                ${Array.from({ length: totalPages }, (_, i) => i + 1).map(page => `
+                    <li class="page-item ${page === currentPage ? 'active' : ''}">
+                        <a class="page-link" href="#" onclick="getDoctors(${page}); return false;">${page}</a>
+                    </li>
+                `).join('')}
+                <li class="page-item ${currentPage === totalPages ? 'disabled' : ''}">
+                    <a class="page-link" href="#" onclick="getDoctors(${currentPage + 1}); return false;" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    `;
+}
+
+document.getElementById('submit').addEventListener('click', (event) => {
+    event.preventDefault();
+    getDoctors(1);
 });
-async function goToPage(i) {
-    await getDoctors(i);
-}
-function MakePagination(totalItems, currentPage, pageSize) {
-    // Calculate total pages
-    const totalPages = Math.ceil(totalItems / pageSize);
 
-    // Initialize an empty array to store pagination elements
-    const pagination = [];
-
-    // Add a "Previous" button, disabled if on the first page
-    if (currentPage > 1) {
-        pagination.push(`<button onclick="goToPage(${currentPage - 1})">Previous</button>`);
-    } else {
-        pagination.push(`<button disabled>Previous</button>`);
-    }
-
-    // Loop through the total number of pages to add page numbers
-    for (let i = 1; i <= totalPages; i++) {
-        // Add the current page with an active state
-        if (i === currentPage) {
-            pagination.push(`<button class="active">${i}</button>`);
-        } else {
-            pagination.push(`<button onclick="goToPage(${i})">${i}</button>`);
-        }
-    }
-
-    // Add a "Next" button, disabled if on the last page
-    if (currentPage < totalPages) {
-        pagination.push(`<button onclick="goToPage(${currentPage + 1})">Next</button>`);
-    } else {
-        pagination.push(`<button disabled>Next</button>`);
-    }
-
-    // Join the pagination array to form a single string and insert it into the DOM
-    document.getElementById('pagination-container').innerHTML = pagination.join(' ');
-}
-
-
+// Initial data fetch
+getDoctors(1);

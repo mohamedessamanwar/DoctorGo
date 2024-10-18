@@ -1,50 +1,67 @@
 ﻿@using BusinessAccessLayer.DataViews.DoctorView;
 @{
     ViewBag.Title = "Specialty Management";
-}
-
-@{
     Layout = "_AdminLayout";
 }
 
-<h2>Specialty Management</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewBag.Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold text-gray-800 mb-8">Specialty Management</h1>
 
-<form method="post" asp-action="AddSpecialty" class="mb-4">
-    <div class="form-group">
-        <label for="name">Specialty Name</label>
-        <input type="text" id="name" name="name" class="form-control" placeholder="Enter specialty name" required />
-    </div>
-    <div class="form-group">
-        <label for="description">Specialty Description</label>
-        <textarea id="description" name="description" class="form-control" placeholder="Enter specialty description" required></textarea>
-    </div>
-    <button type="submit" class="btn btn-primary mt-2">Add Specialty</button>
-</form>
+        <div class="bg-white shadow-md rounded-lg p-6 mb-8">
+            <h2 class="text-xl font-semibold text-gray-700 mb-4">Add New Specialty</h2>
+            <form method="post" asp-action="AddSpecialty">
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Specialty Name</label>
+                    <input type="text" id="name" name="name" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Enter specialty name" required />
+                </div>
+                <div class="mb-4">
+                    <label for="description" class="block text-gray-700 text-sm font-bold mb-2">Specialty Description</label>
+                    <textarea id="description" name="description" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" rows="3" placeholder="Enter specialty description" required></textarea>
+                </div>
+                <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+                    Add Specialty
+                </button>
+            </form>
+        </div>
 
-<!-- Specialty List -->
-<table class="table table-striped">
-    <thead>
-        <tr>
-            <th>Specialty ID</th>
-            <th>Name</th>
-            <th>Description</th>
-            <th>Action</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var specialty in Model)
-        {
-            <tr>
-                <td>@specialty.Id</td>
-                <td>@specialty.Name</td>
-                <td>@specialty.Description</td>
-                <td>
-                    <form method="post" asp-action="DeleteSpecialty">
-                        <input type="hidden" name="specialtyId" value="@specialty.Id" />
-                        <button type="submit" class="btn btn-danger">Delete</button>
-                    </form>
-                </td>
-            </tr>
-        }
-    </tbody>
-</table>
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+            <h2 class="text-xl font-semibold text-gray-700 p-4 bg-gray-50">Specialty List</h2>
+            <table class="min-w-full divide-y divide-gray-200">
+                <thead class="bg-gray-50">
+                    <tr>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Specialty ID</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Name</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Description</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Action</th>
+                    </tr>
+                </thead>
+                <tbody class="bg-white divide-y divide-gray-200">
+                    @foreach (var specialty in Model)
+                    {
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">@specialty.Id</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">@specialty.Name</td>
+                            <td class="px-6 py-4 text-sm text-gray-500">@specialty.Description</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                                <form method="post" asp-action="DeleteSpecialty">
+                                    <input type="hidden" name="specialtyId" value="@specialty.Id" />
+                                    <button type="submit" class="text-red-600 hover:text-red-900">Delete</button>
+                                </form>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

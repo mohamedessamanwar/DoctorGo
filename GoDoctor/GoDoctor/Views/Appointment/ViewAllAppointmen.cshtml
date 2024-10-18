@@ -3,30 +3,39 @@
 @{
     Layout = "_Layout";
 }
-@if (!Model.Any())
-{
-    <p>No Appointments Found</p>
-}
-else
-{
-    <table  class="table table-hover mt-3">
-        <thead>
-            <tr>
-                <th scope="col">Appointment Day</th>
-                <th>View available times</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var appointment in Model)
-            {
-                <tr class="table-secondary">
-                    <td>@appointment.AppointmentDay</td>
-                    <td>
-                        <a class="btn btn-primary" asp-controller="TimeSlot" asp-action="ViewTimeSlot" asp-route-appointmentId="@appointment.Id">View Tims</a>
-                    </td>
-                </tr>
-            }
-        </tbody>
-    </table>
-}
 
+<div class="container mt-5">
+    <h2 class="mb-4 text-center">Appointments</h2>
+    @if (!Model.Any())
+    {
+        <div class="alert alert-info" role="alert">
+            <i class="fas fa-info-circle me-2"></i> No Appointments Found
+        </div>
+    }
+    else
+    {
+        <div class="table-responsive">
+            <table class="table table-hover table-striped table-bordered shadow-sm">
+                <thead class="table-dark">
+                    <tr>
+                        <th scope="col" class="text-center">Appointment Day</th>
+                        <th scope="col" class="text-center">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var appointment in Model)
+                    {
+                        <tr>
+                            <td class="align-middle text-center">@appointment.AppointmentDay.ToString("MMMM dd, yyyy")</td>
+                            <td class="text-center">
+                                <a class="btn btn-primary btn-sm" asp-controller="TimeSlot" asp-action="ViewTimeSlot" asp-route-appointmentId="@appointment.Id">
+                                    <i class="fas fa-clock me-1"></i> View Times
+                                </a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+</div>

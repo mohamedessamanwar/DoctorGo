@@ -1,9 +1,14 @@
-﻿<!DOCTYPE html>
+﻿@{
+    ViewData["Title"] = "GoDoctor - Your Health, Our Priority";
+}
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GoDoctor - Home Page</title>
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <style>
         /* Reset and base styles */
         * {
@@ -13,14 +18,16 @@
         }
 
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             color: #333;
             background-color: #f0f8ff;
         }
 
         .container {
-            width: 100%;
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
         }
 
         /* Hero section styles */
@@ -31,141 +38,292 @@
             display: flex;
             align-items: center;
             justify-content: flex-start;
-            padding-left: 2rem;
             overflow: hidden;
-            border-radius: 100px;
+            background-image: url('@Url.Content("~/Img/PagesImages/1.jpg")');
+            background-size: cover;
+            background-position: center;
         }
-
-            .hero img {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                z-index: -1;
-                opacity: 0.7;
-            }
 
         .hero-content {
             position: relative;
             z-index: 1;
             max-width: 600px;
             color: #ffffff;
+            background-color: rgba(0, 102, 204, 0.8);
+            padding: 2.5rem;
+            border-radius: 15px;
+            margin-left: 5%;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
         }
 
         .hero h1 {
-            font-size: 3.5rem;
+            font-size: 3.8rem;
             margin-bottom: 1.5rem;
-            color: #0066cc; /* Changed from #e6f3ff to pure white for better visibility */
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Added text shadow for better contrast */
+            color: #ffffff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            line-height: 1.2;
         }
 
         .hero p {
-            font-size: 1.4rem;
+            font-size: 1.5rem;
             margin-bottom: 2rem;
-            color: #ffffff; /* Changed from #cce6ff to pure white for better visibility */
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Added text shadow for better contrast */
+            color: #ffffff;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
         }
 
-        /* Button styles for both */
+        /* Button styles */
         .cta-btn, .hero-btn {
             display: inline-block;
             background-color: #ffffff;
             color: #0066cc;
-            padding: 1rem 3rem; /* Increase padding */
-            font-size: 1.5rem; /* Larger font size */
-            font-weight: 700; /* Bold text */
+            padding: 1rem 3rem;
+            font-size: 1.5rem;
+            font-weight: 700;
             text-decoration: none;
             border-radius: 50px;
             transition: all 0.3s ease;
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Add box shadow */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
         }
 
-            .cta-btn:hover, .hero-btn:hover {
-                background-color: #e6f3ff;
-                transform: translateY(-3px);
-                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-            }
+        .cta-btn:hover, .hero-btn:hover {
+            background-color: #e6f3ff;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
 
         /* Features section styles */
         .features {
-            padding: 6rem 0;
+            padding: 8rem 0;
             background-color: #e6f3ff;
         }
 
-            .features h2 {
-                text-align: center;
-                font-size: 2.5rem;
-                color: #0052a3;
-                margin-bottom: 3rem;
-            }
+        .features h2 {
+            text-align: center;
+            font-size: 3rem;
+            color: #0052a3;
+            margin-bottom: 4rem;
+            position: relative;
+        }
+
+        .features h2::after {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 4px;
+            background-color: #0066cc;
+            margin: 1rem auto 0;
+        }
 
         .feature-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
+            gap: 3rem;
         }
 
         .feature-card {
             background-color: #ffffff;
-            padding: 2rem;
-            border-radius: 12px;
+            padding: 2.5rem;
+            border-radius: 15px;
             text-align: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
             transition: all 0.3s ease;
             cursor: pointer;
         }
 
-            .feature-card:hover {
-                transform: translateY(-10px);
-                box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
-            }
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
 
-            .feature-card h3 {
-                color: #0066cc;
-                margin-bottom: 1rem;
-                font-size: 1.5rem;
-            }
+        .feature-card h3 {
+            color: #0066cc;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+        }
 
         .feature-icon {
+            font-size: 3.5rem;
+            color: #0066cc;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Services section styles */
+        .services {
+            padding: 8rem 0;
+            background-color: #ffffff;
+        }
+
+        .services h2 {
+            text-align: center;
+            font-size: 3rem;
+            color: #0052a3;
+            margin-bottom: 4rem;
+            position: relative;
+        }
+
+        .services h2::after {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 4px;
+            background-color: #0066cc;
+            margin: 1rem auto 0;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+        }
+
+        .service-card {
+            background-color: #f0f8ff;
+            padding: 2.5rem;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .service-card h3 {
+            color: #0066cc;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .service-icon {
             font-size: 3rem;
             color: #0066cc;
             margin-bottom: 1.5rem;
         }
 
-        /* CTA section styles */
-        .cta-section {
-            background-color: #0066cc;
-            color: #ffffff;
-            text-align: center;
-            padding: 4rem 0;
+        /* About Us section styles */
+        .about-us {
+            padding: 8rem 0;
+            background-color: #f0f8ff;
         }
 
-            .cta-section h2 {
-                font-size: 2.5rem;
-                margin-bottom: 1rem;
-            }
+        .about-us h2 {
+            text-align: center;
+            font-size: 3rem;
+            color: #0052a3;
+            margin-bottom: 4rem;
+            position: relative;
+        }
 
-            .cta-section p {
-                font-size: 1.2rem;
-                margin-bottom: 2rem;
-                max-width: 800px;
-                margin-left: auto;
-                margin-right: auto;
-            }
+        .about-us h2::after {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 4px;
+            background-color: #0066cc;
+            margin: 1rem auto 0;
+        }
+
+        .about-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 4rem;
+            background-color: #ffffff;
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-text {
+            flex: 1;
+        }
+
+        .about-text p {
+            margin-bottom: 1.5rem;
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #444;
+        }
+
+        .about-image {
+            flex: 1;
+            text-align: center;
+        }
+
+        .about-image img {
+            max-width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .about-image img:hover {
+            transform: scale(1.05);
+        }
+
+        /* FAQ section styles */
+        .faq {
+            padding: 8rem 0;
+            background-color: #ffffff;
+        }
+
+        .faq h2 {
+            text-align: center;
+            font-size: 3rem;
+            color: #0052a3;
+            margin-bottom: 4rem;
+            position: relative;
+        }
+
+        .faq h2::after {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 4px;
+            background-color: #0066cc;
+            margin: 1rem auto 0;
+        }
+
+        .faq-item {
+            margin-bottom: 2rem;
+            background-color: #f0f8ff;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .faq-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .faq-question {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #0066cc;
+            margin-bottom: 1rem;
+        }
+
+        .faq-answer {
+            font-size: 1.1rem;
+            color: #333;
+            line-height: 1.6;
+        }
+
     </style>
 </head>
 <body>
-    <main>
-        <section class="hero">
-            <img src="~/Img/PagesImages/1.jpg" alt="Healthcare Image">
+    <main id="main">
+        <section class="hero" id="heroid">
             <div class="hero-content">
-                <div class="hero-text">
-                    <h1>Discover Excellence in Healthcare</h1>
-                    <p>Find your health haven at GoDoctor, where your well-being is our top priority. With personalized care and a commitment to excellence, we're here to support you on your journey to better health.</p>
-                    <a href="#" class="hero-btn">Find a Doctor Now</a>
-                </div>
+                <h1>Discover Excellence in Healthcare</h1>
+                <p>Find your health haven at GoDoctor, where your well-being is our top priority. With personalized care and a commitment to excellence, we're here to support you on your journey to better health.</p>
+                <a href="#" class="hero-btn">Find a Doctor Now</a>
             </div>
         </section>
 
@@ -174,17 +332,17 @@
                 <h2>Why Choose GoDoctor?</h2>
                 <div class="feature-grid">
                     <div class="feature-card">
-                        <div class="feature-icon">🔍</div>
+                        <div class="feature-icon"><i class="fas fa-search"></i></div>
                         <h3>Easy Search</h3>
                         <p>Find the right doctor with our advanced search options. Filter by specialty, location, and availability to get the care you need.</p>
                     </div>
                     <div class="feature-card">
-                        <div class="feature-icon">📅</div>
+                        <div class="feature-icon"><i class="fas fa-calendar-alt"></i></div>
                         <h3>Online Booking</h3>
                         <p>Book appointments instantly, 24/7 at your convenience. No more waiting on hold or playing phone tag.</p>
                     </div>
                     <div class="feature-card">
-                        <div class="feature-icon">💻</div>
+                        <div class="feature-icon"><i class="fas fa-video"></i></div>
                         <h3>Virtual Consultations</h3>
                         <p>Connect with doctors remotely for follow-ups and minor issues. Save time and stay safe with our telemedicine options.</p>
                     </div>
@@ -192,11 +350,97 @@
             </div>
         </section>
 
-        <section class="cta-section">
+        <section class="services" id="servicesid">
             <div class="container">
-                <h2>Ready to Take Control of Your Health?</h2>
-                <p>Join thousands of satisfied patients who have found their perfect healthcare match with GoDoctor.</p>
-                <a href="#" class="cta-btn">Sign Up Now</a>
+                <h2>Our Services</h2>
+                <div class="service-grid">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-heartbeat"></i></div>
+                        <h3>Cardiology</h3>
+                        <p>Expert care for your heart health needs.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-brain"></i></div>
+                        <h3>Neurology</h3>
+                        <p>Specialized care for neurological conditions.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-allergies"></i></div>
+                        <h3>Dermatology</h3>
+                        <p>Comprehensive skin care and treatments.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-baby"></i></div>
+                        <h3>Pediatrics</h3>
+                        <p>Dedicated care for children's health and development.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-bone"></i></div>
+                        <h3>Orthopedics</h3>
+                        <p>Specialized care for musculoskeletal issues.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-eye"></i></div>
+                        <h3>Ophthalmology</h3>
+                        <p>Comprehensive eye care and vision treatments.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-female"></i></div>
+                        <h3>Gynecology</h3>
+                        <p>Specialized care for women's health.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-ribbon"></i></div>
+                        <h3>Oncology</h3>
+                        <p>Advanced cancer care and treatments.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-us" id="about-usid">
+            <div class="container">
+                <h2>About GoDoctor</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>GoDoctor is a revolutionary healthcare platform designed to connect patients with the best medical professionals. Our mission is to make quality healthcare accessible to everyone, anytime, anywhere.</p>
+                        <p>With a network of highly qualified doctors across various specialties, state-of-the-art telemedicine capabilities, and a user-friendly interface, we're transforming the way people approach their health and well-being.</p>
+                        <p>At GoDoctor,   we're not just a platform - we're your partner in health, committed to supporting you at every step of your wellness journey.</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="@Url.Content("~/Img/Doctors/2.jpg")" alt="GoDoctor Team">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-item">
+                    <div class="faq-question">How do I book an appointment?</div>
+                    <div class="faq-answer">Simply create an account, search for a doctor based on your needs, and select an available time slot that suits you. It's quick and easy!</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Are virtual consultations secure?</div>
+                    <div class="faq-answer">Yes, we use state-of-the-art encryption technology to ensure that all virtual consultations are private and secure. Our platform is HIPAA compliant, guaranteeing the confidentiality of your medical information.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Can I cancel or reschedule my appointment?</div>
+                    <div class="faq-answer">Yes, you can cancel or reschedule your appointment up to 24 hours before the scheduled time without any penalty. Simply log into your account and navigate to the 'My Appointments' section to make changes.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">How do I pay for my consultation?</div>
+                    <div class="faq-answer">We accept various payment methods including credit cards, debit cards, and some insurance plans. Payment is processed securely through our platform. For insured patients, we offer direct billing to many major insurance providers.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">What if I need a prescription?</div>
+                    <div class="faq-answer">If your doctor determines that you need a prescription, they can send it electronically to your preferred pharmacy. For controlled substances or certain medications, an in-person visit may be required.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">How can I access my medical records?</div>
+                    <div class="faq-answer">Your medical records are securely stored in your GoDoctor account. You can access them at any time by logging in and navigating to the 'My Records' section. You can also easily share these records with other healthcare providers if needed.</div>
+                </div>
             </div>
         </section>
     </main>
