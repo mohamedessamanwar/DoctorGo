@@ -22,5 +22,10 @@ namespace DataAccessLayer.Repositories.BookingRepo
                .Where(a=>a.PaymentStatus== "Complete")
                .ToListAsync();             
         }
+        public async Task<Booking> GetDoctorBook(int bookId)
+        {
+            return await context.Bookings.AsNoTracking().Include(b => b.User).Include(b => b.TimeSlot).
+               ThenInclude(t => t.Appointment).ThenInclude(a => a.Doctor).ThenInclude(d=>d.ApplicationUser).FirstOrDefaultAsync(b => b.Id == bookId);
+        }
     }
 }

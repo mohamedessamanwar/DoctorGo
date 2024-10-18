@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{85C91D78-4979-49F7-90B0-291B5E85018E}|GoDoctor\\GoDoctor.csproj|c:\\users\\al-fajr\\desktop\\new folder (3)\\doctorgo\\godoctor\\godoctor\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{85C91D78-4979-49F7-90B0-291B5E85018E}|GoDoctor\\GoDoctor.csproj|solutionrelative:godoctor\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9CC451E4-3241-41ED-AC38-D55777A9FFF7}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\al-fajr\\desktop\\new folder (3)\\doctorgo\\godoctor\\dataaccesslayer\\repositories\\timeslotrepo\\timeslotrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CC451E4-3241-41ED-AC38-D55777A9FFF7}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\repositories\\timeslotrepo\\timeslotrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E98982E-56A7-4DAB-8295-5BF3C1727AF1}|BusinessAccessLayer\\BusinessAccessLayer.csproj|c:\\users\\al-fajr\\desktop\\new folder (3)\\doctorgo\\godoctor\\businessaccesslayer\\sevices\\authservice\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E98982E-56A7-4DAB-8295-5BF3C1727AF1}|BusinessAccessLayer\\BusinessAccessLayer.csproj|solutionrelative:businessaccesslayer\\sevices\\authservice\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9CC451E4-3241-41ED-AC38-D55777A9FFF7}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\al-fajr\\desktop\\new folder (3)\\doctorgo\\godoctor\\dataaccesslayer\\repositories\\bookingrepo\\bookingrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CC451E4-3241-41ED-AC38-D55777A9FFF7}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\repositories\\bookingrepo\\bookingrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{85C91D78-4979-49F7-90B0-291B5E85018E}|GoDoctor\\GoDoctor.csproj|c:\\users\\al-fajr\\desktop\\new folder (3)\\doctorgo\\godoctor\\godoctor\\views\\auth\\resetpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{85C91D78-4979-49F7-90B0-291B5E85018E}|GoDoctor\\GoDoctor.csproj|solutionrelative:godoctor\\views\\auth\\resetpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{7E98982E-56A7-4DAB-8295-5BF3C1727AF1}|BusinessAccessLayer\\BusinessAccessLayer.csproj|c:\\users\\al-fajr\\desktop\\new folder (3)\\doctorgo\\godoctor\\businessaccesslayer\\sevices\\bookingservice\\bookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E98982E-56A7-4DAB-8295-5BF3C1727AF1}|BusinessAccessLayer\\BusinessAccessLayer.csproj|solutionrelative:businessaccesslayer\\sevices\\bookingservice\\bookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{85C91D78-4979-49F7-90B0-291B5E85018E}|GoDoctor\\GoDoctor.csproj|c:\\users\\al-fajr\\desktop\\new folder (3)\\doctorgo\\godoctor\\godoctor\\views\\doctor\\goasdoctor.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{85C91D78-4979-49F7-90B0-291B5E85018E}|GoDoctor\\GoDoctor.csproj|solutionrelative:godoctor\\views\\doctor\\goasdoctor.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{9CC451E4-3241-41ED-AC38-D55777A9FFF7}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\al-fajr\\desktop\\new folder (3)\\doctorgo\\godoctor\\dataaccesslayer\\repositories\\bookingrepo\\ibookingrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CC451E4-3241-41ED-AC38-D55777A9FFF7}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\repositories\\bookingrepo\\ibookingrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,58 +26,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 387,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "GoAsDoctor.cshtml",
-              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\GoDoctor\\Views\\Doctor\\GoAsDoctor.cshtml",
-              "RelativeDocumentMoniker": "GoDoctor\\Views\\Doctor\\GoAsDoctor.cshtml",
-              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\GoDoctor\\Views\\Doctor\\GoAsDoctor.cshtml",
-              "RelativeToolTip": "GoDoctor\\Views\\Doctor\\GoAsDoctor.cshtml",
-              "ViewState": "AQIAAI0AAAAAAAAAAAAAAKMAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-17T18:48:11.499Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\GoDoctor\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "GoDoctor\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\GoDoctor\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "GoDoctor\\Controllers\\AuthController.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAIwBIAAAAIAAAA",
+              "Title": "TimeSlotRepo.cs",
+              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\DataAccessLayer\\Repositories\\TimeSlotRepo\\TimeSlotRepo.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Repositories\\TimeSlotRepo\\TimeSlotRepo.cs",
+              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\DataAccessLayer\\Repositories\\TimeSlotRepo\\TimeSlotRepo.cs",
+              "RelativeToolTip": "DataAccessLayer\\Repositories\\TimeSlotRepo\\TimeSlotRepo.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABYAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T18:39:59.975Z",
+              "WhenOpened": "2024-10-18T08:24:36.425Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ResetPassword.cshtml",
-              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\GoDoctor\\Views\\Auth\\ResetPassword.cshtml",
-              "RelativeDocumentMoniker": "GoDoctor\\Views\\Auth\\ResetPassword.cshtml",
-              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\GoDoctor\\Views\\Auth\\ResetPassword.cshtml",
-              "RelativeToolTip": "GoDoctor\\Views\\Auth\\ResetPassword.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-17T18:38:03.498Z",
+              "Title": "BookingService.cs",
+              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\BusinessAccessLayer\\Sevices\\BookingService\\BookingService.cs",
+              "RelativeDocumentMoniker": "BusinessAccessLayer\\Sevices\\BookingService\\BookingService.cs",
+              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\BusinessAccessLayer\\Sevices\\BookingService\\BookingService.cs",
+              "RelativeToolTip": "BusinessAccessLayer\\Sevices\\BookingService\\BookingService.cs",
+              "ViewState": "AQIAAGkAAAAAAAAAAAAUwHgAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T08:07:11.652Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IBookingRepo.cs",
+              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\DataAccessLayer\\Repositories\\BookingRepo\\IBookingRepo.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Repositories\\BookingRepo\\IBookingRepo.cs",
+              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\DataAccessLayer\\Repositories\\BookingRepo\\IBookingRepo.cs",
+              "RelativeToolTip": "DataAccessLayer\\Repositories\\BookingRepo\\IBookingRepo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T08:06:54.06Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\BusinessAccessLayer\\Sevices\\AuthService\\AuthService.cs",
-              "RelativeDocumentMoniker": "BusinessAccessLayer\\Sevices\\AuthService\\AuthService.cs",
-              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\BusinessAccessLayer\\Sevices\\AuthService\\AuthService.cs",
-              "RelativeToolTip": "BusinessAccessLayer\\Sevices\\AuthService\\AuthService.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAIwB4AAAAIAAAA",
+              "Title": "BookingRepo.cs",
+              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\DataAccessLayer\\Repositories\\BookingRepo\\BookingRepo.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Repositories\\BookingRepo\\BookingRepo.cs",
+              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\New folder (3)\\DoctorGo\\GoDoctor\\DataAccessLayer\\Repositories\\BookingRepo\\BookingRepo.cs",
+              "RelativeToolTip": "DataAccessLayer\\Repositories\\BookingRepo\\BookingRepo.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAABsAAABqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T18:36:22.042Z",
+              "WhenOpened": "2024-10-18T08:03:37.654Z",
               "EditorCaption": ""
             }
           ]

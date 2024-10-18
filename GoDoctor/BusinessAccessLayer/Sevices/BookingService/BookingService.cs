@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using BusinessAccessLayer.HelperClasses;
 using BusinessAccessLayer.DataViews.BookingView;
+using BusinessAccessLayer.Services.Email;
 
 namespace BusinessAccessLayer.Sevices.BookingService
 {
@@ -17,11 +18,12 @@ namespace BusinessAccessLayer.Sevices.BookingService
     {
         private readonly IUnitOfWork unitOfWork;
         private readonly IPayment payment;
-
-        public BookingService(IUnitOfWork unitOfWork, IPayment payment)
+        private readonly IMailingService mailingService;
+        public BookingService(IUnitOfWork unitOfWork, IPayment payment, IMailingService mailingService)
         {
             this.unitOfWork = unitOfWork;
             this.payment = payment;
+            this.mailingService = mailingService;
         }
 
 
@@ -91,7 +93,7 @@ namespace BusinessAccessLayer.Sevices.BookingService
 
         public async Task<BookingResult> Confirmation(int bookId)
         {
-            var booking = await unitOfWork.BookingRepo.GetByIdAsync(bookId); //1  include slote with tracking 
+            var booking = await unitOfWork.BookingRepo.GetDoctorBook(bookId); //1  include slote with tracking 
             var paymentStatus = payment.PaymentStatus(booking.SessionId);
             var session = payment.PaymentSession(booking.SessionId);
             // path if user InComplete payment .
@@ -115,6 +117,29 @@ namespace BusinessAccessLayer.Sevices.BookingService
             {
                 await UpdateOrderStatus(booking, "Complete"); 
                 await unitOfWork.CompleteAsync();
+                // Email to the User (Appointment Confirmation)
+                string userEmailSubject = "Appointment Confirmation with Dr. " + booking.TimeSlot.Appointment.Doctor.ApplicationUser.FirstName;
+                string userEmailBody = $@"
+                 Dear {booking.User.FirstName},
+ 
+                 Your appointment with Dr. {booking.TimeSlot.Appointment.Doctor.ApplicationUser.FirstName} on {booking.TimeSlot.Appointment.AppointmentDay:MMMM dd, yyyy} at {booking.TimeSlot.AppointmentTime} has been confirmed.
+                 Best regards,
+                 [GoDoctor]";
+
+                await mailingService.SendEmailAsync(booking.User.Email, userEmailSubject, userEmailBody);
+
+                // Email to the Doctor (New Appointment Notification)
+                string doctorEmailSubject = "New Appointment with " + booking.User.FirstName;
+                string doctorEmailBody = $@"
+                Dear Dr. {booking.TimeSlot.Appointment.Doctor.ApplicationUser.FirstName},
+
+                You have a new appointment with {booking.User.FirstName} on {booking.TimeSlot.Appointment.AppointmentDay:MMMM dd, yyyy} at {booking.TimeSlot.AppointmentTime}.
+
+                Best regards,
+                [GoDoctor]";
+
+                await mailingService.SendEmailAsync(booking.TimeSlot.Appointment.Doctor.ApplicationUser.Email, doctorEmailSubject, doctorEmailBody);
+
                 return new BookingResult()
                 {
                     IsBook = true,

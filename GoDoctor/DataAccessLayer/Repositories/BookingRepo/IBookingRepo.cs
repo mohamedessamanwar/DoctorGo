@@ -11,5 +11,6 @@ namespace DataAccessLayer.Repositories.BookingRepo
     public interface IBookingRepo:IGenericRepo<Booking>
     {
          Task<IEnumerable<Booking>> GetDoctorBooking(string userId);
+         Task<Booking> GetDoctorBook(int bookId);
     }
 }
