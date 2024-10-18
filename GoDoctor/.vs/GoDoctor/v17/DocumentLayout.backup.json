@@ -99,7 +99,7 @@
               "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Roaming\\Microsoft\\UserSecrets\\9cc70ced-df48-462c-a82d-3459a76e7ef5\\secrets.json",
               "ToolTip": "C:\\Users\\DELL\\AppData\\Roaming\\Microsoft\\UserSecrets\\9cc70ced-df48-462c-a82d-3459a76e7ef5\\secrets.json",
               "RelativeToolTip": "..\\..\\..\\..\\AppData\\Roaming\\Microsoft\\UserSecrets\\9cc70ced-df48-462c-a82d-3459a76e7ef5\\secrets.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAADAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-10-18T14:04:38.639Z",
               "EditorCaption": ""
@@ -114,8 +114,7 @@
               "RelativeToolTip": "GoDoctor\\Views\\Shared\\_AdminLayout.cshtml",
               "ViewState": "AgIAAE4AAAAAAAAAAAAAAFQAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-18T12:52:58.189Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-18T12:52:58.189Z"
             },
             {
               "$type": "Document",
@@ -127,8 +126,7 @@
               "RelativeToolTip": "GoDoctor\\Views\\TimeSlot\\ViewTimeSlot.cshtml",
               "ViewState": "AgIAABwAAAAAAAAAAAAIwDEAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-18T12:51:13.218Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-18T12:51:13.218Z"
             },
             {
               "$type": "Document",
@@ -140,8 +138,7 @@
               "RelativeToolTip": "GoDoctor\\Views\\Admin\\DoctorsStatus.cshtml",
               "ViewState": "AgIAAGsAAAAAAAAAAAAIwHMAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-17T21:26:27.879Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-17T21:26:27.879Z"
             },
             {
               "$type": "Document",
@@ -153,8 +150,7 @@
               "RelativeToolTip": "GoDoctor\\Views\\Shared\\_DoctorLayout.cshtml",
               "ViewState": "AgIAAFAAAAAAAAAAAAAAAGAAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-18T12:33:56.801Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-18T12:33:56.801Z"
             },
             {
               "$type": "Document",
@@ -166,8 +162,7 @@
               "RelativeToolTip": "GoDoctor\\Views\\Home\\Index.cshtml",
               "ViewState": "AgIAADYBAAAAAAAAAAAAAD8BAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-17T21:56:29.508Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-17T21:56:29.508Z"
             },
             {
               "$type": "Document",
@@ -179,8 +174,7 @@
               "RelativeToolTip": "GoDoctor\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAJkAAAAAAAAAAAAAAKgAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-17T20:30:04.53Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-17T20:30:04.53Z"
             },
             {
               "$type": "Document",
@@ -192,8 +186,7 @@
               "RelativeToolTip": "GoDoctor\\Views\\Appointment\\ViewAllAppointmen.cshtml",
               "ViewState": "AgIAABMAAAAAAAAAAAAIwCgAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-18T12:45:50.688Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-18T12:45:50.688Z"
             },
             {
               "$type": "Document",
@@ -205,8 +198,7 @@
               "RelativeToolTip": "GoDoctor\\Views\\Appointment\\Create.cshtml",
               "ViewState": "AgIAAHAAAAAAAAAAAAAIwIUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-18T12:28:10.275Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-18T12:28:10.275Z"
             },
             {
               "$type": "Document",
@@ -218,8 +210,7 @@
               "RelativeToolTip": "GoDoctor\\wwwroot\\css\\site.css",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-10-18T11:17:11.519Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-18T11:17:11.519Z"
             },
             {
               "$type": "Document",
@@ -231,8 +222,7 @@
               "RelativeToolTip": "GoDoctor\\Views\\Admin\\SpecialtyManagement.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAEIAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-17T21:25:15.414Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-17T21:25:15.414Z"
             },
             {
               "$type": "Document",
@@ -244,8 +234,7 @@
               "RelativeToolTip": "GoDoctor\\Views\\Doctor\\Details.cshtml",
               "ViewState": "AgIAAG0AAAAAAAAAAAAIwIIAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-17T21:18:09.234Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-17T21:18:09.234Z"
             },
             {
               "$type": "Document",
@@ -257,8 +246,7 @@
               "RelativeToolTip": "GoDoctor\\Views\\Doctor\\ViewDoctors.cshtml",
               "ViewState": "AgIAACsAAAAAAAAAAAAkwDMAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-17T19:57:48.866Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-17T19:57:48.866Z"
             },
             {
               "$type": "Document",

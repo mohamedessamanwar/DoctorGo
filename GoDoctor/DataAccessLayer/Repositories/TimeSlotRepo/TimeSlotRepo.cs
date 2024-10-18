@@ -20,7 +20,7 @@ namespace DataAccessLayer.Repositories.TimeSlotRepo
             var currentTime = TimeOnly.FromDateTime(DateTime.Now);
             return await context.TimeSlots
                 .Where(t => t.AppointmentId == appointmentId)
-                .Where(t => t.AppointmentTime >= currentTime)
+               // .Where(t => t.AppointmentTime >= currentTime)
                 .ToListAsync();
         }
 
